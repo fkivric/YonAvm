@@ -29,11 +29,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.TileItemElement tileItemElement13 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement1 = new DevExpress.XtraEditors.TileItemElement();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            DevExpress.XtraEditors.TileItemElement tileItemElement14 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement15 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement16 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement2 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement3 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement4 = new DevExpress.XtraEditors.TileItemElement();
             this.tileBar = new DevExpress.XtraBars.Navigation.TileBar();
             this.tileBarGroupTables = new DevExpress.XtraBars.Navigation.TileBarGroup();
             this.employeesTileBarItem = new DevExpress.XtraBars.Navigation.TileBarItem();
@@ -47,9 +47,9 @@
             this.tileBarItem1 = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.Yeni = new DevExpress.XtraEditors.SimpleButton();
+            this.btnIadeListele = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSatisListele = new DevExpress.XtraEditors.SimpleButton();
             this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.srcMagaza = new DevExpress.XtraEditors.SearchLookUpEdit();
@@ -129,12 +129,12 @@
             this.employeesTileBarItem.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.Black;
             this.employeesTileBarItem.AppearanceItem.Normal.Options.UseBackColor = true;
             this.employeesTileBarItem.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            tileItemElement13.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement13.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Top;
-            tileItemElement13.Text = "Employees";
-            tileItemElement13.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.employeesTileBarItem.Elements.Add(tileItemElement13);
+            tileItemElement1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            tileItemElement1.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Top;
+            tileItemElement1.Text = "";
+            tileItemElement1.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.employeesTileBarItem.Elements.Add(tileItemElement1);
             this.employeesTileBarItem.Name = "employeesTileBarItem";
             // 
             // customersTileBarItem
@@ -143,12 +143,12 @@
             this.customersTileBarItem.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.customersTileBarItem.AppearanceItem.Normal.Options.UseBackColor = true;
             this.customersTileBarItem.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement14.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            tileItemElement14.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement14.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Top;
-            tileItemElement14.Text = "Customers";
-            tileItemElement14.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleLeft;
-            this.customersTileBarItem.Elements.Add(tileItemElement14);
+            tileItemElement2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            tileItemElement2.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Top;
+            tileItemElement2.Text = "";
+            tileItemElement2.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.customersTileBarItem.Elements.Add(tileItemElement2);
             this.customersTileBarItem.Id = 2;
             this.customersTileBarItem.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.customersTileBarItem.Name = "customersTileBarItem";
@@ -225,12 +225,12 @@
             this.tileBarItem2.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.Black;
             this.tileBarItem2.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBarItem2.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement15.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement15.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
-            tileItemElement15.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage")));
-            tileItemElement15.Text = "İşlem Listesi";
-            tileItemElement15.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tileBarItem2.Elements.Add(tileItemElement15);
+            tileItemElement3.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement3.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage")));
+            tileItemElement3.Text = "İşlem Listesi";
+            tileItemElement3.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tileBarItem2.Elements.Add(tileItemElement3);
             this.tileBarItem2.Id = 4;
             this.tileBarItem2.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem2.Name = "tileBarItem2";
@@ -241,12 +241,12 @@
             this.tileBarItem1.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.Black;
             this.tileBarItem1.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBarItem1.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement16.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement16.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
-            tileItemElement16.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage1")));
-            tileItemElement16.Text = "Satış Süreçleri";
-            tileItemElement16.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tileBarItem1.Elements.Add(tileItemElement16);
+            tileItemElement4.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement4.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage1")));
+            tileItemElement4.Text = "Satış Süreçleri";
+            tileItemElement4.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tileBarItem1.Elements.Add(tileItemElement4);
             this.tileBarItem1.Id = 3;
             this.tileBarItem1.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem1.Name = "tileBarItem1";
@@ -260,17 +260,17 @@
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(1572, 86);
             this.groupControl1.TabIndex = 4;
-            this.groupControl1.Text = "groupControl1";
+            this.groupControl1.Text = "Satış Filitresi";
             // 
             // tablePanel2
             // 
             this.tablePanel2.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 250F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 240F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 300F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 300F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 33F)});
-            this.tablePanel2.Controls.Add(this.simpleButton2);
-            this.tablePanel2.Controls.Add(this.simpleButton3);
-            this.tablePanel2.Controls.Add(this.simpleButton1);
+            this.tablePanel2.Controls.Add(this.Yeni);
+            this.tablePanel2.Controls.Add(this.btnIadeListele);
+            this.tablePanel2.Controls.Add(this.btnSatisListele);
             this.tablePanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel2.Location = new System.Drawing.Point(561, 23);
             this.tablePanel2.Name = "tablePanel2";
@@ -279,44 +279,47 @@
             this.tablePanel2.Size = new System.Drawing.Size(1009, 61);
             this.tablePanel2.TabIndex = 2;
             // 
-            // simpleButton2
+            // Yeni
             // 
-            this.simpleButton2.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary;
-            this.simpleButton2.Appearance.Options.UseBackColor = true;
-            this.tablePanel2.SetColumn(this.simpleButton2, 2);
-            this.simpleButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton2.Location = new System.Drawing.Point(493, 3);
-            this.simpleButton2.Name = "simpleButton2";
-            this.tablePanel2.SetRow(this.simpleButton2, 0);
-            this.simpleButton2.Size = new System.Drawing.Size(513, 55);
-            this.simpleButton2.TabIndex = 4;
-            this.simpleButton2.Text = "Yeni";
+            this.Yeni.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary;
+            this.Yeni.Appearance.Options.UseBackColor = true;
+            this.tablePanel2.SetColumn(this.Yeni, 2);
+            this.Yeni.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Yeni.Location = new System.Drawing.Point(603, 3);
+            this.Yeni.Name = "Yeni";
+            this.tablePanel2.SetRow(this.Yeni, 0);
+            this.Yeni.Size = new System.Drawing.Size(403, 55);
+            this.Yeni.TabIndex = 4;
+            this.Yeni.Text = "Yeni";
+            this.Yeni.Click += new System.EventHandler(this.Yeni_Click);
             // 
-            // simpleButton3
+            // btnIadeListele
             // 
-            this.simpleButton3.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
-            this.simpleButton3.Appearance.Options.UseBackColor = true;
-            this.tablePanel2.SetColumn(this.simpleButton3, 1);
-            this.simpleButton3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton3.Location = new System.Drawing.Point(253, 3);
-            this.simpleButton3.Name = "simpleButton3";
-            this.tablePanel2.SetRow(this.simpleButton3, 0);
-            this.simpleButton3.Size = new System.Drawing.Size(234, 55);
-            this.simpleButton3.TabIndex = 8;
-            this.simpleButton3.Text = "İade Listesini Getir";
+            this.btnIadeListele.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
+            this.btnIadeListele.Appearance.Options.UseBackColor = true;
+            this.tablePanel2.SetColumn(this.btnIadeListele, 1);
+            this.btnIadeListele.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnIadeListele.Location = new System.Drawing.Point(303, 3);
+            this.btnIadeListele.Name = "btnIadeListele";
+            this.tablePanel2.SetRow(this.btnIadeListele, 0);
+            this.btnIadeListele.Size = new System.Drawing.Size(294, 55);
+            this.btnIadeListele.TabIndex = 8;
+            this.btnIadeListele.Text = "İade Listesini Getir";
+            this.btnIadeListele.Click += new System.EventHandler(this.btnIadeListele_Click);
             // 
-            // simpleButton1
+            // btnSatisListele
             // 
-            this.simpleButton1.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
-            this.simpleButton1.Appearance.Options.UseBackColor = true;
-            this.tablePanel2.SetColumn(this.simpleButton1, 0);
-            this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton1.Location = new System.Drawing.Point(3, 3);
-            this.simpleButton1.Name = "simpleButton1";
-            this.tablePanel2.SetRow(this.simpleButton1, 0);
-            this.simpleButton1.Size = new System.Drawing.Size(244, 55);
-            this.simpleButton1.TabIndex = 3;
-            this.simpleButton1.Text = "Satış Listesini Getir";
+            this.btnSatisListele.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
+            this.btnSatisListele.Appearance.Options.UseBackColor = true;
+            this.tablePanel2.SetColumn(this.btnSatisListele, 0);
+            this.btnSatisListele.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSatisListele.Location = new System.Drawing.Point(3, 3);
+            this.btnSatisListele.Name = "btnSatisListele";
+            this.tablePanel2.SetRow(this.btnSatisListele, 0);
+            this.btnSatisListele.Size = new System.Drawing.Size(294, 55);
+            this.btnSatisListele.TabIndex = 3;
+            this.btnSatisListele.Text = "Satış Listesini Getir";
+            this.btnSatisListele.Click += new System.EventHandler(this.btnSatisListele_Click);
             // 
             // tablePanel1
             // 
@@ -512,9 +515,9 @@
         private DevExpress.XtraBars.Navigation.TileBarItem tileBarItem1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.Utils.Layout.TablePanel tablePanel2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton Yeni;
+        private DevExpress.XtraEditors.SimpleButton btnIadeListele;
+        private DevExpress.XtraEditors.SimpleButton btnSatisListele;
         private DevExpress.Utils.Layout.TablePanel tablePanel1;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.SearchLookUpEdit srcMagaza;

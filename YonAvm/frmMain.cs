@@ -24,6 +24,10 @@ namespace YonAvm
         {
             navigationFrame.SelectedPageIndex = tileBarGroupTables.Items.IndexOf(e.Item);
         }
+        private void tileBar1_SelectedItemChanged(object sender, TileItemEventArgs e)
+        {
+            navigationFrame1.SelectedPageIndex = tileBarGroup1.Items.IndexOf(e.Item);
+        }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
@@ -35,9 +39,19 @@ namespace YonAvm
             dteBitTarih.EditValue = DateTime.Now;
         }
 
-        private void tileBar1_SelectedItemChanged(object sender, TileItemEventArgs e)
+        private void btnSatisListele_Click(object sender, EventArgs e)
         {
-            navigationFrame1.SelectedPageIndex = tileBarGroup1.Items.IndexOf(e.Item);
+
+        }
+
+        private void btnIadeListele_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Yeni_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

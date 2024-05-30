@@ -41,7 +41,7 @@ namespace YonAvm
 
         private void btnSatisListele_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnIadeListele_Click(object sender, EventArgs e)

@@ -46,7 +46,7 @@ namespace YonAvm
 
         private void btnIadeListele_Click(object sender, EventArgs e)
         {
-
+            //denemerrrrrrr
         }
 
         private void Yeni_Click(object sender, EventArgs e)

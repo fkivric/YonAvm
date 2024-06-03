@@ -13,9 +13,13 @@ namespace YonAvm
 {
     public partial class frmIslem : DevExpress.XtraEditors.XtraForm
     {
-        public frmIslem()
+        string CURID;
+        string SALID;
+        public frmIslem(string _curid, string _salid)
         {
             InitializeComponent();
+            CURID = _curid;
+            SALID = _salid;
         }
 
         private void frmIslem_Load(object sender, EventArgs e)

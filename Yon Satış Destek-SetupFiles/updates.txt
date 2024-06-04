@@ -1,0 +1,13 @@
+;aiu;
+
+[Update]
+Name = Yon Satýþ Destek
+ProductVersion = 1.0.0
+URL = http://192.168.4.8:1080/Yon Satýþ Destek.msi
+URL1 = http://192.168.4.8:1080/
+Size = 70829568
+SHA256 = 721CF3F15869537EEB44125605A97DC5702F353FF9715C421D6674B3B4E49518
+MD5 = 902823a2676bf37aa8bd410bc540e46c
+ServerFileName = Yon Satýþ Destek.msi
+FilePath = [APPDIR]YourApplication.exe
+Version = 1.0.0

@@ -70,6 +70,14 @@
             this.navBarGroupControlContainer3 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
             this.gridUrunler = new DevExpress.XtraGrid.GridControl();
             this.ViewUrunler = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn43 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn44 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn45 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn46 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn47 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.tablePanel15 = new DevExpress.Utils.Layout.TablePanel();
+            this.btnVestelTamamlandi = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.tablePanel3 = new DevExpress.Utils.Layout.TablePanel();
             this.txtmail = new DevExpress.XtraEditors.TextEdit();
@@ -100,9 +108,6 @@
             this.txtCode = new DevExpress.XtraEditors.TextEdit();
             this.txtSAdi = new DevExpress.XtraEditors.TextEdit();
             this.txtMadi = new DevExpress.XtraEditors.TextEdit();
-            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
-            this.tablePanel15 = new DevExpress.Utils.Layout.TablePanel();
-            this.btnVestelTamamlandi = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
             this.btnYeni = new DevExpress.XtraEditors.SimpleButton();
@@ -197,10 +202,6 @@
             this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
             this.dateEdit2 = new DevExpress.XtraEditors.DateEdit();
             this.lblSayfaIsmi = new DevExpress.XtraEditors.LabelControl();
-            this.gridColumn43 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn44 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn45 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn46 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).BeginInit();
             this.navigationFrame.SuspendLayout();
             this.navigationPage3.SuspendLayout();
@@ -214,6 +215,10 @@
             this.navBarGroupControlContainer3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridUrunler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ViewUrunler)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
+            this.panelControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel15)).BeginInit();
+            this.tablePanel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).BeginInit();
@@ -231,10 +236,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCode.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSAdi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMadi.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
-            this.panelControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel15)).BeginInit();
-            this.tablePanel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).BeginInit();
@@ -376,6 +377,7 @@
             // 
             // navigationPage3
             // 
+            this.navigationPage3.Caption = "navigationPage3";
             this.navigationPage3.Controls.Add(this.navigationFrame1);
             this.navigationPage3.Controls.Add(this.tileBar1);
             this.navigationPage3.Name = "navigationPage3";
@@ -398,6 +400,7 @@
             // 
             // navigationPage1
             // 
+            this.navigationPage1.Caption = "navigationPage1";
             this.navigationPage1.Controls.Add(this.gridVestelSatis);
             this.navigationPage1.Controls.Add(this.navBarControl1);
             this.navigationPage1.Controls.Add(this.groupControl1);
@@ -643,11 +646,102 @@
             this.gridColumn43,
             this.gridColumn44,
             this.gridColumn45,
-            this.gridColumn46});
+            this.gridColumn46,
+            this.gridColumn47});
             this.ViewUrunler.GridControl = this.gridUrunler;
             this.ViewUrunler.Name = "ViewUrunler";
             this.ViewUrunler.OptionsView.BestFitMode = DevExpress.XtraGrid.Views.Grid.GridBestFitMode.Full;
             this.ViewUrunler.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn43
+            // 
+            this.gridColumn43.Caption = "Stok Kodu";
+            this.gridColumn43.FieldName = "PROVAL";
+            this.gridColumn43.Name = "gridColumn43";
+            this.gridColumn43.OptionsColumn.AllowEdit = false;
+            this.gridColumn43.Visible = true;
+            this.gridColumn43.VisibleIndex = 0;
+            this.gridColumn43.Width = 100;
+            // 
+            // gridColumn44
+            // 
+            this.gridColumn44.Caption = "Barkod";
+            this.gridColumn44.FieldName = "PROBARID";
+            this.gridColumn44.Name = "gridColumn44";
+            this.gridColumn44.OptionsColumn.AllowEdit = false;
+            this.gridColumn44.Visible = true;
+            this.gridColumn44.VisibleIndex = 1;
+            this.gridColumn44.Width = 111;
+            // 
+            // gridColumn45
+            // 
+            this.gridColumn45.Caption = "Stok Adı";
+            this.gridColumn45.FieldName = "PRONAME";
+            this.gridColumn45.Name = "gridColumn45";
+            this.gridColumn45.OptionsColumn.AllowEdit = false;
+            this.gridColumn45.Visible = true;
+            this.gridColumn45.VisibleIndex = 2;
+            this.gridColumn45.Width = 414;
+            // 
+            // gridColumn46
+            // 
+            this.gridColumn46.Caption = "Adet";
+            this.gridColumn46.FieldName = "QUAN";
+            this.gridColumn46.Name = "gridColumn46";
+            this.gridColumn46.OptionsColumn.AllowEdit = false;
+            this.gridColumn46.Visible = true;
+            this.gridColumn46.VisibleIndex = 3;
+            this.gridColumn46.Width = 80;
+            // 
+            // gridColumn47
+            // 
+            this.gridColumn47.Caption = "Detayid";
+            this.gridColumn47.FieldName = "Detayid";
+            this.gridColumn47.Name = "gridColumn47";
+            // 
+            // panelControl3
+            // 
+            this.panelControl3.Controls.Add(this.tablePanel15);
+            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelControl3.Location = new System.Drawing.Point(280, 419);
+            this.panelControl3.Name = "panelControl3";
+            this.panelControl3.Size = new System.Drawing.Size(730, 83);
+            this.panelControl3.TabIndex = 34;
+            // 
+            // tablePanel15
+            // 
+            this.tablePanel15.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 32.45F)});
+            this.tablePanel15.Controls.Add(this.btnVestelTamamlandi);
+            this.tablePanel15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablePanel15.Location = new System.Drawing.Point(2, 2);
+            this.tablePanel15.Name = "tablePanel15";
+            this.tablePanel15.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 90F)});
+            this.tablePanel15.Size = new System.Drawing.Size(726, 79);
+            this.tablePanel15.TabIndex = 0;
+            // 
+            // btnVestelTamamlandi
+            // 
+            this.btnVestelTamamlandi.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
+            this.btnVestelTamamlandi.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnVestelTamamlandi.Appearance.Options.UseBackColor = true;
+            this.btnVestelTamamlandi.Appearance.Options.UseFont = true;
+            this.btnVestelTamamlandi.Appearance.Options.UseTextOptions = true;
+            this.btnVestelTamamlandi.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.btnVestelTamamlandi.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel15.SetColumn(this.btnVestelTamamlandi, 0);
+            this.btnVestelTamamlandi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnVestelTamamlandi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnVestelTamamlandi.ImageOptions.Image")));
+            this.btnVestelTamamlandi.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.btnVestelTamamlandi.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btnVestelTamamlandi.Location = new System.Drawing.Point(3, 3);
+            this.btnVestelTamamlandi.Name = "btnVestelTamamlandi";
+            this.tablePanel15.SetRow(this.btnVestelTamamlandi, 0);
+            this.btnVestelTamamlandi.Size = new System.Drawing.Size(720, 73);
+            this.btnVestelTamamlandi.TabIndex = 4;
+            this.btnVestelTamamlandi.Text = "Müşteri Kayıt \r\nİşlendi Yap";
+            this.btnVestelTamamlandi.Click += new System.EventHandler(this.btnVestelTamamlandi_Click);
             // 
             // panelControl1
             // 
@@ -993,49 +1087,6 @@
             this.txtMadi.Size = new System.Drawing.Size(180, 20);
             this.txtMadi.TabIndex = 0;
             // 
-            // panelControl3
-            // 
-            this.panelControl3.Controls.Add(this.tablePanel15);
-            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl3.Location = new System.Drawing.Point(280, 419);
-            this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(730, 83);
-            this.panelControl3.TabIndex = 34;
-            // 
-            // tablePanel15
-            // 
-            this.tablePanel15.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 32.45F)});
-            this.tablePanel15.Controls.Add(this.btnVestelTamamlandi);
-            this.tablePanel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tablePanel15.Location = new System.Drawing.Point(2, 2);
-            this.tablePanel15.Name = "tablePanel15";
-            this.tablePanel15.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 90F)});
-            this.tablePanel15.Size = new System.Drawing.Size(726, 79);
-            this.tablePanel15.TabIndex = 0;
-            // 
-            // btnVestelTamamlandi
-            // 
-            this.btnVestelTamamlandi.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
-            this.btnVestelTamamlandi.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.btnVestelTamamlandi.Appearance.Options.UseBackColor = true;
-            this.btnVestelTamamlandi.Appearance.Options.UseFont = true;
-            this.btnVestelTamamlandi.Appearance.Options.UseTextOptions = true;
-            this.btnVestelTamamlandi.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.btnVestelTamamlandi.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tablePanel15.SetColumn(this.btnVestelTamamlandi, 0);
-            this.btnVestelTamamlandi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnVestelTamamlandi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnVestelTamamlandi.ImageOptions.Image")));
-            this.btnVestelTamamlandi.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.btnVestelTamamlandi.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnVestelTamamlandi.Location = new System.Drawing.Point(3, 3);
-            this.btnVestelTamamlandi.Name = "btnVestelTamamlandi";
-            this.tablePanel15.SetRow(this.btnVestelTamamlandi, 0);
-            this.btnVestelTamamlandi.Size = new System.Drawing.Size(720, 73);
-            this.btnVestelTamamlandi.TabIndex = 4;
-            this.btnVestelTamamlandi.Text = "Müşteri Kayıt \r\nİşlendi Yap";
-            // 
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.tablePanel2);
@@ -1227,11 +1278,10 @@
             this.tileBar1.ItemPadding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.tileBar1.Location = new System.Drawing.Point(0, 0);
             this.tileBar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tileBar1.MaxId = 5;
+            this.tileBar1.MaxId = 6;
             this.tileBar1.MaximumSize = new System.Drawing.Size(0, 110);
             this.tileBar1.Name = "tileBar1";
             this.tileBar1.Padding = new System.Windows.Forms.Padding(0, 0, 12, 0);
-            this.tileBar1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.tileBar1.ScrollMode = DevExpress.XtraEditors.TileControlScrollMode.None;
             this.tileBar1.SelectionBorderWidth = 2;
             this.tileBar1.SelectionColorMode = DevExpress.XtraBars.Navigation.SelectionColorMode.UseItemBackColor;
@@ -1257,7 +1307,7 @@
             tileItemElement3.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
             tileItemElement3.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
             tileItemElement3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage")));
-            tileItemElement3.Text = "İşlem Listesi";
+            tileItemElement3.Text = "Satış Listesi";
             tileItemElement3.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
             this.tileBarItem2.Elements.Add(tileItemElement3);
             this.tileBarItem2.Id = 4;
@@ -1273,7 +1323,7 @@
             tileItemElement4.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
             tileItemElement4.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
             tileItemElement4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage1")));
-            tileItemElement4.Text = "Satış Süreçleri";
+            tileItemElement4.Text = "Girişi Olanlar";
             tileItemElement4.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
             this.tileBarItem1.Elements.Add(tileItemElement4);
             this.tileBarItem1.Id = 3;
@@ -1282,6 +1332,7 @@
             // 
             // navigationPage4
             // 
+            this.navigationPage4.Caption = "navigationPage4";
             this.navigationPage4.Controls.Add(this.gridControl2);
             this.navigationPage4.Controls.Add(this.navBarControl2);
             this.navigationPage4.Controls.Add(this.groupControl2);
@@ -2095,46 +2146,6 @@
             this.lblSayfaIsmi.TabIndex = 2;
             this.lblSayfaIsmi.Text = "VESTEL";
             // 
-            // gridColumn43
-            // 
-            this.gridColumn43.Caption = "Stok Kodu";
-            this.gridColumn43.FieldName = "PROVAL";
-            this.gridColumn43.Name = "gridColumn43";
-            this.gridColumn43.OptionsColumn.AllowEdit = false;
-            this.gridColumn43.Visible = true;
-            this.gridColumn43.VisibleIndex = 0;
-            this.gridColumn43.Width = 100;
-            // 
-            // gridColumn44
-            // 
-            this.gridColumn44.Caption = "Barkod";
-            this.gridColumn44.FieldName = "PROBARID";
-            this.gridColumn44.Name = "gridColumn44";
-            this.gridColumn44.OptionsColumn.AllowEdit = false;
-            this.gridColumn44.Visible = true;
-            this.gridColumn44.VisibleIndex = 1;
-            this.gridColumn44.Width = 111;
-            // 
-            // gridColumn45
-            // 
-            this.gridColumn45.Caption = "Stok Adı";
-            this.gridColumn45.FieldName = "PRONAME";
-            this.gridColumn45.Name = "gridColumn45";
-            this.gridColumn45.OptionsColumn.AllowEdit = false;
-            this.gridColumn45.Visible = true;
-            this.gridColumn45.VisibleIndex = 2;
-            this.gridColumn45.Width = 414;
-            // 
-            // gridColumn46
-            // 
-            this.gridColumn46.Caption = "Adet";
-            this.gridColumn46.FieldName = "QUAN";
-            this.gridColumn46.Name = "gridColumn46";
-            this.gridColumn46.OptionsColumn.AllowEdit = false;
-            this.gridColumn46.Visible = true;
-            this.gridColumn46.VisibleIndex = 3;
-            this.gridColumn46.Width = 80;
-            // 
             // frmMain
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
@@ -2160,6 +2171,10 @@
             this.navBarGroupControlContainer3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridUrunler)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ViewUrunler)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
+            this.panelControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel15)).EndInit();
+            this.tablePanel15.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).EndInit();
@@ -2178,10 +2193,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCode.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSAdi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMadi.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
-            this.panelControl3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel15)).EndInit();
-            this.tablePanel15.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).EndInit();
@@ -2411,5 +2422,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn44;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn45;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn46;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn47;
     }
 }

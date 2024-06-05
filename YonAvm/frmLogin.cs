@@ -25,7 +25,7 @@ namespace YonAvm
     public partial class frmLogin : DevExpress.XtraEditors.XtraForm
     {
         private string clientName;
-
+        public static string Username;
         public static string SOCODE = "";
         public frmLogin()
         {

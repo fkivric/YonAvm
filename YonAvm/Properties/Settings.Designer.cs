@@ -46,5 +46,53 @@ namespace YonAvm.Properties {
                 this["Company"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SIPToken {
+            get {
+                return ((string)(this["SIPToken"]));
+            }
+            set {
+                this["SIPToken"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DidCentraluuid {
+            get {
+                return ((string)(this["DidCentraluuid"]));
+            }
+            set {
+                this["DidCentraluuid"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DidCentralcode {
+            get {
+                return ((string)(this["DidCentralcode"]));
+            }
+            set {
+                this["DidCentralcode"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DidApiUrl {
+            get {
+                return ((string)(this["DidApiUrl"]));
+            }
+            set {
+                this["DidApiUrl"] = value;
+            }
+        }
     }
 }

@@ -108,6 +108,9 @@
     <Reference Include="Infragistics4.Win.UltraWinToolbars.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.UltraWinTree.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -122,13 +125,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\ApiClass.cs" />
     <Compile Include="Class\Volant.cs" />
-    <Compile Include="frmIslem.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmIslem.Designer.cs">
-      <DependentUpon>frmIslem.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,18 +139,105 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Phone\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phone\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Phone\ActivationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phone\ActivationForm.Designer.cs">
+      <DependentUpon>ActivationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Phone\ConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phone\ConfigForm.Designer.cs">
+      <DependentUpon>ConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Phone\ContributionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phone\ContributionForm.Designer.cs">
+      <DependentUpon>ContributionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Phone\IncomingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phone\IncomingForm.Designer.cs">
+      <DependentUpon>IncomingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Phone\JoinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phone\JoinForm.Designer.cs">
+      <DependentUpon>JoinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Phone\PhoneForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phone\PhoneForm.Designer.cs">
+      <DependentUpon>PhoneForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Phone\SendTextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phone\SendTextForm.Designer.cs">
+      <DependentUpon>SendTextForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Phone\TransferAddrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phone\TransferAddrForm.Designer.cs">
+      <DependentUpon>TransferAddrForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlConnectionObject.cs" />
-    <EmbeddedResource Include="frmIslem.resx">
-      <DependentUpon>frmIslem.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\licenses.licx" />
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phone\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phone\ActivationForm.resx">
+      <DependentUpon>ActivationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phone\ConfigForm.resx">
+      <DependentUpon>ConfigForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phone\ContributionForm.resx">
+      <DependentUpon>ContributionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phone\IncomingForm.resx">
+      <DependentUpon>IncomingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phone\JoinForm.resx">
+      <DependentUpon>JoinForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phone\PhoneForm.resx">
+      <DependentUpon>PhoneForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phone\SendTextForm.resx">
+      <DependentUpon>SendTextForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phone\TransferAddrForm.resx">
+      <DependentUpon>TransferAddrForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -162,6 +247,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -179,6 +265,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
+    <None Include="YON_AVM_400.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
@@ -191,6 +278,17 @@
       <ProductName>.NET Framework 3.5 SP1 </ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SIPVoipSDK">
+      <Guid>{51E1C96F-F16B-4D5A-A790-4C72E219F9AE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

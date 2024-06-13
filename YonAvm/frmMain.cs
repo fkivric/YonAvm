@@ -370,7 +370,7 @@ namespace YonAvm
                 var selectdrow = ViewVestelSatis.GetSelectedRows();
 
                 txtMadi.Text = ViewVestelSatis.GetRowCellValue(selectdrow[0], "CUSIDNAME").ToString();
-                txtSAdi.Text = ViewVestelSatis.GetRowCellValue(selectdrow[0], "CUSIDNAME").ToString();
+                txtSAdi.Text = ViewVestelSatis.GetRowCellValue(selectdrow[0], "CUSIDSIRNAME").ToString();
                 txtCode.Text = ViewVestelSatis.GetRowCellValue(selectdrow[0], "CURVAL").ToString();
                 txtIdnty.Text = ViewVestelSatis.GetRowCellValue(selectdrow[0], "CUSIDENTY").ToString();
                 txtVdate.Text = ViewVestelSatis.GetRowCellValue(selectdrow[0], "CUSIDBIRTHDAY").ToString();
@@ -444,6 +444,26 @@ namespace YonAvm
         private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void tileBarItem1_ItemClick(object sender, TileItemEventArgs e)
+        {
+            string q = @"select SALDATE,DIVNAME,CURNAME,PROVAL,PRONAME,ORDCHAMOUNT,ORDCHQUAN from MDE_GENEL.dbo.DivaEklenenler i
+            left outer join VDB_YON01.dbo.CURRENTS c on c.CURID = i.CURID
+            left outer join VDB_YON01.dbo.SALES s on s.SALID = i.SALID
+            left outer join VDB_YON01.dbo.DIVISON on DIVVAL = SALDIVISON
+            left outer join VDB_YON01.dbo.ORDERSCHILD on ORDCHID = i.IslemdetayID
+            left outer join VDB_YON01.dbo.PRODUCTS on PROID = ORDCHPROID";
+            SqlDataAdapter da = new SqlDataAdapter(q, sql);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            gridVestelTamamlanan.DataSource = dt;
+        }
+
+        private void btnTelefon_ItemClick(object sender, TileItemEventArgs e)
+        {
+            PhoneForm form = new PhoneForm("");
+            form.Show();
         }
     }
 }

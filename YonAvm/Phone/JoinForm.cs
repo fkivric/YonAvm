@@ -43,7 +43,7 @@ namespace YonAvm
 
 		private void JoinForm_Load(object sender, EventArgs e)
 		{
-			for(int i = 1; i <= frmPhone.LineCount; ++i)
+			for(int i = 1; i <= PhoneForm.LineCount; ++i)
 			{
 				if(m_curLineId == i) continue;
 				comboBoxLine.Items.Add( new ComboLineItem(i));

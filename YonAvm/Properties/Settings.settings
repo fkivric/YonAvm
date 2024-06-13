@@ -18,6 +18,15 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="DidApiUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://45.11.98.230</Value>
+    </Setting>
+    <Setting Name="DidlicUserId" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Licesned_for_Andan-A1A2-476A-D50E2E43-56BE-59AC-7C83-F09DADFC8311</Value>
+    </Setting>
+    <Setting Name="DidlicKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CSfU1+IWwdgH3Xxm5FVXOYUdE6zqXYkDrqn/IufVrk06OvpgvgM2vVtMsojZ5OQukoJmLcxN7qDxuJMdgKZZsw==</Value>
+    </Setting>
+    <Setting Name="DidApikey" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
   </Settings>

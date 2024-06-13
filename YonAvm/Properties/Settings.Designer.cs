@@ -85,13 +85,50 @@ namespace YonAvm.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://45.11.98.230")]
         public string DidApiUrl {
             get {
                 return ((string)(this["DidApiUrl"]));
             }
             set {
                 this["DidApiUrl"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Licesned_for_Andan-A1A2-476A-D50E2E43-56BE-59AC-7C83-F09DADFC8311")]
+        public string DidlicUserId {
+            get {
+                return ((string)(this["DidlicUserId"]));
+            }
+            set {
+                this["DidlicUserId"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("CSfU1+IWwdgH3Xxm5FVXOYUdE6zqXYkDrqn/IufVrk06OvpgvgM2vVtMsojZ5OQukoJmLcxN7qDxuJMdg" +
+            "KZZsw==")]
+        public string DidlicKey {
+            get {
+                return ((string)(this["DidlicKey"]));
+            }
+            set {
+                this["DidlicKey"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DidApikey {
+            get {
+                return ((string)(this["DidApikey"]));
+            }
+            set {
+                this["DidApikey"] = value;
             }
         }
     }

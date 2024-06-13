@@ -19,6 +19,9 @@ using System.Data.SqlClient;
 using System.Reflection.Emit;
 using DevExpress.ClipboardSource.SpreadsheetML;
 using DevExpress.XtraEditors.Design;
+using System.Net.Http;
+using Newtonsoft.Json;
+using YonAvm.Class;
 
 namespace YonAvm
 {
@@ -118,6 +121,57 @@ namespace YonAvm
                 connection.Close();
             }
         }
+        public async void DidToken()
+        {
+            try
+            {
+                var sorgu = new DidKey
+                {
+                    username = "entegref",
+                    password = "M@gicUs€r2023!H",
+                    centralcode = "yon.didtelekom.com.tr",
+                    module = "ENTEGREF",
+                    function = "GETKEY"
+                };
+                var json = JsonConvert.SerializeObject(sorgu);
+                using (HttpClient client = new HttpClient())
+                {
+                    try
+                    {
+                        // İstek oluştur
+                        HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, Properties.Settings.Default.DidApiUrl);
+                        request.Content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                        // İsteği gönder ve yanıtı al
+                        HttpResponseMessage response = await client.SendAsync(request);
+                        response.EnsureSuccessStatusCode();
+
+                        // Yanıtı oku
+                        string responseContent = await response.Content.ReadAsStringAsync();
+                        DidKeyreturn myDeserializedClass = JsonConvert.DeserializeObject<DidKeyreturn>(responseContent);
+                        if (myDeserializedClass.result == "SUCCESS")
+                        {
+                            Properties.Settings.Default.DidApikey = myDeserializedClass.apikey;
+                            Properties.Settings.Default.DidCentraluuid = myDeserializedClass.centraluuid;
+                            Properties.Settings.Default.DidCentralcode = myDeserializedClass.centralcode;
+                            Properties.Settings.Default.Save();
+                            //MessageBox.Show(myDeserializedClass.description);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                        // Hata durumunda gerekli işlemleri yapabilirsiniz
+                        XtraMessageBox.Show("DiDTelekom Token alınırken Hata: " + ex.Message);
+
+                    }
+                }
+            }
+            catch (Exception ex2)
+            {
+                XtraMessageBox.Show(ex2.Message);
+            }
+        }
         void FirmaBilgileri()
         {
             cmbVolantMagaza.Properties.DataSource = null;
@@ -155,6 +209,7 @@ namespace YonAvm
 
             if (yetki.Rows.Count > 0)
             {
+                DidToken();
                 SOCODE = yetki.Rows[0]["SOCODE"].ToString();
                 this.Hide();
                 frmMain main = new frmMain();

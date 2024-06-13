@@ -104,7 +104,7 @@ namespace YonAvm
             {
                 var sorgu = new DidEXTLIST
                 {
-                    apikey = Properties.Settings.Default.SIPToken,
+                    apikey = "HRjzrdskUzrksvBMn3ni2GFBVPwFaywH",// Properties.Settings.Default.SIPToken,
                     centraluuid = Properties.Settings.Default.DidCentraluuid,
                     centralcode = Properties.Settings.Default.DidCentralcode,
                     module = "ENTEGREF",
@@ -133,17 +133,15 @@ namespace YonAvm
                             {
                                 if (item.santraldahili_durum == "2")
                                 {
-                                    if (item.santraldahili_numara90e164 == "902129682045")
+                                    if (item.santraldahili_numara90e164 == "902129682046")
                                     {
-                                        if (frmLogin.SOCODE == "Cenk")
-                                        {
-                                            ConfigForm.Domain = item.santraldahili_domain + ":4040";
-                                            ConfigForm.User = item.santraldahili_kullaniciadi;
-                                            ConfigForm.Pass = item.santraldahili_sifre;
-                                            ConfigForm.authId = item.santraldahili_kullaniciadi;
-                                            ConfigForm.CallerId = item.santraldahili_numara90e164.ToString();
-                                            ConfigForm.UserAgent = item.santraldahili_ekranadi;
-                                        }
+                                        ConfigForm.Domain = item.santraldahili_domain + ":4040";
+                                        ConfigForm.User = item.santraldahili_kullaniciadi;
+                                        ConfigForm.Pass = item.santraldahili_sifre;
+                                        ConfigForm.authId = item.santraldahili_kullaniciadi;
+                                        ConfigForm.CallerId = item.santraldahili_numara90e164.ToString();
+                                        ConfigForm.UserAgent = item.santraldahili_ekranadi;
+
                                     }
                                     else
                                     {

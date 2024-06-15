@@ -22,8 +22,11 @@ namespace YonAvm
         SqlConnectionObject conn = new SqlConnectionObject();
         private void tileBar_SelectedItemChanged(object sender, TileItemEventArgs e)
         {
-            navigationFrame.SelectedPageIndex = tileBarGroupTables.Items.IndexOf(e.Item);
-            lblSayfaIsmi.Text = e.Item.Name;
+            if (tileBarGroupTables.Items.IndexOf(e.Item) > 0)
+            {
+                navigationFrame.SelectedPageIndex = tileBarGroupTables.Items.IndexOf(e.Item);
+                lblSayfaIsmi.Text = e.Item.Name;
+            }
         }
         private void tileBar1_SelectedItemChanged(object sender, TileItemEventArgs e)
         {
@@ -37,8 +40,11 @@ namespace YonAvm
             srcMagaza.Properties.DataSource = conn.GetDataTableConnectionSql("select DIVVAL, DIVNAME from DIVISON where DIVSTS = 1 and DIVSALESTS = 1", sql);
             srcMagaza.Properties.ValueMember = "DIVVAL";
             srcMagaza.Properties.DisplayMember = "DIVNAME";
-            dteBasTarih.EditValue = DateTime.Now.AddDays(-1);
-            dteBitTarih.EditValue = DateTime.Now;
+            dteBasTarih.EditValue = DateTime.Now.AddDays(-2);
+            dteBitTarih.EditValue = DateTime.Now.AddDays(-2);
+            dteBasTarih.Properties.MaxValue = DateTime.Now.AddDays(-2);
+            dteBitTarih.Properties.MaxValue= DateTime.Now.AddDays(-2);
+
         }
 
         private void btnSatisListele_Click(object sender, EventArgs e)
@@ -92,7 +98,7 @@ namespace YonAvm
             LEFT OUTER JOIN PRODUCTSBEHAVE WITH (NOLOCK) ON PROBHDEEDID=DEEDID 
             LEFT OUTER JOIN ORDERSCHILD WITH (NOLOCK) ON  ORDCHID=PROBHORDCHID  
             LEFT OUTER JOIN ORDERS WITH (NOLOCK) ON ORDID=ORDCHORDID 
-            LEFT OUTER JOIN SALES WITH (NOLOCK) ON SALID=ORDSALID 
+            LEFT OUTER JOIN SALES s WITH (NOLOCK) ON SALID=ORDSALID 
             LEFT OUTER JOIN PRODUCTS WITH (NOLOCK) ON PROID=PROBHPROID   
             LEFT OUTER JOIN PRODUCTSCHILD WITH (NOLOCK) ON PROCHID=PROBHPROCHID   
             LEFT OUTER JOIN PROUNIT WITH (NOLOCK) ON PUNIPROID=PROID AND PUNISORT=0 
@@ -107,6 +113,7 @@ namespace YonAvm
             AND DEEDDATE between '{0}' and '{1}'
             AND PROSUPPLIER.PROSUPCURID IN (3408506)
             AND SALDIVISON {2}
+			AND not exists (select * from SALES i where i.SALCANSALID = s.SALID)
 			AND NOT EXISTS (select * from MDE_GENEL.dbo.DivaEklenenler where IslemdetayID = ORDCHID)
             union
             SELECT distinct SALID,
@@ -149,7 +156,7 @@ namespace YonAvm
             LEFT OUTER JOIN INVOICECHILDPROBH  WITH (NOLOCK) ON PROBHID = INVCHPBHPROBHID 
             LEFT OUTER JOIN INVOICECHILD WITH (NOLOCK) ON  INVOICECHILDPROBH.INVCHPBHID = INVOICECHILD.INVCHID 
             LEFT OUTER JOIN INVOICE WITH (NOLOCK) ON INVID=INVCHINVID 
-            LEFT OUTER JOIN SALES WITH (NOLOCK) ON SALID=INVSALID 
+            LEFT OUTER JOIN SALES s WITH (NOLOCK) ON SALID=INVSALID 
             LEFT OUTER JOIN PRODUCTS WITH (NOLOCK) ON PROID=PROBHPROID   
             LEFT OUTER JOIN PRODUCTSCHILD WITH (NOLOCK) ON PROCHID=PROBHPROCHID   
             LEFT OUTER JOIN PROUNIT WITH (NOLOCK) ON PUNIPROID=PROID AND PUNISORT=0 
@@ -163,6 +170,7 @@ namespace YonAvm
             AND SALID IS NOT NULL 
             AND DEEDDATE  between '{0}' and '{1}'
             AND SALDIVISON {2}
+			AND not exists (select * from SALES i where i.SALCANSALID = s.SALID)
 			AND NOT EXISTS (select * from MDE_GENEL.dbo.DivaEklenenler where IslemdetayID = INVCHID)
             AND PROSUPPLIER.PROSUPCURID IN (3408506)", Convert.ToDateTime(dteBasTarih.EditValue).ToString("yyyy-MM-dd"), Convert.ToDateTime(dteBitTarih.EditValue).ToString("yyyy-MM-dd"),div);
             var dt = conn.GetDataTableConnectionSql(q, sql);
@@ -446,6 +454,30 @@ namespace YonAvm
             Application.Exit();
         }
 
+        private void tileBarItem3_ItemClick(object sender, TileItemEventArgs e)
+        {
+            PhoneForm phone = new PhoneForm("");
+            if (phone.Visible)
+            {
+                XtraMessageBox.Show("Telefon Açık");
+                phone.Focus();
+            }
+            else
+            {
+                phone.Show();
+            }
+        }
+
+        private void btnGsm1Ara_Click(object sender, EventArgs e)
+        {
+            PhoneForm.number = txtgsm1.Text;
+        }
+
+        private void btnGsm2Ara_Click(object sender, EventArgs e)
+        {
+            PhoneForm.number = txtgsm2.Text;
+        }
+
         private void tileBarItem1_ItemClick(object sender, TileItemEventArgs e)
         {
             string q = @"select SALDATE,DIVNAME,CURNAME,PROVAL,PRONAME,ORDCHAMOUNT,ORDCHQUAN from MDE_GENEL.dbo.DivaEklenenler i
@@ -458,12 +490,6 @@ namespace YonAvm
             DataTable dt = new DataTable();
             da.Fill(dt);
             gridVestelTamamlanan.DataSource = dt;
-        }
-
-        private void btnTelefon_ItemClick(object sender, TileItemEventArgs e)
-        {
-            PhoneForm form = new PhoneForm("");
-            form.Show();
         }
     }
 }

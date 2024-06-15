@@ -34,7 +34,7 @@ namespace YonAvm
 				return this.name;
 			}
 		}//ComboLineItem
-				
+
 		public JoinForm()
 		{
 			InitializeComponent();

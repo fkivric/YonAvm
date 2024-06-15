@@ -32,13 +32,17 @@
             DevExpress.XtraEditors.TileItemElement tileItemElement1 = new DevExpress.XtraEditors.TileItemElement();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             DevExpress.XtraEditors.TileItemElement tileItemElement2 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement3 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement4 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement5 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement3 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement6 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement7 = new DevExpress.XtraEditors.TileItemElement();
             this.tileBar = new DevExpress.XtraBars.Navigation.TileBar();
             this.tileBarGroupTables = new DevExpress.XtraBars.Navigation.TileBarGroup();
             this.VESTEL = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.PROFİLO = new DevExpress.XtraBars.Navigation.TileBarItem();
+            this.tileBarGroup3 = new DevExpress.XtraBars.Navigation.TileBarGroup();
+            this.tileBarItem3 = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.navigationFrame = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.navigationPage3 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.navigationFrame1 = new DevExpress.XtraBars.Navigation.NavigationFrame();
@@ -69,8 +73,8 @@
             this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
             this.navBarGroup3 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarGroupControlContainer3 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
-            this.gridUrunler = new DevExpress.XtraGrid.GridControl();
-            this.ViewUrunler = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridVestelUrunler = new DevExpress.XtraGrid.GridControl();
+            this.ViewVestelUrunler = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn43 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn44 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn45 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -81,7 +85,9 @@
             this.btnVestelTamamlandi = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.tablePanel3 = new DevExpress.Utils.Layout.TablePanel();
-            this.txtmail = new DevExpress.XtraEditors.TextEdit();
+            this.btnGsm2Ara_V = new DevExpress.XtraEditors.SimpleButton();
+            this.btnGsm1Ara_V = new DevExpress.XtraEditors.SimpleButton();
+            this.txtMail_V = new DevExpress.XtraEditors.TextEdit();
             this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
@@ -96,40 +102,56 @@
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.txtadr = new System.Windows.Forms.RichTextBox();
-            this.txtgsm2 = new DevExpress.XtraEditors.TextEdit();
-            this.txtgsm1 = new DevExpress.XtraEditors.TextEdit();
-            this.txtDefrent = new DevExpress.XtraEditors.TextEdit();
-            this.txtXity = new DevExpress.XtraEditors.TextEdit();
+            this.txtAdr_V = new System.Windows.Forms.RichTextBox();
+            this.txtGsm2_V = new DevExpress.XtraEditors.TextEdit();
+            this.txtGsm1_V = new DevExpress.XtraEditors.TextEdit();
+            this.txtDefrent_V = new DevExpress.XtraEditors.TextEdit();
+            this.txtCity_V = new DevExpress.XtraEditors.TextEdit();
             this.txtHtp = new DevExpress.XtraEditors.TextEdit();
-            this.txtMerred = new DevExpress.XtraEditors.TextEdit();
-            this.txtsex = new DevExpress.XtraEditors.TextEdit();
-            this.txtVdate = new DevExpress.XtraEditors.TextEdit();
-            this.txtIdnty = new DevExpress.XtraEditors.TextEdit();
-            this.txtCode = new DevExpress.XtraEditors.TextEdit();
-            this.txtSAdi = new DevExpress.XtraEditors.TextEdit();
-            this.txtMadi = new DevExpress.XtraEditors.TextEdit();
+            this.txtMerred_V = new DevExpress.XtraEditors.TextEdit();
+            this.txtSex_V = new DevExpress.XtraEditors.TextEdit();
+            this.txtVdate_V = new DevExpress.XtraEditors.TextEdit();
+            this.txtIdnty_V = new DevExpress.XtraEditors.TextEdit();
+            this.txtCode_V = new DevExpress.XtraEditors.TextEdit();
+            this.txtSAdi_V = new DevExpress.XtraEditors.TextEdit();
+            this.txtMadi_V = new DevExpress.XtraEditors.TextEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
-            this.btnYeni = new DevExpress.XtraEditors.SimpleButton();
-            this.btnIadeListele = new DevExpress.XtraEditors.SimpleButton();
-            this.btnSatisListele = new DevExpress.XtraEditors.SimpleButton();
+            this.btnVestelYeni = new DevExpress.XtraEditors.SimpleButton();
+            this.btnVestelIadeListele = new DevExpress.XtraEditors.SimpleButton();
+            this.btnVestelSatisListele = new DevExpress.XtraEditors.SimpleButton();
             this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.srcMagaza = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.srcVestelMagaza = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.dteBitTarih = new DevExpress.XtraEditors.DateEdit();
+            this.dteVestelBitTarih = new DevExpress.XtraEditors.DateEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.dteBasTarih = new DevExpress.XtraEditors.DateEdit();
+            this.dteVestelBasTarih = new DevExpress.XtraEditors.DateEdit();
             this.navigationPage2 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.gridVestelTamamlanan = new DevExpress.XtraGrid.GridControl();
+            this.ViewVestelTamamlanan = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.tablePanel9 = new DevExpress.Utils.Layout.TablePanel();
+            this.btnVestelGirisIade = new DevExpress.XtraEditors.SimpleButton();
+            this.btnVestelGirlien = new DevExpress.XtraEditors.SimpleButton();
+            this.tablePanel10 = new DevExpress.Utils.Layout.TablePanel();
+            this.labelControl38 = new DevExpress.XtraEditors.LabelControl();
+            this.srcVestelMagaza2 = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.dteVestelBitTarih2 = new DevExpress.XtraEditors.DateEdit();
+            this.labelControl39 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl40 = new DevExpress.XtraEditors.LabelControl();
+            this.dteVestelBasTarih2 = new DevExpress.XtraEditors.DateEdit();
             this.tileBar1 = new DevExpress.XtraBars.Navigation.TileBar();
             this.tileBarGroup1 = new DevExpress.XtraBars.Navigation.TileBarGroup();
             this.tileBarItem2 = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.tileBarItem1 = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.navigationPage4 = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
-            this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.navigationFrame2 = new DevExpress.XtraBars.Navigation.NavigationFrame();
+            this.navigationPage5 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.gridProfiloSatis = new DevExpress.XtraGrid.GridControl();
+            this.ViewProfiloSatis = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn22 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn23 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn24 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -154,9 +176,15 @@
             this.navBarControl2 = new DevExpress.XtraNavBar.NavBarControl();
             this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarGroupControlContainer1 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
+            this.gridProfiloUrunler = new DevExpress.XtraGrid.GridControl();
+            this.ViewProfiloUrunler = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.tablePanel6 = new DevExpress.Utils.Layout.TablePanel();
-            this.textEPOSTAP = new DevExpress.XtraEditors.TextEdit();
+            this.btnGsm2Ara_P = new DevExpress.XtraEditors.SimpleButton();
+            this.btnGsm1Ara_P = new DevExpress.XtraEditors.SimpleButton();
+            this.txtMail_P = new DevExpress.XtraEditors.TextEdit();
             this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
@@ -171,43 +199,56 @@
             this.labelControl32 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl33 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl34 = new DevExpress.XtraEditors.LabelControl();
-            this.txtADRESP = new System.Windows.Forms.RichTextBox();
-            this.textTEL2P = new DevExpress.XtraEditors.TextEdit();
-            this.textTEL1P = new DevExpress.XtraEditors.TextEdit();
-            this.textILCEP = new DevExpress.XtraEditors.TextEdit();
-            this.textSEHIRP = new DevExpress.XtraEditors.TextEdit();
+            this.txtAdr_P = new System.Windows.Forms.RichTextBox();
+            this.txtGsm2_P = new DevExpress.XtraEditors.TextEdit();
+            this.txtGsm1_P = new DevExpress.XtraEditors.TextEdit();
+            this.txtDefrent_P = new DevExpress.XtraEditors.TextEdit();
+            this.txtCity_P = new DevExpress.XtraEditors.TextEdit();
             this.textUNVANP = new DevExpress.XtraEditors.TextEdit();
-            this.textMEDENIP = new DevExpress.XtraEditors.TextEdit();
-            this.textCINSIYETP = new DevExpress.XtraEditors.TextEdit();
-            this.textDOGUMP = new DevExpress.XtraEditors.TextEdit();
-            this.textVERGIKIMLIKP = new DevExpress.XtraEditors.TextEdit();
-            this.textKARTNOP = new DevExpress.XtraEditors.TextEdit();
-            this.textSOYADIP = new DevExpress.XtraEditors.TextEdit();
-            this.textMUSTERIADIP = new DevExpress.XtraEditors.TextEdit();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.txtMerred_P = new DevExpress.XtraEditors.TextEdit();
+            this.txtSex_P = new DevExpress.XtraEditors.TextEdit();
+            this.txtVdate_P = new DevExpress.XtraEditors.TextEdit();
+            this.txtIdnty_P = new DevExpress.XtraEditors.TextEdit();
+            this.txtCode_P = new DevExpress.XtraEditors.TextEdit();
+            this.txtSAdi_P = new DevExpress.XtraEditors.TextEdit();
+            this.txtMadi_P = new DevExpress.XtraEditors.TextEdit();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.tablePanel4 = new DevExpress.Utils.Layout.TablePanel();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnProfiloYeni = new DevExpress.XtraEditors.SimpleButton();
+            this.btnProfiloIade = new DevExpress.XtraEditors.SimpleButton();
+            this.btnProfiloSatis = new DevExpress.XtraEditors.SimpleButton();
             this.tablePanel5 = new DevExpress.Utils.Layout.TablePanel();
             this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
-            this.searchLookUpEdit1 = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.srcProfiloMagaza = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
+            this.dteProfiloBitTarih = new DevExpress.XtraEditors.DateEdit();
             this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
-            this.dateEdit2 = new DevExpress.XtraEditors.DateEdit();
+            this.dteProfiloBasTarih = new DevExpress.XtraEditors.DateEdit();
+            this.navigationPage6 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
+            this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.tablePanel7 = new DevExpress.Utils.Layout.TablePanel();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.tablePanel8 = new DevExpress.Utils.Layout.TablePanel();
+            this.labelControl35 = new DevExpress.XtraEditors.LabelControl();
+            this.srcProfiloMagaza2 = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.dteProfiloBitTarih2 = new DevExpress.XtraEditors.DateEdit();
+            this.labelControl36 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl37 = new DevExpress.XtraEditors.LabelControl();
+            this.dteProfiloBasTarih2 = new DevExpress.XtraEditors.DateEdit();
+            this.tileBar2 = new DevExpress.XtraBars.Navigation.TileBar();
+            this.tileBarGroup2 = new DevExpress.XtraBars.Navigation.TileBarGroup();
+            this.tileBarItem4 = new DevExpress.XtraBars.Navigation.TileBarItem();
+            this.tileBarItem5 = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.lblSayfaIsmi = new DevExpress.XtraEditors.LabelControl();
-            this.tileBarGroup3 = new DevExpress.XtraBars.Navigation.TileBarGroup();
-            this.tileBarItem3 = new DevExpress.XtraBars.Navigation.TileBarItem();
-            this.btnGsm1Ara = new DevExpress.XtraEditors.SimpleButton();
-            this.btnGsm2Ara = new DevExpress.XtraEditors.SimpleButton();
-            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.gridVestelTamamlanan = new DevExpress.XtraGrid.GridControl();
-            this.ViewVestelTamamlanan = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.navBarControl3 = new DevExpress.XtraNavBar.NavBarControl();
+            this.navBarGroup2 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarGroupControlContainer2 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
+            this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).BeginInit();
             this.navigationFrame.SuspendLayout();
             this.navigationPage3.SuspendLayout();
@@ -219,8 +260,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
             this.navBarControl1.SuspendLayout();
             this.navBarGroupControlContainer3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridUrunler)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ViewUrunler)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridVestelUrunler)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewVestelUrunler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel15)).BeginInit();
@@ -229,73 +270,107 @@
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).BeginInit();
             this.tablePanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtmail.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtgsm2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtgsm1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDefrent.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtXity.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMail_V.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGsm2_V.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGsm1_V.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDefrent_V.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCity_V.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHtp.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMerred.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtsex.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtVdate.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtIdnty.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCode.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSAdi.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMadi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMerred_V.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSex_V.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVdate_V.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIdnty_V.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCode_V.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSAdi_V.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMadi_V.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).BeginInit();
             this.tablePanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
             this.tablePanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.srcMagaza.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.srcVestelMagaza.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dteBitTarih.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dteBitTarih.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dteBasTarih.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dteBasTarih.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteVestelBitTarih.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteVestelBitTarih.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteVestelBasTarih.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteVestelBasTarih.Properties)).BeginInit();
             this.navigationPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridVestelTamamlanan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewVestelTamamlanan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
+            this.groupControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel9)).BeginInit();
+            this.tablePanel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel10)).BeginInit();
+            this.tablePanel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.srcVestelMagaza2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteVestelBitTarih2.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteVestelBitTarih2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteVestelBasTarih2.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteVestelBasTarih2.Properties)).BeginInit();
             this.navigationPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.navigationFrame2)).BeginInit();
+            this.navigationFrame2.SuspendLayout();
+            this.navigationPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridProfiloSatis)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewProfiloSatis)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl2)).BeginInit();
             this.navBarControl2.SuspendLayout();
             this.navBarGroupControlContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridProfiloUrunler)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewProfiloUrunler)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
+            this.panelControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel6)).BeginInit();
             this.tablePanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEPOSTAP.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textTEL2P.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textTEL1P.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textILCEP.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textSEHIRP.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMail_P.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGsm2_P.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGsm1_P.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDefrent_P.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCity_P.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textUNVANP.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textMEDENIP.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textCINSIYETP.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textDOGUMP.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textVERGIKIMLIKP.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textKARTNOP.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textSOYADIP.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textMUSTERIADIP.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMerred_P.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSex_P.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVdate_P.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIdnty_P.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCode_P.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSAdi_P.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMadi_P.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).BeginInit();
             this.tablePanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel5)).BeginInit();
             this.tablePanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.srcProfiloMagaza.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
-            this.panelControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridVestelTamamlanan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ViewVestelTamamlanan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteProfiloBitTarih.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteProfiloBitTarih.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteProfiloBasTarih.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteProfiloBasTarih.Properties)).BeginInit();
+            this.navigationPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
+            this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel7)).BeginInit();
+            this.tablePanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel8)).BeginInit();
+            this.tablePanel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.srcProfiloMagaza2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteProfiloBitTarih2.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteProfiloBitTarih2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteProfiloBasTarih2.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteProfiloBasTarih2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.navBarControl3)).BeginInit();
+            this.navBarControl3.SuspendLayout();
+            this.navBarGroupControlContainer2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.SuspendLayout();
             // 
             // tileBar
@@ -367,6 +442,25 @@
             this.PROFİLO.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.PROFİLO.Name = "PROFİLO";
             // 
+            // tileBarGroup3
+            // 
+            this.tileBarGroup3.Items.Add(this.tileBarItem3);
+            this.tileBarGroup3.Name = "tileBarGroup3";
+            // 
+            // tileBarItem3
+            // 
+            this.tileBarItem3.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            tileItemElement3.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement3.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement3.Text = "Telefon";
+            tileItemElement3.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tileBarItem3.Elements.Add(tileItemElement3);
+            this.tileBarItem3.Id = 3;
+            this.tileBarItem3.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
+            this.tileBarItem3.Name = "tileBarItem3";
+            this.tileBarItem3.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileBarItem3_ItemClick);
+            // 
             // navigationFrame
             // 
             this.navigationFrame.Controls.Add(this.navigationPage3);
@@ -379,16 +473,17 @@
             this.navigationPage3,
             this.navigationPage4});
             this.navigationFrame.SelectedPage = this.navigationPage3;
-            this.navigationFrame.Size = new System.Drawing.Size(1355, 689);
+            this.navigationFrame.Size = new System.Drawing.Size(1323, 689);
             this.navigationFrame.TabIndex = 0;
             this.navigationFrame.Text = "navigationFrame";
             // 
             // navigationPage3
             // 
+            this.navigationPage3.Caption = "navigationPage3";
             this.navigationPage3.Controls.Add(this.navigationFrame1);
             this.navigationPage3.Controls.Add(this.tileBar1);
             this.navigationPage3.Name = "navigationPage3";
-            this.navigationPage3.Size = new System.Drawing.Size(1355, 689);
+            this.navigationPage3.Size = new System.Drawing.Size(1323, 689);
             // 
             // navigationFrame1
             // 
@@ -401,17 +496,18 @@
             this.navigationPage1,
             this.navigationPage2});
             this.navigationFrame1.SelectedPage = this.navigationPage1;
-            this.navigationFrame1.Size = new System.Drawing.Size(1355, 620);
+            this.navigationFrame1.Size = new System.Drawing.Size(1323, 620);
             this.navigationFrame1.TabIndex = 6;
             this.navigationFrame1.Text = "navigationFrame1";
             // 
             // navigationPage1
             // 
+            this.navigationPage1.Caption = "navigationPage1";
             this.navigationPage1.Controls.Add(this.gridVestelSatis);
             this.navigationPage1.Controls.Add(this.navBarControl1);
             this.navigationPage1.Controls.Add(this.groupControl1);
             this.navigationPage1.Name = "navigationPage1";
-            this.navigationPage1.Size = new System.Drawing.Size(1355, 620);
+            this.navigationPage1.Size = new System.Drawing.Size(1323, 620);
             // 
             // gridVestelSatis
             // 
@@ -419,7 +515,7 @@
             this.gridVestelSatis.Location = new System.Drawing.Point(0, 86);
             this.gridVestelSatis.MainView = this.ViewVestelSatis;
             this.gridVestelSatis.Name = "gridVestelSatis";
-            this.gridVestelSatis.Size = new System.Drawing.Size(345, 534);
+            this.gridVestelSatis.Size = new System.Drawing.Size(313, 534);
             this.gridVestelSatis.TabIndex = 5;
             this.gridVestelSatis.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.ViewVestelSatis});
@@ -605,7 +701,7 @@
             this.navBarControl1.Dock = System.Windows.Forms.DockStyle.Right;
             this.navBarControl1.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.navBarGroup3});
-            this.navBarControl1.Location = new System.Drawing.Point(345, 86);
+            this.navBarControl1.Location = new System.Drawing.Point(313, 86);
             this.navBarControl1.Name = "navBarControl1";
             this.navBarControl1.OptionsNavPane.ExpandedWidth = 1010;
             this.navBarControl1.OptionsNavPane.ShowOverflowPanel = false;
@@ -628,36 +724,36 @@
             // 
             this.navBarGroupControlContainer3.Appearance.BackColor = System.Drawing.SystemColors.Control;
             this.navBarGroupControlContainer3.Appearance.Options.UseBackColor = true;
-            this.navBarGroupControlContainer3.Controls.Add(this.gridUrunler);
+            this.navBarGroupControlContainer3.Controls.Add(this.gridVestelUrunler);
             this.navBarGroupControlContainer3.Controls.Add(this.panelControl3);
             this.navBarGroupControlContainer3.Controls.Add(this.panelControl1);
             this.navBarGroupControlContainer3.Name = "navBarGroupControlContainer3";
             this.navBarGroupControlContainer3.Size = new System.Drawing.Size(1010, 502);
             this.navBarGroupControlContainer3.TabIndex = 0;
             // 
-            // gridUrunler
+            // gridVestelUrunler
             // 
-            this.gridUrunler.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridUrunler.Location = new System.Drawing.Point(293, 0);
-            this.gridUrunler.MainView = this.ViewUrunler;
-            this.gridUrunler.Name = "gridUrunler";
-            this.gridUrunler.Size = new System.Drawing.Size(717, 419);
-            this.gridUrunler.TabIndex = 37;
-            this.gridUrunler.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.ViewUrunler});
+            this.gridVestelUrunler.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridVestelUrunler.Location = new System.Drawing.Point(293, 0);
+            this.gridVestelUrunler.MainView = this.ViewVestelUrunler;
+            this.gridVestelUrunler.Name = "gridVestelUrunler";
+            this.gridVestelUrunler.Size = new System.Drawing.Size(717, 419);
+            this.gridVestelUrunler.TabIndex = 37;
+            this.gridVestelUrunler.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.ViewVestelUrunler});
             // 
-            // ViewUrunler
+            // ViewVestelUrunler
             // 
-            this.ViewUrunler.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.ViewVestelUrunler.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn43,
             this.gridColumn44,
             this.gridColumn45,
             this.gridColumn46,
             this.gridColumn47});
-            this.ViewUrunler.GridControl = this.gridUrunler;
-            this.ViewUrunler.Name = "ViewUrunler";
-            this.ViewUrunler.OptionsView.BestFitMode = DevExpress.XtraGrid.Views.Grid.GridBestFitMode.Full;
-            this.ViewUrunler.OptionsView.ShowGroupPanel = false;
+            this.ViewVestelUrunler.GridControl = this.gridVestelUrunler;
+            this.ViewVestelUrunler.Name = "ViewVestelUrunler";
+            this.ViewVestelUrunler.OptionsView.BestFitMode = DevExpress.XtraGrid.Views.Grid.GridBestFitMode.Full;
+            this.ViewVestelUrunler.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn43
             // 
@@ -764,9 +860,9 @@
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 33.22F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 12F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 64.78F)});
-            this.tablePanel3.Controls.Add(this.btnGsm2Ara);
-            this.tablePanel3.Controls.Add(this.btnGsm1Ara);
-            this.tablePanel3.Controls.Add(this.txtmail);
+            this.tablePanel3.Controls.Add(this.btnGsm2Ara_V);
+            this.tablePanel3.Controls.Add(this.btnGsm1Ara_V);
+            this.tablePanel3.Controls.Add(this.txtMail_V);
             this.tablePanel3.Controls.Add(this.labelControl17);
             this.tablePanel3.Controls.Add(this.labelControl12);
             this.tablePanel3.Controls.Add(this.labelControl15);
@@ -781,20 +877,20 @@
             this.tablePanel3.Controls.Add(this.labelControl9);
             this.tablePanel3.Controls.Add(this.labelControl10);
             this.tablePanel3.Controls.Add(this.labelControl4);
-            this.tablePanel3.Controls.Add(this.txtadr);
-            this.tablePanel3.Controls.Add(this.txtgsm2);
-            this.tablePanel3.Controls.Add(this.txtgsm1);
-            this.tablePanel3.Controls.Add(this.txtDefrent);
-            this.tablePanel3.Controls.Add(this.txtXity);
+            this.tablePanel3.Controls.Add(this.txtAdr_V);
+            this.tablePanel3.Controls.Add(this.txtGsm2_V);
+            this.tablePanel3.Controls.Add(this.txtGsm1_V);
+            this.tablePanel3.Controls.Add(this.txtDefrent_V);
+            this.tablePanel3.Controls.Add(this.txtCity_V);
             this.tablePanel3.Controls.Add(this.txtHtp);
-            this.tablePanel3.Controls.Add(this.txtMerred);
-            this.tablePanel3.Controls.Add(this.txtsex);
-            this.tablePanel3.Controls.Add(this.txtVdate);
-            this.tablePanel3.Controls.Add(this.txtIdnty);
-            this.tablePanel3.Controls.Add(this.txtCode);
-            this.tablePanel3.Controls.Add(this.txtSAdi);
-            this.tablePanel3.Controls.Add(this.txtMadi);
-            this.tablePanel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tablePanel3.Controls.Add(this.txtMerred_V);
+            this.tablePanel3.Controls.Add(this.txtSex_V);
+            this.tablePanel3.Controls.Add(this.txtVdate_V);
+            this.tablePanel3.Controls.Add(this.txtIdnty_V);
+            this.tablePanel3.Controls.Add(this.txtCode_V);
+            this.tablePanel3.Controls.Add(this.txtSAdi_V);
+            this.tablePanel3.Controls.Add(this.txtMadi_V);
+            this.tablePanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel3.Location = new System.Drawing.Point(2, 2);
             this.tablePanel3.Name = "tablePanel3";
             this.tablePanel3.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
@@ -814,17 +910,41 @@
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
-            this.tablePanel3.Size = new System.Drawing.Size(289, 484);
+            this.tablePanel3.Size = new System.Drawing.Size(289, 498);
             this.tablePanel3.TabIndex = 36;
             // 
-            // txtmail
+            // btnGsm2Ara_V
             // 
-            this.tablePanel3.SetColumn(this.txtmail, 2);
-            this.txtmail.Location = new System.Drawing.Point(122, 367);
-            this.txtmail.Name = "txtmail";
-            this.tablePanel3.SetRow(this.txtmail, 14);
-            this.txtmail.Size = new System.Drawing.Size(164, 20);
-            this.txtmail.TabIndex = 23;
+            this.tablePanel3.SetColumn(this.btnGsm2Ara_V, 1);
+            this.btnGsm2Ara_V.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnGsm2Ara_V.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGsm2Ara_V.ImageOptions.Image")));
+            this.btnGsm2Ara_V.Location = new System.Drawing.Point(90, 341);
+            this.btnGsm2Ara_V.Name = "btnGsm2Ara_V";
+            this.tablePanel3.SetRow(this.btnGsm2Ara_V, 13);
+            this.btnGsm2Ara_V.Size = new System.Drawing.Size(26, 20);
+            this.btnGsm2Ara_V.TabIndex = 25;
+            this.btnGsm2Ara_V.Click += new System.EventHandler(this.btnGsm2Ara_Click);
+            // 
+            // btnGsm1Ara_V
+            // 
+            this.tablePanel3.SetColumn(this.btnGsm1Ara_V, 1);
+            this.btnGsm1Ara_V.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnGsm1Ara_V.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGsm1Ara_V.ImageOptions.Image")));
+            this.btnGsm1Ara_V.Location = new System.Drawing.Point(90, 315);
+            this.btnGsm1Ara_V.Name = "btnGsm1Ara_V";
+            this.tablePanel3.SetRow(this.btnGsm1Ara_V, 12);
+            this.btnGsm1Ara_V.Size = new System.Drawing.Size(26, 20);
+            this.btnGsm1Ara_V.TabIndex = 24;
+            this.btnGsm1Ara_V.Click += new System.EventHandler(this.btnGsm1Ara_Click);
+            // 
+            // txtMail_V
+            // 
+            this.tablePanel3.SetColumn(this.txtMail_V, 2);
+            this.txtMail_V.Location = new System.Drawing.Point(122, 367);
+            this.txtMail_V.Name = "txtMail_V";
+            this.tablePanel3.SetRow(this.txtMail_V, 14);
+            this.txtMail_V.Size = new System.Drawing.Size(164, 20);
+            this.txtMail_V.TabIndex = 23;
             // 
             // labelControl17
             // 
@@ -861,7 +981,7 @@
             // 
             this.labelControl16.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.tablePanel3.SetColumn(this.labelControl16, 0);
-            this.labelControl16.Location = new System.Drawing.Point(3, 430);
+            this.labelControl16.Location = new System.Drawing.Point(3, 437);
             this.labelControl16.Name = "labelControl16";
             this.tablePanel3.SetRow(this.labelControl16, 15);
             this.labelControl16.Size = new System.Drawing.Size(81, 13);
@@ -978,51 +1098,52 @@
             this.labelControl4.TabIndex = 14;
             this.labelControl4.Text = "Müşteri Adı";
             // 
-            // txtadr
+            // txtAdr_V
             // 
-            this.tablePanel3.SetColumn(this.txtadr, 2);
-            this.txtadr.Location = new System.Drawing.Point(122, 393);
-            this.txtadr.Name = "txtadr";
-            this.tablePanel3.SetRow(this.txtadr, 15);
-            this.txtadr.Size = new System.Drawing.Size(164, 88);
-            this.txtadr.TabIndex = 13;
-            this.txtadr.Text = "";
+            this.tablePanel3.SetColumn(this.txtAdr_V, 2);
+            this.txtAdr_V.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtAdr_V.Location = new System.Drawing.Point(122, 393);
+            this.txtAdr_V.Name = "txtAdr_V";
+            this.tablePanel3.SetRow(this.txtAdr_V, 15);
+            this.txtAdr_V.Size = new System.Drawing.Size(164, 102);
+            this.txtAdr_V.TabIndex = 13;
+            this.txtAdr_V.Text = "";
             // 
-            // txtgsm2
+            // txtGsm2_V
             // 
-            this.tablePanel3.SetColumn(this.txtgsm2, 2);
-            this.txtgsm2.Location = new System.Drawing.Point(122, 341);
-            this.txtgsm2.Name = "txtgsm2";
-            this.tablePanel3.SetRow(this.txtgsm2, 13);
-            this.txtgsm2.Size = new System.Drawing.Size(164, 20);
-            this.txtgsm2.TabIndex = 11;
+            this.tablePanel3.SetColumn(this.txtGsm2_V, 2);
+            this.txtGsm2_V.Location = new System.Drawing.Point(122, 341);
+            this.txtGsm2_V.Name = "txtGsm2_V";
+            this.tablePanel3.SetRow(this.txtGsm2_V, 13);
+            this.txtGsm2_V.Size = new System.Drawing.Size(164, 20);
+            this.txtGsm2_V.TabIndex = 11;
             // 
-            // txtgsm1
+            // txtGsm1_V
             // 
-            this.tablePanel3.SetColumn(this.txtgsm1, 2);
-            this.txtgsm1.Location = new System.Drawing.Point(122, 315);
-            this.txtgsm1.Name = "txtgsm1";
-            this.tablePanel3.SetRow(this.txtgsm1, 12);
-            this.txtgsm1.Size = new System.Drawing.Size(164, 20);
-            this.txtgsm1.TabIndex = 10;
+            this.tablePanel3.SetColumn(this.txtGsm1_V, 2);
+            this.txtGsm1_V.Location = new System.Drawing.Point(122, 315);
+            this.txtGsm1_V.Name = "txtGsm1_V";
+            this.tablePanel3.SetRow(this.txtGsm1_V, 12);
+            this.txtGsm1_V.Size = new System.Drawing.Size(164, 20);
+            this.txtGsm1_V.TabIndex = 10;
             // 
-            // txtDefrent
+            // txtDefrent_V
             // 
-            this.tablePanel3.SetColumn(this.txtDefrent, 2);
-            this.txtDefrent.Location = new System.Drawing.Point(122, 289);
-            this.txtDefrent.Name = "txtDefrent";
-            this.tablePanel3.SetRow(this.txtDefrent, 11);
-            this.txtDefrent.Size = new System.Drawing.Size(164, 20);
-            this.txtDefrent.TabIndex = 9;
+            this.tablePanel3.SetColumn(this.txtDefrent_V, 2);
+            this.txtDefrent_V.Location = new System.Drawing.Point(122, 289);
+            this.txtDefrent_V.Name = "txtDefrent_V";
+            this.tablePanel3.SetRow(this.txtDefrent_V, 11);
+            this.txtDefrent_V.Size = new System.Drawing.Size(164, 20);
+            this.txtDefrent_V.TabIndex = 9;
             // 
-            // txtXity
+            // txtCity_V
             // 
-            this.tablePanel3.SetColumn(this.txtXity, 2);
-            this.txtXity.Location = new System.Drawing.Point(122, 263);
-            this.txtXity.Name = "txtXity";
-            this.tablePanel3.SetRow(this.txtXity, 10);
-            this.txtXity.Size = new System.Drawing.Size(164, 20);
-            this.txtXity.TabIndex = 8;
+            this.tablePanel3.SetColumn(this.txtCity_V, 2);
+            this.txtCity_V.Location = new System.Drawing.Point(122, 263);
+            this.txtCity_V.Name = "txtCity_V";
+            this.tablePanel3.SetRow(this.txtCity_V, 10);
+            this.txtCity_V.Size = new System.Drawing.Size(164, 20);
+            this.txtCity_V.TabIndex = 8;
             // 
             // txtHtp
             // 
@@ -1033,68 +1154,68 @@
             this.txtHtp.Size = new System.Drawing.Size(164, 20);
             this.txtHtp.TabIndex = 7;
             // 
-            // txtMerred
+            // txtMerred_V
             // 
-            this.tablePanel3.SetColumn(this.txtMerred, 2);
-            this.txtMerred.Location = new System.Drawing.Point(122, 185);
-            this.txtMerred.Name = "txtMerred";
-            this.tablePanel3.SetRow(this.txtMerred, 7);
-            this.txtMerred.Size = new System.Drawing.Size(164, 20);
-            this.txtMerred.TabIndex = 6;
+            this.tablePanel3.SetColumn(this.txtMerred_V, 2);
+            this.txtMerred_V.Location = new System.Drawing.Point(122, 185);
+            this.txtMerred_V.Name = "txtMerred_V";
+            this.tablePanel3.SetRow(this.txtMerred_V, 7);
+            this.txtMerred_V.Size = new System.Drawing.Size(164, 20);
+            this.txtMerred_V.TabIndex = 6;
             // 
-            // txtsex
+            // txtSex_V
             // 
-            this.tablePanel3.SetColumn(this.txtsex, 2);
-            this.txtsex.Location = new System.Drawing.Point(122, 159);
-            this.txtsex.Name = "txtsex";
-            this.tablePanel3.SetRow(this.txtsex, 6);
-            this.txtsex.Size = new System.Drawing.Size(164, 20);
-            this.txtsex.TabIndex = 5;
+            this.tablePanel3.SetColumn(this.txtSex_V, 2);
+            this.txtSex_V.Location = new System.Drawing.Point(122, 159);
+            this.txtSex_V.Name = "txtSex_V";
+            this.tablePanel3.SetRow(this.txtSex_V, 6);
+            this.txtSex_V.Size = new System.Drawing.Size(164, 20);
+            this.txtSex_V.TabIndex = 5;
             // 
-            // txtVdate
+            // txtVdate_V
             // 
-            this.tablePanel3.SetColumn(this.txtVdate, 2);
-            this.txtVdate.Location = new System.Drawing.Point(122, 133);
-            this.txtVdate.Name = "txtVdate";
-            this.tablePanel3.SetRow(this.txtVdate, 5);
-            this.txtVdate.Size = new System.Drawing.Size(164, 20);
-            this.txtVdate.TabIndex = 4;
+            this.tablePanel3.SetColumn(this.txtVdate_V, 2);
+            this.txtVdate_V.Location = new System.Drawing.Point(122, 133);
+            this.txtVdate_V.Name = "txtVdate_V";
+            this.tablePanel3.SetRow(this.txtVdate_V, 5);
+            this.txtVdate_V.Size = new System.Drawing.Size(164, 20);
+            this.txtVdate_V.TabIndex = 4;
             // 
-            // txtIdnty
+            // txtIdnty_V
             // 
-            this.tablePanel3.SetColumn(this.txtIdnty, 2);
-            this.txtIdnty.Location = new System.Drawing.Point(122, 81);
-            this.txtIdnty.Name = "txtIdnty";
-            this.tablePanel3.SetRow(this.txtIdnty, 3);
-            this.txtIdnty.Size = new System.Drawing.Size(164, 20);
-            this.txtIdnty.TabIndex = 3;
+            this.tablePanel3.SetColumn(this.txtIdnty_V, 2);
+            this.txtIdnty_V.Location = new System.Drawing.Point(122, 81);
+            this.txtIdnty_V.Name = "txtIdnty_V";
+            this.tablePanel3.SetRow(this.txtIdnty_V, 3);
+            this.txtIdnty_V.Size = new System.Drawing.Size(164, 20);
+            this.txtIdnty_V.TabIndex = 3;
             // 
-            // txtCode
+            // txtCode_V
             // 
-            this.tablePanel3.SetColumn(this.txtCode, 2);
-            this.txtCode.Location = new System.Drawing.Point(122, 55);
-            this.txtCode.Name = "txtCode";
-            this.tablePanel3.SetRow(this.txtCode, 2);
-            this.txtCode.Size = new System.Drawing.Size(164, 20);
-            this.txtCode.TabIndex = 2;
+            this.tablePanel3.SetColumn(this.txtCode_V, 2);
+            this.txtCode_V.Location = new System.Drawing.Point(122, 55);
+            this.txtCode_V.Name = "txtCode_V";
+            this.tablePanel3.SetRow(this.txtCode_V, 2);
+            this.txtCode_V.Size = new System.Drawing.Size(164, 20);
+            this.txtCode_V.TabIndex = 2;
             // 
-            // txtSAdi
+            // txtSAdi_V
             // 
-            this.tablePanel3.SetColumn(this.txtSAdi, 2);
-            this.txtSAdi.Location = new System.Drawing.Point(122, 29);
-            this.txtSAdi.Name = "txtSAdi";
-            this.tablePanel3.SetRow(this.txtSAdi, 1);
-            this.txtSAdi.Size = new System.Drawing.Size(164, 20);
-            this.txtSAdi.TabIndex = 1;
+            this.tablePanel3.SetColumn(this.txtSAdi_V, 2);
+            this.txtSAdi_V.Location = new System.Drawing.Point(122, 29);
+            this.txtSAdi_V.Name = "txtSAdi_V";
+            this.tablePanel3.SetRow(this.txtSAdi_V, 1);
+            this.txtSAdi_V.Size = new System.Drawing.Size(164, 20);
+            this.txtSAdi_V.TabIndex = 1;
             // 
-            // txtMadi
+            // txtMadi_V
             // 
-            this.tablePanel3.SetColumn(this.txtMadi, 2);
-            this.txtMadi.Location = new System.Drawing.Point(122, 3);
-            this.txtMadi.Name = "txtMadi";
-            this.tablePanel3.SetRow(this.txtMadi, 0);
-            this.txtMadi.Size = new System.Drawing.Size(164, 20);
-            this.txtMadi.TabIndex = 0;
+            this.tablePanel3.SetColumn(this.txtMadi_V, 2);
+            this.txtMadi_V.Location = new System.Drawing.Point(122, 3);
+            this.txtMadi_V.Name = "txtMadi_V";
+            this.tablePanel3.SetRow(this.txtMadi_V, 0);
+            this.txtMadi_V.Size = new System.Drawing.Size(164, 20);
+            this.txtMadi_V.TabIndex = 0;
             // 
             // groupControl1
             // 
@@ -1103,68 +1224,68 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1355, 86);
+            this.groupControl1.Size = new System.Drawing.Size(1323, 86);
             this.groupControl1.TabIndex = 4;
             this.groupControl1.Text = "Satış Filitresi";
             // 
             // tablePanel2
             // 
             this.tablePanel2.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 300F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 300F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 33F)});
-            this.tablePanel2.Controls.Add(this.btnYeni);
-            this.tablePanel2.Controls.Add(this.btnIadeListele);
-            this.tablePanel2.Controls.Add(this.btnSatisListele);
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 33F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 33F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 33F)});
+            this.tablePanel2.Controls.Add(this.btnVestelYeni);
+            this.tablePanel2.Controls.Add(this.btnVestelIadeListele);
+            this.tablePanel2.Controls.Add(this.btnVestelSatisListele);
             this.tablePanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel2.Location = new System.Drawing.Point(561, 23);
             this.tablePanel2.Name = "tablePanel2";
             this.tablePanel2.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
-            this.tablePanel2.Size = new System.Drawing.Size(792, 61);
+            this.tablePanel2.Size = new System.Drawing.Size(760, 61);
             this.tablePanel2.TabIndex = 2;
             // 
-            // btnYeni
+            // btnVestelYeni
             // 
-            this.btnYeni.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary;
-            this.btnYeni.Appearance.Options.UseBackColor = true;
-            this.tablePanel2.SetColumn(this.btnYeni, 2);
-            this.btnYeni.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnYeni.Location = new System.Drawing.Point(603, 3);
-            this.btnYeni.Name = "btnYeni";
-            this.tablePanel2.SetRow(this.btnYeni, 0);
-            this.btnYeni.Size = new System.Drawing.Size(186, 55);
-            this.btnYeni.TabIndex = 4;
-            this.btnYeni.Text = "Yeni";
-            this.btnYeni.Click += new System.EventHandler(this.Yeni_Click);
+            this.btnVestelYeni.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary;
+            this.btnVestelYeni.Appearance.Options.UseBackColor = true;
+            this.tablePanel2.SetColumn(this.btnVestelYeni, 2);
+            this.btnVestelYeni.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnVestelYeni.Location = new System.Drawing.Point(510, 3);
+            this.btnVestelYeni.Name = "btnVestelYeni";
+            this.tablePanel2.SetRow(this.btnVestelYeni, 0);
+            this.btnVestelYeni.Size = new System.Drawing.Size(247, 55);
+            this.btnVestelYeni.TabIndex = 4;
+            this.btnVestelYeni.Text = "Yeni";
+            this.btnVestelYeni.Click += new System.EventHandler(this.Yeni_Click);
             // 
-            // btnIadeListele
+            // btnVestelIadeListele
             // 
-            this.btnIadeListele.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
-            this.btnIadeListele.Appearance.Options.UseBackColor = true;
-            this.tablePanel2.SetColumn(this.btnIadeListele, 1);
-            this.btnIadeListele.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnIadeListele.Location = new System.Drawing.Point(303, 3);
-            this.btnIadeListele.Name = "btnIadeListele";
-            this.tablePanel2.SetRow(this.btnIadeListele, 0);
-            this.btnIadeListele.Size = new System.Drawing.Size(294, 55);
-            this.btnIadeListele.TabIndex = 8;
-            this.btnIadeListele.Text = "İade Listesini Getir";
-            this.btnIadeListele.Click += new System.EventHandler(this.btnIadeListele_Click);
+            this.btnVestelIadeListele.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
+            this.btnVestelIadeListele.Appearance.Options.UseBackColor = true;
+            this.tablePanel2.SetColumn(this.btnVestelIadeListele, 1);
+            this.btnVestelIadeListele.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnVestelIadeListele.Location = new System.Drawing.Point(256, 3);
+            this.btnVestelIadeListele.Name = "btnVestelIadeListele";
+            this.tablePanel2.SetRow(this.btnVestelIadeListele, 0);
+            this.btnVestelIadeListele.Size = new System.Drawing.Size(247, 55);
+            this.btnVestelIadeListele.TabIndex = 8;
+            this.btnVestelIadeListele.Text = "İade Listesini Getir";
+            this.btnVestelIadeListele.Click += new System.EventHandler(this.btnIadeListele_Click);
             // 
-            // btnSatisListele
+            // btnVestelSatisListele
             // 
-            this.btnSatisListele.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
-            this.btnSatisListele.Appearance.Options.UseBackColor = true;
-            this.tablePanel2.SetColumn(this.btnSatisListele, 0);
-            this.btnSatisListele.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSatisListele.Location = new System.Drawing.Point(3, 3);
-            this.btnSatisListele.Name = "btnSatisListele";
-            this.tablePanel2.SetRow(this.btnSatisListele, 0);
-            this.btnSatisListele.Size = new System.Drawing.Size(294, 55);
-            this.btnSatisListele.TabIndex = 3;
-            this.btnSatisListele.Text = "Satış Listesini Getir";
-            this.btnSatisListele.Click += new System.EventHandler(this.btnSatisListele_Click);
+            this.btnVestelSatisListele.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
+            this.btnVestelSatisListele.Appearance.Options.UseBackColor = true;
+            this.tablePanel2.SetColumn(this.btnVestelSatisListele, 0);
+            this.btnVestelSatisListele.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnVestelSatisListele.Location = new System.Drawing.Point(3, 3);
+            this.btnVestelSatisListele.Name = "btnVestelSatisListele";
+            this.tablePanel2.SetRow(this.btnVestelSatisListele, 0);
+            this.btnVestelSatisListele.Size = new System.Drawing.Size(247, 55);
+            this.btnVestelSatisListele.TabIndex = 3;
+            this.btnVestelSatisListele.Text = "Satış Listesini Getir";
+            this.btnVestelSatisListele.Click += new System.EventHandler(this.btnSatisListele_Click);
             // 
             // tablePanel1
             // 
@@ -1173,11 +1294,11 @@
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 35.48F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 34.44F)});
             this.tablePanel1.Controls.Add(this.labelControl3);
-            this.tablePanel1.Controls.Add(this.srcMagaza);
-            this.tablePanel1.Controls.Add(this.dteBitTarih);
+            this.tablePanel1.Controls.Add(this.srcVestelMagaza);
+            this.tablePanel1.Controls.Add(this.dteVestelBitTarih);
             this.tablePanel1.Controls.Add(this.labelControl2);
             this.tablePanel1.Controls.Add(this.labelControl1);
-            this.tablePanel1.Controls.Add(this.dteBasTarih);
+            this.tablePanel1.Controls.Add(this.dteVestelBasTarih);
             this.tablePanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.tablePanel1.Location = new System.Drawing.Point(2, 23);
             this.tablePanel1.Name = "tablePanel1";
@@ -1197,18 +1318,18 @@
             this.labelControl3.TabIndex = 7;
             this.labelControl3.Text = "Bitiş Tarihi";
             // 
-            // srcMagaza
+            // srcVestelMagaza
             // 
-            this.tablePanel1.SetColumn(this.srcMagaza, 0);
-            this.srcMagaza.Location = new System.Drawing.Point(3, 34);
-            this.srcMagaza.Name = "srcMagaza";
-            this.srcMagaza.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.tablePanel1.SetColumn(this.srcVestelMagaza, 0);
+            this.srcVestelMagaza.Location = new System.Drawing.Point(3, 34);
+            this.srcVestelMagaza.Name = "srcVestelMagaza";
+            this.srcVestelMagaza.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.srcMagaza.Properties.NullText = "Seçiniz...!";
-            this.srcMagaza.Properties.PopupView = this.searchLookUpEdit1View;
-            this.tablePanel1.SetRow(this.srcMagaza, 1);
-            this.srcMagaza.Size = new System.Drawing.Size(198, 20);
-            this.srcMagaza.TabIndex = 0;
+            this.srcVestelMagaza.Properties.NullText = "Seçiniz...!";
+            this.srcVestelMagaza.Properties.PopupView = this.searchLookUpEdit1View;
+            this.tablePanel1.SetRow(this.srcVestelMagaza, 1);
+            this.srcVestelMagaza.Size = new System.Drawing.Size(198, 20);
+            this.srcVestelMagaza.TabIndex = 0;
             // 
             // searchLookUpEdit1View
             // 
@@ -1217,19 +1338,19 @@
             this.searchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.searchLookUpEdit1View.OptionsView.ShowGroupPanel = false;
             // 
-            // dteBitTarih
+            // dteVestelBitTarih
             // 
-            this.tablePanel1.SetColumn(this.dteBitTarih, 2);
-            this.dteBitTarih.EditValue = null;
-            this.dteBitTarih.Location = new System.Drawing.Point(387, 34);
-            this.dteBitTarih.Name = "dteBitTarih";
-            this.dteBitTarih.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.tablePanel1.SetColumn(this.dteVestelBitTarih, 2);
+            this.dteVestelBitTarih.EditValue = null;
+            this.dteVestelBitTarih.Location = new System.Drawing.Point(387, 34);
+            this.dteVestelBitTarih.Name = "dteVestelBitTarih";
+            this.dteVestelBitTarih.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dteBitTarih.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dteVestelBitTarih.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.tablePanel1.SetRow(this.dteBitTarih, 1);
-            this.dteBitTarih.Size = new System.Drawing.Size(169, 20);
-            this.dteBitTarih.TabIndex = 2;
+            this.tablePanel1.SetRow(this.dteVestelBitTarih, 1);
+            this.dteVestelBitTarih.Size = new System.Drawing.Size(169, 20);
+            this.dteVestelBitTarih.TabIndex = 2;
             // 
             // labelControl2
             // 
@@ -1251,25 +1372,197 @@
             this.labelControl1.TabIndex = 5;
             this.labelControl1.Text = "Mağaza";
             // 
-            // dteBasTarih
+            // dteVestelBasTarih
             // 
-            this.tablePanel1.SetColumn(this.dteBasTarih, 1);
-            this.dteBasTarih.EditValue = null;
-            this.dteBasTarih.Location = new System.Drawing.Point(207, 34);
-            this.dteBasTarih.Name = "dteBasTarih";
-            this.dteBasTarih.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.tablePanel1.SetColumn(this.dteVestelBasTarih, 1);
+            this.dteVestelBasTarih.EditValue = null;
+            this.dteVestelBasTarih.Location = new System.Drawing.Point(207, 34);
+            this.dteVestelBasTarih.Name = "dteVestelBasTarih";
+            this.dteVestelBasTarih.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dteBasTarih.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dteVestelBasTarih.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.tablePanel1.SetRow(this.dteBasTarih, 1);
-            this.dteBasTarih.Size = new System.Drawing.Size(174, 20);
-            this.dteBasTarih.TabIndex = 1;
+            this.tablePanel1.SetRow(this.dteVestelBasTarih, 1);
+            this.dteVestelBasTarih.Size = new System.Drawing.Size(174, 20);
+            this.dteVestelBasTarih.TabIndex = 1;
             // 
             // navigationPage2
             // 
+            this.navigationPage2.Caption = "navigationPage2";
             this.navigationPage2.Controls.Add(this.gridVestelTamamlanan);
+            this.navigationPage2.Controls.Add(this.groupControl4);
             this.navigationPage2.Name = "navigationPage2";
-            this.navigationPage2.Size = new System.Drawing.Size(1355, 620);
+            this.navigationPage2.Size = new System.Drawing.Size(1323, 620);
+            // 
+            // gridVestelTamamlanan
+            // 
+            this.gridVestelTamamlanan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridVestelTamamlanan.Location = new System.Drawing.Point(0, 86);
+            this.gridVestelTamamlanan.MainView = this.ViewVestelTamamlanan;
+            this.gridVestelTamamlanan.Name = "gridVestelTamamlanan";
+            this.gridVestelTamamlanan.Size = new System.Drawing.Size(1323, 534);
+            this.gridVestelTamamlanan.TabIndex = 0;
+            this.gridVestelTamamlanan.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.ViewVestelTamamlanan});
+            // 
+            // ViewVestelTamamlanan
+            // 
+            this.ViewVestelTamamlanan.GridControl = this.gridVestelTamamlanan;
+            this.ViewVestelTamamlanan.Name = "ViewVestelTamamlanan";
+            this.ViewVestelTamamlanan.OptionsView.ShowGroupPanel = false;
+            // 
+            // groupControl4
+            // 
+            this.groupControl4.Controls.Add(this.tablePanel9);
+            this.groupControl4.Controls.Add(this.tablePanel10);
+            this.groupControl4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupControl4.Location = new System.Drawing.Point(0, 0);
+            this.groupControl4.Name = "groupControl4";
+            this.groupControl4.Size = new System.Drawing.Size(1323, 86);
+            this.groupControl4.TabIndex = 7;
+            this.groupControl4.Text = "Satış Filitresi";
+            // 
+            // tablePanel9
+            // 
+            this.tablePanel9.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 33F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 33F)});
+            this.tablePanel9.Controls.Add(this.btnVestelGirisIade);
+            this.tablePanel9.Controls.Add(this.btnVestelGirlien);
+            this.tablePanel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablePanel9.Location = new System.Drawing.Point(561, 23);
+            this.tablePanel9.Name = "tablePanel9";
+            this.tablePanel9.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
+            this.tablePanel9.Size = new System.Drawing.Size(760, 61);
+            this.tablePanel9.TabIndex = 2;
+            // 
+            // btnVestelGirisIade
+            // 
+            this.btnVestelGirisIade.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
+            this.btnVestelGirisIade.Appearance.Options.UseBackColor = true;
+            this.tablePanel9.SetColumn(this.btnVestelGirisIade, 1);
+            this.btnVestelGirisIade.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnVestelGirisIade.Location = new System.Drawing.Point(383, 3);
+            this.btnVestelGirisIade.Name = "btnVestelGirisIade";
+            this.tablePanel9.SetRow(this.btnVestelGirisIade, 0);
+            this.btnVestelGirisIade.Size = new System.Drawing.Size(374, 55);
+            this.btnVestelGirisIade.TabIndex = 8;
+            this.btnVestelGirisIade.Text = "Girişi Olan İade Listesini Getir";
+            this.btnVestelGirisIade.Click += new System.EventHandler(this.btnVestelGirisIade_Click);
+            // 
+            // btnVestelGirlien
+            // 
+            this.btnVestelGirlien.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
+            this.btnVestelGirlien.Appearance.Options.UseBackColor = true;
+            this.tablePanel9.SetColumn(this.btnVestelGirlien, 0);
+            this.btnVestelGirlien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnVestelGirlien.Location = new System.Drawing.Point(3, 3);
+            this.btnVestelGirlien.Name = "btnVestelGirlien";
+            this.tablePanel9.SetRow(this.btnVestelGirlien, 0);
+            this.btnVestelGirlien.Size = new System.Drawing.Size(374, 55);
+            this.btnVestelGirlien.TabIndex = 3;
+            this.btnVestelGirlien.Text = "Girişi Olan Listesini Getir";
+            this.btnVestelGirlien.Click += new System.EventHandler(this.btnVestelGirlien_Click);
+            // 
+            // tablePanel10
+            // 
+            this.tablePanel10.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 40.08F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 35.48F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 34.44F)});
+            this.tablePanel10.Controls.Add(this.labelControl38);
+            this.tablePanel10.Controls.Add(this.srcVestelMagaza2);
+            this.tablePanel10.Controls.Add(this.dteVestelBitTarih2);
+            this.tablePanel10.Controls.Add(this.labelControl39);
+            this.tablePanel10.Controls.Add(this.labelControl40);
+            this.tablePanel10.Controls.Add(this.dteVestelBasTarih2);
+            this.tablePanel10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tablePanel10.Location = new System.Drawing.Point(2, 23);
+            this.tablePanel10.Name = "tablePanel10";
+            this.tablePanel10.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 27F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
+            this.tablePanel10.Size = new System.Drawing.Size(559, 61);
+            this.tablePanel10.TabIndex = 1;
+            // 
+            // labelControl38
+            // 
+            this.tablePanel10.SetColumn(this.labelControl38, 2);
+            this.labelControl38.Location = new System.Drawing.Point(387, 7);
+            this.labelControl38.Name = "labelControl38";
+            this.tablePanel10.SetRow(this.labelControl38, 0);
+            this.labelControl38.Size = new System.Drawing.Size(48, 13);
+            this.labelControl38.TabIndex = 7;
+            this.labelControl38.Text = "Bitiş Tarihi";
+            // 
+            // srcVestelMagaza2
+            // 
+            this.tablePanel10.SetColumn(this.srcVestelMagaza2, 0);
+            this.srcVestelMagaza2.Location = new System.Drawing.Point(3, 34);
+            this.srcVestelMagaza2.Name = "srcVestelMagaza2";
+            this.srcVestelMagaza2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.srcVestelMagaza2.Properties.NullText = "Seçiniz...!";
+            this.srcVestelMagaza2.Properties.PopupView = this.gridView5;
+            this.tablePanel10.SetRow(this.srcVestelMagaza2, 1);
+            this.srcVestelMagaza2.Size = new System.Drawing.Size(198, 20);
+            this.srcVestelMagaza2.TabIndex = 0;
+            // 
+            // gridView5
+            // 
+            this.gridView5.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridView5.Name = "gridView5";
+            this.gridView5.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridView5.OptionsView.ShowGroupPanel = false;
+            // 
+            // dteVestelBitTarih2
+            // 
+            this.tablePanel10.SetColumn(this.dteVestelBitTarih2, 2);
+            this.dteVestelBitTarih2.EditValue = null;
+            this.dteVestelBitTarih2.Location = new System.Drawing.Point(387, 34);
+            this.dteVestelBitTarih2.Name = "dteVestelBitTarih2";
+            this.dteVestelBitTarih2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dteVestelBitTarih2.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.tablePanel10.SetRow(this.dteVestelBitTarih2, 1);
+            this.dteVestelBitTarih2.Size = new System.Drawing.Size(169, 20);
+            this.dteVestelBitTarih2.TabIndex = 2;
+            // 
+            // labelControl39
+            // 
+            this.tablePanel10.SetColumn(this.labelControl39, 1);
+            this.labelControl39.Location = new System.Drawing.Point(207, 7);
+            this.labelControl39.Name = "labelControl39";
+            this.tablePanel10.SetRow(this.labelControl39, 0);
+            this.labelControl39.Size = new System.Drawing.Size(73, 13);
+            this.labelControl39.TabIndex = 6;
+            this.labelControl39.Text = "Başlangıç Tarihi";
+            // 
+            // labelControl40
+            // 
+            this.tablePanel10.SetColumn(this.labelControl40, 0);
+            this.labelControl40.Location = new System.Drawing.Point(3, 7);
+            this.labelControl40.Name = "labelControl40";
+            this.tablePanel10.SetRow(this.labelControl40, 0);
+            this.labelControl40.Size = new System.Drawing.Size(37, 13);
+            this.labelControl40.TabIndex = 5;
+            this.labelControl40.Text = "Mağaza";
+            // 
+            // dteVestelBasTarih2
+            // 
+            this.tablePanel10.SetColumn(this.dteVestelBasTarih2, 1);
+            this.dteVestelBasTarih2.EditValue = null;
+            this.dteVestelBasTarih2.Location = new System.Drawing.Point(207, 34);
+            this.dteVestelBasTarih2.Name = "dteVestelBasTarih2";
+            this.dteVestelBasTarih2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dteVestelBasTarih2.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.tablePanel10.SetRow(this.dteVestelBasTarih2, 1);
+            this.dteVestelBasTarih2.Size = new System.Drawing.Size(174, 20);
+            this.dteVestelBasTarih2.TabIndex = 1;
             // 
             // tileBar1
             // 
@@ -1295,7 +1588,7 @@
             this.tileBar1.SelectionBorderWidth = 2;
             this.tileBar1.SelectionColorMode = DevExpress.XtraBars.Navigation.SelectionColorMode.UseItemBackColor;
             this.tileBar1.ShowGroupText = false;
-            this.tileBar1.Size = new System.Drawing.Size(1355, 69);
+            this.tileBar1.Size = new System.Drawing.Size(1323, 69);
             this.tileBar1.TabIndex = 3;
             this.tileBar1.Text = "tileBar1";
             this.tileBar1.WideTileWidth = 150;
@@ -1338,30 +1631,53 @@
             this.tileBarItem1.Id = 3;
             this.tileBarItem1.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem1.Name = "tileBarItem1";
-            this.tileBarItem1.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileBarItem1_ItemClick);
             // 
             // navigationPage4
             // 
-            this.navigationPage4.Controls.Add(this.gridControl2);
-            this.navigationPage4.Controls.Add(this.navBarControl2);
-            this.navigationPage4.Controls.Add(this.groupControl2);
+            this.navigationPage4.Caption = "navigationPage4";
+            this.navigationPage4.Controls.Add(this.navigationFrame2);
+            this.navigationPage4.Controls.Add(this.tileBar2);
             this.navigationPage4.Name = "navigationPage4";
-            this.navigationPage4.Size = new System.Drawing.Size(1355, 689);
+            this.navigationPage4.Size = new System.Drawing.Size(1323, 689);
             // 
-            // gridControl2
+            // navigationFrame2
             // 
-            this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl2.Location = new System.Drawing.Point(0, 86);
-            this.gridControl2.MainView = this.gridView3;
-            this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(436, 603);
-            this.gridControl2.TabIndex = 20;
-            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView3});
+            this.navigationFrame2.Controls.Add(this.navigationPage5);
+            this.navigationFrame2.Controls.Add(this.navigationPage6);
+            this.navigationFrame2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.navigationFrame2.Location = new System.Drawing.Point(0, 69);
+            this.navigationFrame2.Name = "navigationFrame2";
+            this.navigationFrame2.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
+            this.navigationPage5,
+            this.navigationPage6});
+            this.navigationFrame2.SelectedPage = this.navigationPage5;
+            this.navigationFrame2.Size = new System.Drawing.Size(1323, 620);
+            this.navigationFrame2.TabIndex = 22;
+            this.navigationFrame2.Text = "navigationFrame2";
             // 
-            // gridView3
+            // navigationPage5
             // 
-            this.gridView3.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.navigationPage5.Caption = "navigationPage5";
+            this.navigationPage5.Controls.Add(this.gridProfiloSatis);
+            this.navigationPage5.Controls.Add(this.navBarControl2);
+            this.navigationPage5.Controls.Add(this.groupControl2);
+            this.navigationPage5.Name = "navigationPage5";
+            this.navigationPage5.Size = new System.Drawing.Size(1323, 620);
+            // 
+            // gridProfiloSatis
+            // 
+            this.gridProfiloSatis.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridProfiloSatis.Location = new System.Drawing.Point(0, 86);
+            this.gridProfiloSatis.MainView = this.ViewProfiloSatis;
+            this.gridProfiloSatis.Name = "gridProfiloSatis";
+            this.gridProfiloSatis.Size = new System.Drawing.Size(313, 534);
+            this.gridProfiloSatis.TabIndex = 20;
+            this.gridProfiloSatis.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.ViewProfiloSatis});
+            // 
+            // ViewProfiloSatis
+            // 
+            this.ViewProfiloSatis.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn22,
             this.gridColumn23,
             this.gridColumn24,
@@ -1383,11 +1699,12 @@
             this.gridColumn40,
             this.gridColumn41,
             this.gridColumn42});
-            this.gridView3.GridControl = this.gridControl2;
-            this.gridView3.Name = "gridView3";
-            this.gridView3.OptionsView.BestFitMode = DevExpress.XtraGrid.Views.Grid.GridBestFitMode.Full;
-            this.gridView3.OptionsView.ColumnAutoWidth = false;
-            this.gridView3.OptionsView.ShowGroupPanel = false;
+            this.ViewProfiloSatis.GridControl = this.gridProfiloSatis;
+            this.ViewProfiloSatis.Name = "ViewProfiloSatis";
+            this.ViewProfiloSatis.OptionsView.BestFitMode = DevExpress.XtraGrid.Views.Grid.GridBestFitMode.Full;
+            this.ViewProfiloSatis.OptionsView.ColumnAutoWidth = false;
+            this.ViewProfiloSatis.OptionsView.ShowGroupPanel = false;
+            this.ViewProfiloSatis.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.ViewProfiloSatis_RowCellClick);
             // 
             // gridColumn22
             // 
@@ -1539,13 +1856,13 @@
             this.navBarControl2.Dock = System.Windows.Forms.DockStyle.Right;
             this.navBarControl2.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.navBarGroup1});
-            this.navBarControl2.Location = new System.Drawing.Point(436, 86);
+            this.navBarControl2.Location = new System.Drawing.Point(313, 86);
             this.navBarControl2.Name = "navBarControl2";
-            this.navBarControl2.OptionsNavPane.ExpandedWidth = 919;
+            this.navBarControl2.OptionsNavPane.ExpandedWidth = 1010;
             this.navBarControl2.OptionsNavPane.ShowOverflowPanel = false;
             this.navBarControl2.OptionsNavPane.ShowSplitter = false;
             this.navBarControl2.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.NavigationPane;
-            this.navBarControl2.Size = new System.Drawing.Size(919, 603);
+            this.navBarControl2.Size = new System.Drawing.Size(1010, 534);
             this.navBarControl2.TabIndex = 19;
             // 
             // navBarGroup1
@@ -1562,12 +1879,57 @@
             // 
             this.navBarGroupControlContainer1.Appearance.BackColor = System.Drawing.SystemColors.Control;
             this.navBarGroupControlContainer1.Appearance.Options.UseBackColor = true;
-            this.navBarGroupControlContainer1.Controls.Add(this.gridControl1);
-            this.navBarGroupControlContainer1.Controls.Add(this.panelControl2);
+            this.navBarGroupControlContainer1.Controls.Add(this.gridProfiloUrunler);
             this.navBarGroupControlContainer1.Controls.Add(this.panelControl4);
+            this.navBarGroupControlContainer1.Controls.Add(this.panelControl2);
             this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
-            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(919, 571);
+            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(1010, 502);
             this.navBarGroupControlContainer1.TabIndex = 0;
+            // 
+            // gridProfiloUrunler
+            // 
+            this.gridProfiloUrunler.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridProfiloUrunler.Location = new System.Drawing.Point(310, 0);
+            this.gridProfiloUrunler.MainView = this.ViewProfiloUrunler;
+            this.gridProfiloUrunler.Name = "gridProfiloUrunler";
+            this.gridProfiloUrunler.Size = new System.Drawing.Size(700, 453);
+            this.gridProfiloUrunler.TabIndex = 37;
+            this.gridProfiloUrunler.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.ViewProfiloUrunler});
+            // 
+            // ViewProfiloUrunler
+            // 
+            this.ViewProfiloUrunler.GridControl = this.gridProfiloUrunler;
+            this.ViewProfiloUrunler.Name = "ViewProfiloUrunler";
+            this.ViewProfiloUrunler.OptionsView.ShowGroupPanel = false;
+            // 
+            // panelControl4
+            // 
+            this.panelControl4.Controls.Add(this.simpleButton4);
+            this.panelControl4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelControl4.Location = new System.Drawing.Point(310, 453);
+            this.panelControl4.Name = "panelControl4";
+            this.panelControl4.Size = new System.Drawing.Size(700, 49);
+            this.panelControl4.TabIndex = 38;
+            // 
+            // simpleButton4
+            // 
+            this.simpleButton4.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
+            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.simpleButton4.Appearance.Options.UseBackColor = true;
+            this.simpleButton4.Appearance.Options.UseFont = true;
+            this.simpleButton4.Appearance.Options.UseTextOptions = true;
+            this.simpleButton4.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.simpleButton4.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.simpleButton4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
+            this.simpleButton4.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.simpleButton4.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.simpleButton4.Location = new System.Drawing.Point(2, 2);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(696, 45);
+            this.simpleButton4.TabIndex = 4;
+            this.simpleButton4.Text = "Müşteri Kayıt \r\nİşlendi Yap";
             // 
             // panelControl2
             // 
@@ -1575,15 +1937,18 @@
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelControl2.Location = new System.Drawing.Point(0, 0);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(310, 522);
+            this.panelControl2.Size = new System.Drawing.Size(310, 502);
             this.panelControl2.TabIndex = 36;
             // 
             // tablePanel6
             // 
             this.tablePanel6.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 17.2F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 42.8F)});
-            this.tablePanel6.Controls.Add(this.textEPOSTAP);
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 29.8F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 10.4F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 69.8F)});
+            this.tablePanel6.Controls.Add(this.btnGsm2Ara_P);
+            this.tablePanel6.Controls.Add(this.btnGsm1Ara_P);
+            this.tablePanel6.Controls.Add(this.txtMail_P);
             this.tablePanel6.Controls.Add(this.labelControl21);
             this.tablePanel6.Controls.Add(this.labelControl22);
             this.tablePanel6.Controls.Add(this.labelControl23);
@@ -1598,19 +1963,19 @@
             this.tablePanel6.Controls.Add(this.labelControl32);
             this.tablePanel6.Controls.Add(this.labelControl33);
             this.tablePanel6.Controls.Add(this.labelControl34);
-            this.tablePanel6.Controls.Add(this.txtADRESP);
-            this.tablePanel6.Controls.Add(this.textTEL2P);
-            this.tablePanel6.Controls.Add(this.textTEL1P);
-            this.tablePanel6.Controls.Add(this.textILCEP);
-            this.tablePanel6.Controls.Add(this.textSEHIRP);
+            this.tablePanel6.Controls.Add(this.txtAdr_P);
+            this.tablePanel6.Controls.Add(this.txtGsm2_P);
+            this.tablePanel6.Controls.Add(this.txtGsm1_P);
+            this.tablePanel6.Controls.Add(this.txtDefrent_P);
+            this.tablePanel6.Controls.Add(this.txtCity_P);
             this.tablePanel6.Controls.Add(this.textUNVANP);
-            this.tablePanel6.Controls.Add(this.textMEDENIP);
-            this.tablePanel6.Controls.Add(this.textCINSIYETP);
-            this.tablePanel6.Controls.Add(this.textDOGUMP);
-            this.tablePanel6.Controls.Add(this.textVERGIKIMLIKP);
-            this.tablePanel6.Controls.Add(this.textKARTNOP);
-            this.tablePanel6.Controls.Add(this.textSOYADIP);
-            this.tablePanel6.Controls.Add(this.textMUSTERIADIP);
+            this.tablePanel6.Controls.Add(this.txtMerred_P);
+            this.tablePanel6.Controls.Add(this.txtSex_P);
+            this.tablePanel6.Controls.Add(this.txtVdate_P);
+            this.tablePanel6.Controls.Add(this.txtIdnty_P);
+            this.tablePanel6.Controls.Add(this.txtCode_P);
+            this.tablePanel6.Controls.Add(this.txtSAdi_P);
+            this.tablePanel6.Controls.Add(this.txtMadi_P);
             this.tablePanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel6.Location = new System.Drawing.Point(2, 2);
             this.tablePanel6.Name = "tablePanel6";
@@ -1631,17 +1996,40 @@
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
-            this.tablePanel6.Size = new System.Drawing.Size(306, 518);
+            this.tablePanel6.Size = new System.Drawing.Size(306, 498);
             this.tablePanel6.TabIndex = 36;
             // 
-            // textEPOSTAP
+            // btnGsm2Ara_P
             // 
-            this.tablePanel6.SetColumn(this.textEPOSTAP, 1);
-            this.textEPOSTAP.Location = new System.Drawing.Point(91, 367);
-            this.textEPOSTAP.Name = "textEPOSTAP";
-            this.tablePanel6.SetRow(this.textEPOSTAP, 14);
-            this.textEPOSTAP.Size = new System.Drawing.Size(212, 20);
-            this.textEPOSTAP.TabIndex = 23;
+            this.tablePanel6.SetColumn(this.btnGsm2Ara_P, 1);
+            this.btnGsm2Ara_P.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnGsm2Ara_P.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGsm2Ara_P.ImageOptions.Image")));
+            this.btnGsm2Ara_P.Location = new System.Drawing.Point(86, 341);
+            this.btnGsm2Ara_P.Name = "btnGsm2Ara_P";
+            this.tablePanel6.SetRow(this.btnGsm2Ara_P, 13);
+            this.btnGsm2Ara_P.Size = new System.Drawing.Size(23, 20);
+            this.btnGsm2Ara_P.TabIndex = 25;
+            // 
+            // btnGsm1Ara_P
+            // 
+            this.tablePanel6.SetColumn(this.btnGsm1Ara_P, 1);
+            this.btnGsm1Ara_P.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnGsm1Ara_P.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGsm1Ara_P.ImageOptions.Image")));
+            this.btnGsm1Ara_P.Location = new System.Drawing.Point(86, 315);
+            this.btnGsm1Ara_P.Name = "btnGsm1Ara_P";
+            this.tablePanel6.SetRow(this.btnGsm1Ara_P, 12);
+            this.btnGsm1Ara_P.Size = new System.Drawing.Size(23, 20);
+            this.btnGsm1Ara_P.TabIndex = 24;
+            this.btnGsm1Ara_P.Text = "simpleButton1";
+            // 
+            // txtMail_P
+            // 
+            this.tablePanel6.SetColumn(this.txtMail_P, 2);
+            this.txtMail_P.Location = new System.Drawing.Point(115, 367);
+            this.txtMail_P.Name = "txtMail_P";
+            this.tablePanel6.SetRow(this.txtMail_P, 14);
+            this.txtMail_P.Size = new System.Drawing.Size(188, 20);
+            this.txtMail_P.TabIndex = 23;
             // 
             // labelControl21
             // 
@@ -1670,7 +2058,7 @@
             this.labelControl23.Location = new System.Drawing.Point(3, 318);
             this.labelControl23.Name = "labelControl23";
             this.tablePanel6.SetRow(this.labelControl23, 12);
-            this.labelControl23.Size = new System.Drawing.Size(82, 13);
+            this.labelControl23.Size = new System.Drawing.Size(77, 13);
             this.labelControl23.TabIndex = 15;
             this.labelControl23.Text = "Telefon 1";
             // 
@@ -1678,10 +2066,10 @@
             // 
             this.labelControl24.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.tablePanel6.SetColumn(this.labelControl24, 0);
-            this.labelControl24.Location = new System.Drawing.Point(3, 447);
+            this.labelControl24.Location = new System.Drawing.Point(3, 437);
             this.labelControl24.Name = "labelControl24";
             this.tablePanel6.SetRow(this.labelControl24, 15);
-            this.labelControl24.Size = new System.Drawing.Size(82, 13);
+            this.labelControl24.Size = new System.Drawing.Size(77, 13);
             this.labelControl24.TabIndex = 16;
             this.labelControl24.Text = "Adress";
             // 
@@ -1692,7 +2080,7 @@
             this.labelControl25.Location = new System.Drawing.Point(3, 240);
             this.labelControl25.Name = "labelControl25";
             this.tablePanel6.SetRow(this.labelControl25, 9);
-            this.labelControl25.Size = new System.Drawing.Size(82, 13);
+            this.labelControl25.Size = new System.Drawing.Size(77, 13);
             this.labelControl25.TabIndex = 15;
             this.labelControl25.Text = "Ünvan";
             // 
@@ -1703,7 +2091,7 @@
             this.labelControl26.Location = new System.Drawing.Point(3, 266);
             this.labelControl26.Name = "labelControl26";
             this.tablePanel6.SetRow(this.labelControl26, 10);
-            this.labelControl26.Size = new System.Drawing.Size(82, 13);
+            this.labelControl26.Size = new System.Drawing.Size(77, 13);
             this.labelControl26.TabIndex = 17;
             this.labelControl26.Text = "Şehir";
             // 
@@ -1714,7 +2102,7 @@
             this.labelControl27.Location = new System.Drawing.Point(3, 292);
             this.labelControl27.Name = "labelControl27";
             this.tablePanel6.SetRow(this.labelControl27, 11);
-            this.labelControl27.Size = new System.Drawing.Size(82, 13);
+            this.labelControl27.Size = new System.Drawing.Size(77, 13);
             this.labelControl27.TabIndex = 18;
             this.labelControl27.Text = "İlçe Adı";
             // 
@@ -1725,7 +2113,7 @@
             this.labelControl28.Location = new System.Drawing.Point(3, 32);
             this.labelControl28.Name = "labelControl28";
             this.tablePanel6.SetRow(this.labelControl28, 1);
-            this.labelControl28.Size = new System.Drawing.Size(82, 13);
+            this.labelControl28.Size = new System.Drawing.Size(77, 13);
             this.labelControl28.TabIndex = 15;
             this.labelControl28.Text = "Soyad";
             // 
@@ -1736,7 +2124,7 @@
             this.labelControl29.Location = new System.Drawing.Point(3, 58);
             this.labelControl29.Name = "labelControl29";
             this.tablePanel6.SetRow(this.labelControl29, 2);
-            this.labelControl29.Size = new System.Drawing.Size(82, 13);
+            this.labelControl29.Size = new System.Drawing.Size(77, 13);
             this.labelControl29.TabIndex = 16;
             this.labelControl29.Text = "Kart No";
             // 
@@ -1747,7 +2135,7 @@
             this.labelControl30.Location = new System.Drawing.Point(3, 84);
             this.labelControl30.Name = "labelControl30";
             this.tablePanel6.SetRow(this.labelControl30, 3);
-            this.labelControl30.Size = new System.Drawing.Size(82, 13);
+            this.labelControl30.Size = new System.Drawing.Size(77, 13);
             this.labelControl30.TabIndex = 17;
             this.labelControl30.Text = "Vergi \\ Kimlik No";
             // 
@@ -1758,7 +2146,7 @@
             this.labelControl31.Location = new System.Drawing.Point(3, 136);
             this.labelControl31.Name = "labelControl31";
             this.tablePanel6.SetRow(this.labelControl31, 5);
-            this.labelControl31.Size = new System.Drawing.Size(82, 13);
+            this.labelControl31.Size = new System.Drawing.Size(77, 13);
             this.labelControl31.TabIndex = 18;
             this.labelControl31.Text = "Doğum Tarihi";
             // 
@@ -1769,7 +2157,7 @@
             this.labelControl32.Location = new System.Drawing.Point(3, 162);
             this.labelControl32.Name = "labelControl32";
             this.tablePanel6.SetRow(this.labelControl32, 6);
-            this.labelControl32.Size = new System.Drawing.Size(82, 13);
+            this.labelControl32.Size = new System.Drawing.Size(77, 13);
             this.labelControl32.TabIndex = 19;
             this.labelControl32.Text = "Cinsiyeti";
             // 
@@ -1780,7 +2168,7 @@
             this.labelControl33.Location = new System.Drawing.Point(3, 188);
             this.labelControl33.Name = "labelControl33";
             this.tablePanel6.SetRow(this.labelControl33, 7);
-            this.labelControl33.Size = new System.Drawing.Size(82, 13);
+            this.labelControl33.Size = new System.Drawing.Size(77, 13);
             this.labelControl33.TabIndex = 20;
             this.labelControl33.Text = "Medeni Hal";
             // 
@@ -1791,147 +2179,128 @@
             this.labelControl34.Location = new System.Drawing.Point(3, 6);
             this.labelControl34.Name = "labelControl34";
             this.tablePanel6.SetRow(this.labelControl34, 0);
-            this.labelControl34.Size = new System.Drawing.Size(82, 13);
+            this.labelControl34.Size = new System.Drawing.Size(77, 13);
             this.labelControl34.TabIndex = 14;
             this.labelControl34.Text = "Müşteri Adı";
             // 
-            // txtADRESP
+            // txtAdr_P
             // 
-            this.tablePanel6.SetColumn(this.txtADRESP, 1);
-            this.txtADRESP.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtADRESP.Location = new System.Drawing.Point(91, 393);
-            this.txtADRESP.Name = "txtADRESP";
-            this.tablePanel6.SetRow(this.txtADRESP, 15);
-            this.txtADRESP.Size = new System.Drawing.Size(212, 122);
-            this.txtADRESP.TabIndex = 13;
-            this.txtADRESP.Text = "";
+            this.tablePanel6.SetColumn(this.txtAdr_P, 2);
+            this.txtAdr_P.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtAdr_P.Location = new System.Drawing.Point(115, 393);
+            this.txtAdr_P.Name = "txtAdr_P";
+            this.tablePanel6.SetRow(this.txtAdr_P, 15);
+            this.txtAdr_P.Size = new System.Drawing.Size(188, 102);
+            this.txtAdr_P.TabIndex = 13;
+            this.txtAdr_P.Text = "";
             // 
-            // textTEL2P
+            // txtGsm2_P
             // 
-            this.tablePanel6.SetColumn(this.textTEL2P, 1);
-            this.textTEL2P.Location = new System.Drawing.Point(91, 341);
-            this.textTEL2P.Name = "textTEL2P";
-            this.tablePanel6.SetRow(this.textTEL2P, 13);
-            this.textTEL2P.Size = new System.Drawing.Size(212, 20);
-            this.textTEL2P.TabIndex = 11;
+            this.tablePanel6.SetColumn(this.txtGsm2_P, 2);
+            this.txtGsm2_P.Location = new System.Drawing.Point(115, 341);
+            this.txtGsm2_P.Name = "txtGsm2_P";
+            this.tablePanel6.SetRow(this.txtGsm2_P, 13);
+            this.txtGsm2_P.Size = new System.Drawing.Size(188, 20);
+            this.txtGsm2_P.TabIndex = 11;
             // 
-            // textTEL1P
+            // txtGsm1_P
             // 
-            this.tablePanel6.SetColumn(this.textTEL1P, 1);
-            this.textTEL1P.Location = new System.Drawing.Point(91, 315);
-            this.textTEL1P.Name = "textTEL1P";
-            this.tablePanel6.SetRow(this.textTEL1P, 12);
-            this.textTEL1P.Size = new System.Drawing.Size(212, 20);
-            this.textTEL1P.TabIndex = 10;
+            this.tablePanel6.SetColumn(this.txtGsm1_P, 2);
+            this.txtGsm1_P.Location = new System.Drawing.Point(115, 315);
+            this.txtGsm1_P.Name = "txtGsm1_P";
+            this.tablePanel6.SetRow(this.txtGsm1_P, 12);
+            this.txtGsm1_P.Size = new System.Drawing.Size(188, 20);
+            this.txtGsm1_P.TabIndex = 10;
             // 
-            // textILCEP
+            // txtDefrent_P
             // 
-            this.tablePanel6.SetColumn(this.textILCEP, 1);
-            this.textILCEP.Location = new System.Drawing.Point(91, 289);
-            this.textILCEP.Name = "textILCEP";
-            this.tablePanel6.SetRow(this.textILCEP, 11);
-            this.textILCEP.Size = new System.Drawing.Size(212, 20);
-            this.textILCEP.TabIndex = 9;
+            this.tablePanel6.SetColumn(this.txtDefrent_P, 2);
+            this.txtDefrent_P.Location = new System.Drawing.Point(115, 289);
+            this.txtDefrent_P.Name = "txtDefrent_P";
+            this.tablePanel6.SetRow(this.txtDefrent_P, 11);
+            this.txtDefrent_P.Size = new System.Drawing.Size(188, 20);
+            this.txtDefrent_P.TabIndex = 9;
             // 
-            // textSEHIRP
+            // txtCity_P
             // 
-            this.tablePanel6.SetColumn(this.textSEHIRP, 1);
-            this.textSEHIRP.Location = new System.Drawing.Point(91, 263);
-            this.textSEHIRP.Name = "textSEHIRP";
-            this.tablePanel6.SetRow(this.textSEHIRP, 10);
-            this.textSEHIRP.Size = new System.Drawing.Size(212, 20);
-            this.textSEHIRP.TabIndex = 8;
+            this.tablePanel6.SetColumn(this.txtCity_P, 2);
+            this.txtCity_P.Location = new System.Drawing.Point(115, 263);
+            this.txtCity_P.Name = "txtCity_P";
+            this.tablePanel6.SetRow(this.txtCity_P, 10);
+            this.txtCity_P.Size = new System.Drawing.Size(188, 20);
+            this.txtCity_P.TabIndex = 8;
             // 
             // textUNVANP
             // 
-            this.tablePanel6.SetColumn(this.textUNVANP, 1);
-            this.textUNVANP.Location = new System.Drawing.Point(91, 237);
+            this.tablePanel6.SetColumn(this.textUNVANP, 2);
+            this.textUNVANP.Location = new System.Drawing.Point(115, 237);
             this.textUNVANP.Name = "textUNVANP";
             this.tablePanel6.SetRow(this.textUNVANP, 9);
-            this.textUNVANP.Size = new System.Drawing.Size(212, 20);
+            this.textUNVANP.Size = new System.Drawing.Size(188, 20);
             this.textUNVANP.TabIndex = 7;
             // 
-            // textMEDENIP
+            // txtMerred_P
             // 
-            this.tablePanel6.SetColumn(this.textMEDENIP, 1);
-            this.textMEDENIP.Location = new System.Drawing.Point(91, 185);
-            this.textMEDENIP.Name = "textMEDENIP";
-            this.tablePanel6.SetRow(this.textMEDENIP, 7);
-            this.textMEDENIP.Size = new System.Drawing.Size(212, 20);
-            this.textMEDENIP.TabIndex = 6;
+            this.tablePanel6.SetColumn(this.txtMerred_P, 2);
+            this.txtMerred_P.Location = new System.Drawing.Point(115, 185);
+            this.txtMerred_P.Name = "txtMerred_P";
+            this.tablePanel6.SetRow(this.txtMerred_P, 7);
+            this.txtMerred_P.Size = new System.Drawing.Size(188, 20);
+            this.txtMerred_P.TabIndex = 6;
             // 
-            // textCINSIYETP
+            // txtSex_P
             // 
-            this.tablePanel6.SetColumn(this.textCINSIYETP, 1);
-            this.textCINSIYETP.Location = new System.Drawing.Point(91, 159);
-            this.textCINSIYETP.Name = "textCINSIYETP";
-            this.tablePanel6.SetRow(this.textCINSIYETP, 6);
-            this.textCINSIYETP.Size = new System.Drawing.Size(212, 20);
-            this.textCINSIYETP.TabIndex = 5;
+            this.tablePanel6.SetColumn(this.txtSex_P, 2);
+            this.txtSex_P.Location = new System.Drawing.Point(115, 159);
+            this.txtSex_P.Name = "txtSex_P";
+            this.tablePanel6.SetRow(this.txtSex_P, 6);
+            this.txtSex_P.Size = new System.Drawing.Size(188, 20);
+            this.txtSex_P.TabIndex = 5;
             // 
-            // textDOGUMP
+            // txtVdate_P
             // 
-            this.tablePanel6.SetColumn(this.textDOGUMP, 1);
-            this.textDOGUMP.Location = new System.Drawing.Point(91, 133);
-            this.textDOGUMP.Name = "textDOGUMP";
-            this.tablePanel6.SetRow(this.textDOGUMP, 5);
-            this.textDOGUMP.Size = new System.Drawing.Size(212, 20);
-            this.textDOGUMP.TabIndex = 4;
+            this.tablePanel6.SetColumn(this.txtVdate_P, 2);
+            this.txtVdate_P.Location = new System.Drawing.Point(115, 133);
+            this.txtVdate_P.Name = "txtVdate_P";
+            this.tablePanel6.SetRow(this.txtVdate_P, 5);
+            this.txtVdate_P.Size = new System.Drawing.Size(188, 20);
+            this.txtVdate_P.TabIndex = 4;
             // 
-            // textVERGIKIMLIKP
+            // txtIdnty_P
             // 
-            this.tablePanel6.SetColumn(this.textVERGIKIMLIKP, 1);
-            this.textVERGIKIMLIKP.Location = new System.Drawing.Point(91, 81);
-            this.textVERGIKIMLIKP.Name = "textVERGIKIMLIKP";
-            this.tablePanel6.SetRow(this.textVERGIKIMLIKP, 3);
-            this.textVERGIKIMLIKP.Size = new System.Drawing.Size(212, 20);
-            this.textVERGIKIMLIKP.TabIndex = 3;
+            this.tablePanel6.SetColumn(this.txtIdnty_P, 2);
+            this.txtIdnty_P.Location = new System.Drawing.Point(115, 81);
+            this.txtIdnty_P.Name = "txtIdnty_P";
+            this.tablePanel6.SetRow(this.txtIdnty_P, 3);
+            this.txtIdnty_P.Size = new System.Drawing.Size(188, 20);
+            this.txtIdnty_P.TabIndex = 3;
             // 
-            // textKARTNOP
+            // txtCode_P
             // 
-            this.tablePanel6.SetColumn(this.textKARTNOP, 1);
-            this.textKARTNOP.Location = new System.Drawing.Point(91, 55);
-            this.textKARTNOP.Name = "textKARTNOP";
-            this.tablePanel6.SetRow(this.textKARTNOP, 2);
-            this.textKARTNOP.Size = new System.Drawing.Size(212, 20);
-            this.textKARTNOP.TabIndex = 2;
+            this.tablePanel6.SetColumn(this.txtCode_P, 2);
+            this.txtCode_P.Location = new System.Drawing.Point(115, 55);
+            this.txtCode_P.Name = "txtCode_P";
+            this.tablePanel6.SetRow(this.txtCode_P, 2);
+            this.txtCode_P.Size = new System.Drawing.Size(188, 20);
+            this.txtCode_P.TabIndex = 2;
             // 
-            // textSOYADIP
+            // txtSAdi_P
             // 
-            this.tablePanel6.SetColumn(this.textSOYADIP, 1);
-            this.textSOYADIP.Location = new System.Drawing.Point(91, 29);
-            this.textSOYADIP.Name = "textSOYADIP";
-            this.tablePanel6.SetRow(this.textSOYADIP, 1);
-            this.textSOYADIP.Size = new System.Drawing.Size(212, 20);
-            this.textSOYADIP.TabIndex = 1;
+            this.tablePanel6.SetColumn(this.txtSAdi_P, 2);
+            this.txtSAdi_P.Location = new System.Drawing.Point(115, 29);
+            this.txtSAdi_P.Name = "txtSAdi_P";
+            this.tablePanel6.SetRow(this.txtSAdi_P, 1);
+            this.txtSAdi_P.Size = new System.Drawing.Size(188, 20);
+            this.txtSAdi_P.TabIndex = 1;
             // 
-            // textMUSTERIADIP
+            // txtMadi_P
             // 
-            this.tablePanel6.SetColumn(this.textMUSTERIADIP, 1);
-            this.textMUSTERIADIP.Location = new System.Drawing.Point(91, 3);
-            this.textMUSTERIADIP.Name = "textMUSTERIADIP";
-            this.tablePanel6.SetRow(this.textMUSTERIADIP, 0);
-            this.textMUSTERIADIP.Size = new System.Drawing.Size(212, 20);
-            this.textMUSTERIADIP.TabIndex = 0;
-            // 
-            // simpleButton4
-            // 
-            this.simpleButton4.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
-            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.simpleButton4.Appearance.Options.UseBackColor = true;
-            this.simpleButton4.Appearance.Options.UseFont = true;
-            this.simpleButton4.Appearance.Options.UseTextOptions = true;
-            this.simpleButton4.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.simpleButton4.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.simpleButton4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
-            this.simpleButton4.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.simpleButton4.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.simpleButton4.Location = new System.Drawing.Point(2, 2);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(915, 45);
-            this.simpleButton4.TabIndex = 4;
-            this.simpleButton4.Text = "Müşteri Kayıt \r\nİşlendi Yap";
+            this.tablePanel6.SetColumn(this.txtMadi_P, 2);
+            this.txtMadi_P.Location = new System.Drawing.Point(115, 3);
+            this.txtMadi_P.Name = "txtMadi_P";
+            this.tablePanel6.SetRow(this.txtMadi_P, 0);
+            this.txtMadi_P.Size = new System.Drawing.Size(188, 20);
+            this.txtMadi_P.TabIndex = 0;
             // 
             // groupControl2
             // 
@@ -1940,65 +2309,68 @@
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl2.Location = new System.Drawing.Point(0, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(1355, 86);
+            this.groupControl2.Size = new System.Drawing.Size(1323, 86);
             this.groupControl2.TabIndex = 5;
             this.groupControl2.Text = "Satış Filitresi";
             // 
             // tablePanel4
             // 
             this.tablePanel4.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 300F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 300F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 33F)});
-            this.tablePanel4.Controls.Add(this.simpleButton1);
-            this.tablePanel4.Controls.Add(this.simpleButton2);
-            this.tablePanel4.Controls.Add(this.simpleButton3);
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 33F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 33F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 33F)});
+            this.tablePanel4.Controls.Add(this.btnProfiloYeni);
+            this.tablePanel4.Controls.Add(this.btnProfiloIade);
+            this.tablePanel4.Controls.Add(this.btnProfiloSatis);
             this.tablePanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel4.Location = new System.Drawing.Point(561, 23);
             this.tablePanel4.Name = "tablePanel4";
             this.tablePanel4.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
-            this.tablePanel4.Size = new System.Drawing.Size(792, 61);
+            this.tablePanel4.Size = new System.Drawing.Size(760, 61);
             this.tablePanel4.TabIndex = 2;
             // 
-            // simpleButton1
+            // btnProfiloYeni
             // 
-            this.simpleButton1.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary;
-            this.simpleButton1.Appearance.Options.UseBackColor = true;
-            this.tablePanel4.SetColumn(this.simpleButton1, 2);
-            this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton1.Location = new System.Drawing.Point(603, 3);
-            this.simpleButton1.Name = "simpleButton1";
-            this.tablePanel4.SetRow(this.simpleButton1, 0);
-            this.simpleButton1.Size = new System.Drawing.Size(186, 55);
-            this.simpleButton1.TabIndex = 4;
-            this.simpleButton1.Text = "simpleButton1";
+            this.btnProfiloYeni.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary;
+            this.btnProfiloYeni.Appearance.Options.UseBackColor = true;
+            this.tablePanel4.SetColumn(this.btnProfiloYeni, 2);
+            this.btnProfiloYeni.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnProfiloYeni.Location = new System.Drawing.Point(510, 3);
+            this.btnProfiloYeni.Name = "btnProfiloYeni";
+            this.tablePanel4.SetRow(this.btnProfiloYeni, 0);
+            this.btnProfiloYeni.Size = new System.Drawing.Size(247, 55);
+            this.btnProfiloYeni.TabIndex = 4;
+            this.btnProfiloYeni.Text = "Yeni Sorgu";
+            this.btnProfiloYeni.Click += new System.EventHandler(this.btnProfiloYeni_Click);
             // 
-            // simpleButton2
+            // btnProfiloIade
             // 
-            this.simpleButton2.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
-            this.simpleButton2.Appearance.Options.UseBackColor = true;
-            this.tablePanel4.SetColumn(this.simpleButton2, 1);
-            this.simpleButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton2.Location = new System.Drawing.Point(303, 3);
-            this.simpleButton2.Name = "simpleButton2";
-            this.tablePanel4.SetRow(this.simpleButton2, 0);
-            this.simpleButton2.Size = new System.Drawing.Size(294, 55);
-            this.simpleButton2.TabIndex = 8;
-            this.simpleButton2.Text = "İade Listesini Getir";
+            this.btnProfiloIade.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
+            this.btnProfiloIade.Appearance.Options.UseBackColor = true;
+            this.tablePanel4.SetColumn(this.btnProfiloIade, 1);
+            this.btnProfiloIade.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnProfiloIade.Location = new System.Drawing.Point(256, 3);
+            this.btnProfiloIade.Name = "btnProfiloIade";
+            this.tablePanel4.SetRow(this.btnProfiloIade, 0);
+            this.btnProfiloIade.Size = new System.Drawing.Size(247, 55);
+            this.btnProfiloIade.TabIndex = 8;
+            this.btnProfiloIade.Text = "İade Listesini Getir";
+            this.btnProfiloIade.Click += new System.EventHandler(this.btnProfiloIade_Click);
             // 
-            // simpleButton3
+            // btnProfiloSatis
             // 
-            this.simpleButton3.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
-            this.simpleButton3.Appearance.Options.UseBackColor = true;
-            this.tablePanel4.SetColumn(this.simpleButton3, 0);
-            this.simpleButton3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton3.Location = new System.Drawing.Point(3, 3);
-            this.simpleButton3.Name = "simpleButton3";
-            this.tablePanel4.SetRow(this.simpleButton3, 0);
-            this.simpleButton3.Size = new System.Drawing.Size(294, 55);
-            this.simpleButton3.TabIndex = 3;
-            this.simpleButton3.Text = "Satış Listesini Getir";
+            this.btnProfiloSatis.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
+            this.btnProfiloSatis.Appearance.Options.UseBackColor = true;
+            this.tablePanel4.SetColumn(this.btnProfiloSatis, 0);
+            this.btnProfiloSatis.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnProfiloSatis.Location = new System.Drawing.Point(3, 3);
+            this.btnProfiloSatis.Name = "btnProfiloSatis";
+            this.tablePanel4.SetRow(this.btnProfiloSatis, 0);
+            this.btnProfiloSatis.Size = new System.Drawing.Size(247, 55);
+            this.btnProfiloSatis.TabIndex = 3;
+            this.btnProfiloSatis.Text = "Satış Listesini Getir";
+            this.btnProfiloSatis.Click += new System.EventHandler(this.btnProfiloSatis_Click);
             // 
             // tablePanel5
             // 
@@ -2007,11 +2379,11 @@
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 35.48F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 34.44F)});
             this.tablePanel5.Controls.Add(this.labelControl18);
-            this.tablePanel5.Controls.Add(this.searchLookUpEdit1);
-            this.tablePanel5.Controls.Add(this.dateEdit1);
+            this.tablePanel5.Controls.Add(this.srcProfiloMagaza);
+            this.tablePanel5.Controls.Add(this.dteProfiloBitTarih);
             this.tablePanel5.Controls.Add(this.labelControl19);
             this.tablePanel5.Controls.Add(this.labelControl20);
-            this.tablePanel5.Controls.Add(this.dateEdit2);
+            this.tablePanel5.Controls.Add(this.dteProfiloBasTarih);
             this.tablePanel5.Dock = System.Windows.Forms.DockStyle.Left;
             this.tablePanel5.Location = new System.Drawing.Point(2, 23);
             this.tablePanel5.Name = "tablePanel5";
@@ -2031,18 +2403,18 @@
             this.labelControl18.TabIndex = 7;
             this.labelControl18.Text = "Bitiş Tarihi";
             // 
-            // searchLookUpEdit1
+            // srcProfiloMagaza
             // 
-            this.tablePanel5.SetColumn(this.searchLookUpEdit1, 0);
-            this.searchLookUpEdit1.Location = new System.Drawing.Point(3, 34);
-            this.searchLookUpEdit1.Name = "searchLookUpEdit1";
-            this.searchLookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.tablePanel5.SetColumn(this.srcProfiloMagaza, 0);
+            this.srcProfiloMagaza.Location = new System.Drawing.Point(3, 34);
+            this.srcProfiloMagaza.Name = "srcProfiloMagaza";
+            this.srcProfiloMagaza.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.searchLookUpEdit1.Properties.NullText = "Seçiniz...!";
-            this.searchLookUpEdit1.Properties.PopupView = this.gridView1;
-            this.tablePanel5.SetRow(this.searchLookUpEdit1, 1);
-            this.searchLookUpEdit1.Size = new System.Drawing.Size(198, 20);
-            this.searchLookUpEdit1.TabIndex = 0;
+            this.srcProfiloMagaza.Properties.NullText = "Seçiniz...!";
+            this.srcProfiloMagaza.Properties.PopupView = this.gridView1;
+            this.tablePanel5.SetRow(this.srcProfiloMagaza, 1);
+            this.srcProfiloMagaza.Size = new System.Drawing.Size(198, 20);
+            this.srcProfiloMagaza.TabIndex = 0;
             // 
             // gridView1
             // 
@@ -2051,19 +2423,19 @@
             this.gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
-            // dateEdit1
+            // dteProfiloBitTarih
             // 
-            this.tablePanel5.SetColumn(this.dateEdit1, 2);
-            this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(387, 34);
-            this.dateEdit1.Name = "dateEdit1";
-            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.tablePanel5.SetColumn(this.dteProfiloBitTarih, 2);
+            this.dteProfiloBitTarih.EditValue = null;
+            this.dteProfiloBitTarih.Location = new System.Drawing.Point(387, 34);
+            this.dteProfiloBitTarih.Name = "dteProfiloBitTarih";
+            this.dteProfiloBitTarih.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dteProfiloBitTarih.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.tablePanel5.SetRow(this.dateEdit1, 1);
-            this.dateEdit1.Size = new System.Drawing.Size(169, 20);
-            this.dateEdit1.TabIndex = 2;
+            this.tablePanel5.SetRow(this.dteProfiloBitTarih, 1);
+            this.dteProfiloBitTarih.Size = new System.Drawing.Size(169, 20);
+            this.dteProfiloBitTarih.TabIndex = 2;
             // 
             // labelControl19
             // 
@@ -2085,19 +2457,263 @@
             this.labelControl20.TabIndex = 5;
             this.labelControl20.Text = "Mağaza";
             // 
-            // dateEdit2
+            // dteProfiloBasTarih
             // 
-            this.tablePanel5.SetColumn(this.dateEdit2, 1);
-            this.dateEdit2.EditValue = null;
-            this.dateEdit2.Location = new System.Drawing.Point(207, 34);
-            this.dateEdit2.Name = "dateEdit2";
-            this.dateEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.tablePanel5.SetColumn(this.dteProfiloBasTarih, 1);
+            this.dteProfiloBasTarih.EditValue = null;
+            this.dteProfiloBasTarih.Location = new System.Drawing.Point(207, 34);
+            this.dteProfiloBasTarih.Name = "dteProfiloBasTarih";
+            this.dteProfiloBasTarih.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit2.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dteProfiloBasTarih.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.tablePanel5.SetRow(this.dateEdit2, 1);
-            this.dateEdit2.Size = new System.Drawing.Size(174, 20);
-            this.dateEdit2.TabIndex = 1;
+            this.tablePanel5.SetRow(this.dteProfiloBasTarih, 1);
+            this.dteProfiloBasTarih.Size = new System.Drawing.Size(174, 20);
+            this.dteProfiloBasTarih.TabIndex = 1;
+            // 
+            // navigationPage6
+            // 
+            this.navigationPage6.Caption = "navigationPage6";
+            this.navigationPage6.Controls.Add(this.gridControl2);
+            this.navigationPage6.Controls.Add(this.groupControl3);
+            this.navigationPage6.Name = "navigationPage6";
+            this.navigationPage6.Size = new System.Drawing.Size(1323, 620);
+            // 
+            // gridControl2
+            // 
+            this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl2.Location = new System.Drawing.Point(0, 86);
+            this.gridControl2.MainView = this.gridView4;
+            this.gridControl2.Name = "gridControl2";
+            this.gridControl2.Size = new System.Drawing.Size(1323, 534);
+            this.gridControl2.TabIndex = 7;
+            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView4});
+            // 
+            // gridView4
+            // 
+            this.gridView4.GridControl = this.gridControl2;
+            this.gridView4.Name = "gridView4";
+            this.gridView4.OptionsView.ShowGroupPanel = false;
+            // 
+            // groupControl3
+            // 
+            this.groupControl3.Controls.Add(this.tablePanel7);
+            this.groupControl3.Controls.Add(this.tablePanel8);
+            this.groupControl3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupControl3.Location = new System.Drawing.Point(0, 0);
+            this.groupControl3.Name = "groupControl3";
+            this.groupControl3.Size = new System.Drawing.Size(1323, 86);
+            this.groupControl3.TabIndex = 6;
+            this.groupControl3.Text = "Satış Filitresi";
+            // 
+            // tablePanel7
+            // 
+            this.tablePanel7.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 33F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 33F)});
+            this.tablePanel7.Controls.Add(this.simpleButton2);
+            this.tablePanel7.Controls.Add(this.simpleButton3);
+            this.tablePanel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablePanel7.Location = new System.Drawing.Point(561, 23);
+            this.tablePanel7.Name = "tablePanel7";
+            this.tablePanel7.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
+            this.tablePanel7.Size = new System.Drawing.Size(760, 61);
+            this.tablePanel7.TabIndex = 2;
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
+            this.simpleButton2.Appearance.Options.UseBackColor = true;
+            this.tablePanel7.SetColumn(this.simpleButton2, 1);
+            this.simpleButton2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton2.Location = new System.Drawing.Point(383, 3);
+            this.simpleButton2.Name = "simpleButton2";
+            this.tablePanel7.SetRow(this.simpleButton2, 0);
+            this.simpleButton2.Size = new System.Drawing.Size(374, 55);
+            this.simpleButton2.TabIndex = 8;
+            this.simpleButton2.Text = "Girişi Olan İade Listesini Getir";
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
+            this.simpleButton3.Appearance.Options.UseBackColor = true;
+            this.tablePanel7.SetColumn(this.simpleButton3, 0);
+            this.simpleButton3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton3.Location = new System.Drawing.Point(3, 3);
+            this.simpleButton3.Name = "simpleButton3";
+            this.tablePanel7.SetRow(this.simpleButton3, 0);
+            this.simpleButton3.Size = new System.Drawing.Size(374, 55);
+            this.simpleButton3.TabIndex = 3;
+            this.simpleButton3.Text = "Girişi Olan Listesini Getir";
+            // 
+            // tablePanel8
+            // 
+            this.tablePanel8.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 40.08F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 35.48F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 34.44F)});
+            this.tablePanel8.Controls.Add(this.labelControl35);
+            this.tablePanel8.Controls.Add(this.srcProfiloMagaza2);
+            this.tablePanel8.Controls.Add(this.dteProfiloBitTarih2);
+            this.tablePanel8.Controls.Add(this.labelControl36);
+            this.tablePanel8.Controls.Add(this.labelControl37);
+            this.tablePanel8.Controls.Add(this.dteProfiloBasTarih2);
+            this.tablePanel8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tablePanel8.Location = new System.Drawing.Point(2, 23);
+            this.tablePanel8.Name = "tablePanel8";
+            this.tablePanel8.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 27F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
+            this.tablePanel8.Size = new System.Drawing.Size(559, 61);
+            this.tablePanel8.TabIndex = 1;
+            // 
+            // labelControl35
+            // 
+            this.tablePanel8.SetColumn(this.labelControl35, 2);
+            this.labelControl35.Location = new System.Drawing.Point(387, 7);
+            this.labelControl35.Name = "labelControl35";
+            this.tablePanel8.SetRow(this.labelControl35, 0);
+            this.labelControl35.Size = new System.Drawing.Size(48, 13);
+            this.labelControl35.TabIndex = 7;
+            this.labelControl35.Text = "Bitiş Tarihi";
+            // 
+            // srcProfiloMagaza2
+            // 
+            this.tablePanel8.SetColumn(this.srcProfiloMagaza2, 0);
+            this.srcProfiloMagaza2.Location = new System.Drawing.Point(3, 34);
+            this.srcProfiloMagaza2.Name = "srcProfiloMagaza2";
+            this.srcProfiloMagaza2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.srcProfiloMagaza2.Properties.NullText = "Seçiniz...!";
+            this.srcProfiloMagaza2.Properties.PopupView = this.gridView3;
+            this.tablePanel8.SetRow(this.srcProfiloMagaza2, 1);
+            this.srcProfiloMagaza2.Size = new System.Drawing.Size(198, 20);
+            this.srcProfiloMagaza2.TabIndex = 0;
+            // 
+            // gridView3
+            // 
+            this.gridView3.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridView3.Name = "gridView3";
+            this.gridView3.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridView3.OptionsView.ShowGroupPanel = false;
+            // 
+            // dteProfiloBitTarih2
+            // 
+            this.tablePanel8.SetColumn(this.dteProfiloBitTarih2, 2);
+            this.dteProfiloBitTarih2.EditValue = null;
+            this.dteProfiloBitTarih2.Location = new System.Drawing.Point(387, 34);
+            this.dteProfiloBitTarih2.Name = "dteProfiloBitTarih2";
+            this.dteProfiloBitTarih2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dteProfiloBitTarih2.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.tablePanel8.SetRow(this.dteProfiloBitTarih2, 1);
+            this.dteProfiloBitTarih2.Size = new System.Drawing.Size(169, 20);
+            this.dteProfiloBitTarih2.TabIndex = 2;
+            // 
+            // labelControl36
+            // 
+            this.tablePanel8.SetColumn(this.labelControl36, 1);
+            this.labelControl36.Location = new System.Drawing.Point(207, 7);
+            this.labelControl36.Name = "labelControl36";
+            this.tablePanel8.SetRow(this.labelControl36, 0);
+            this.labelControl36.Size = new System.Drawing.Size(73, 13);
+            this.labelControl36.TabIndex = 6;
+            this.labelControl36.Text = "Başlangıç Tarihi";
+            // 
+            // labelControl37
+            // 
+            this.tablePanel8.SetColumn(this.labelControl37, 0);
+            this.labelControl37.Location = new System.Drawing.Point(3, 7);
+            this.labelControl37.Name = "labelControl37";
+            this.tablePanel8.SetRow(this.labelControl37, 0);
+            this.labelControl37.Size = new System.Drawing.Size(37, 13);
+            this.labelControl37.TabIndex = 5;
+            this.labelControl37.Text = "Mağaza";
+            // 
+            // dteProfiloBasTarih2
+            // 
+            this.tablePanel8.SetColumn(this.dteProfiloBasTarih2, 1);
+            this.dteProfiloBasTarih2.EditValue = null;
+            this.dteProfiloBasTarih2.Location = new System.Drawing.Point(207, 34);
+            this.dteProfiloBasTarih2.Name = "dteProfiloBasTarih2";
+            this.dteProfiloBasTarih2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dteProfiloBasTarih2.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.tablePanel8.SetRow(this.dteProfiloBasTarih2, 1);
+            this.dteProfiloBasTarih2.Size = new System.Drawing.Size(174, 20);
+            this.dteProfiloBasTarih2.TabIndex = 1;
+            // 
+            // tileBar2
+            // 
+            this.tileBar2.AllowGlyphSkinning = true;
+            this.tileBar2.AllowSelectedItem = true;
+            this.tileBar2.AppearanceGroupText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.tileBar2.AppearanceGroupText.Options.UseForeColor = true;
+            this.tileBar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.tileBar2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tileBar2.DropDownButtonWidth = 30;
+            this.tileBar2.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            this.tileBar2.Groups.Add(this.tileBarGroup2);
+            this.tileBar2.IndentBetweenGroups = 10;
+            this.tileBar2.IndentBetweenItems = 10;
+            this.tileBar2.ItemPadding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.tileBar2.Location = new System.Drawing.Point(0, 0);
+            this.tileBar2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tileBar2.MaxId = 6;
+            this.tileBar2.MaximumSize = new System.Drawing.Size(0, 110);
+            this.tileBar2.Name = "tileBar2";
+            this.tileBar2.Padding = new System.Windows.Forms.Padding(0, 0, 12, 0);
+            this.tileBar2.ScrollMode = DevExpress.XtraEditors.TileControlScrollMode.None;
+            this.tileBar2.SelectionBorderWidth = 2;
+            this.tileBar2.SelectionColorMode = DevExpress.XtraBars.Navigation.SelectionColorMode.UseItemBackColor;
+            this.tileBar2.ShowGroupText = false;
+            this.tileBar2.Size = new System.Drawing.Size(1323, 69);
+            this.tileBar2.TabIndex = 21;
+            this.tileBar2.Text = "tileBar2";
+            this.tileBar2.WideTileWidth = 150;
+            this.tileBar2.SelectedItemChanged += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileBar2_SelectedItemChanged);
+            // 
+            // tileBarGroup2
+            // 
+            this.tileBarGroup2.Items.Add(this.tileBarItem4);
+            this.tileBarGroup2.Items.Add(this.tileBarItem5);
+            this.tileBarGroup2.Name = "tileBarGroup2";
+            // 
+            // tileBarItem4
+            // 
+            this.tileBarItem4.AppearanceItem.Normal.BackColor = System.Drawing.Color.Blue;
+            this.tileBarItem4.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.Black;
+            this.tileBarItem4.AppearanceItem.Normal.Options.UseBackColor = true;
+            this.tileBarItem4.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement6.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement6.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage2")));
+            tileItemElement6.Text = "Satış Listesi";
+            tileItemElement6.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tileBarItem4.Elements.Add(tileItemElement6);
+            this.tileBarItem4.Id = 4;
+            this.tileBarItem4.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
+            this.tileBarItem4.Name = "tileBarItem4";
+            // 
+            // tileBarItem5
+            // 
+            this.tileBarItem5.AppearanceItem.Normal.BackColor = System.Drawing.Color.Blue;
+            this.tileBarItem5.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.Black;
+            this.tileBarItem5.AppearanceItem.Normal.Options.UseBackColor = true;
+            this.tileBarItem5.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement7.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement7.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement7.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage3")));
+            tileItemElement7.Text = "Girişi Olanlar";
+            tileItemElement7.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tileBarItem5.Elements.Add(tileItemElement7);
+            this.tileBarItem5.Id = 3;
+            this.tileBarItem5.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
+            this.tileBarItem5.Name = "tileBarItem5";
             // 
             // lblSayfaIsmi
             // 
@@ -2114,90 +2730,49 @@
             this.lblSayfaIsmi.TabIndex = 2;
             this.lblSayfaIsmi.Text = "VESTEL";
             // 
-            // tileBarGroup3
+            // navBarControl3
             // 
-            this.tileBarGroup3.Items.Add(this.tileBarItem3);
-            this.tileBarGroup3.Name = "tileBarGroup3";
+            this.navBarControl3.ActiveGroup = this.navBarGroup2;
+            this.navBarControl3.Controls.Add(this.navBarGroupControlContainer2);
+            this.navBarControl3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.navBarControl3.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
+            this.navBarGroup2});
+            this.navBarControl3.Location = new System.Drawing.Point(1323, 73);
+            this.navBarControl3.Name = "navBarControl3";
+            this.navBarControl3.OptionsNavPane.ExpandedWidth = 386;
+            this.navBarControl3.OptionsNavPane.NavPaneState = DevExpress.XtraNavBar.NavPaneState.Collapsed;
+            this.navBarControl3.OptionsNavPane.ShowOverflowPanel = false;
+            this.navBarControl3.OptionsNavPane.ShowSplitter = false;
+            this.navBarControl3.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.NavigationPane;
+            this.navBarControl3.Size = new System.Drawing.Size(32, 689);
+            this.navBarControl3.TabIndex = 19;
             // 
-            // tileBarItem3
+            // navBarGroup2
             // 
-            this.tileBarItem3.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
-            tileItemElement3.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement3.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
-            tileItemElement3.Text = "Telefon";
-            tileItemElement3.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tileBarItem3.Elements.Add(tileItemElement3);
-            this.tileBarItem3.Id = 3;
-            this.tileBarItem3.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
-            this.tileBarItem3.Name = "tileBarItem3";
-            this.tileBarItem3.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileBarItem3_ItemClick);
+            this.navBarGroup2.Caption = "Telefon";
+            this.navBarGroup2.ControlContainer = this.navBarGroupControlContainer2;
+            this.navBarGroup2.Expanded = true;
+            this.navBarGroup2.GroupClientHeight = 657;
+            this.navBarGroup2.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
+            this.navBarGroup2.Name = "navBarGroup2";
+            this.navBarGroup2.NavigationPaneVisible = false;
             // 
-            // btnGsm1Ara
+            // navBarGroupControlContainer2
             // 
-            this.tablePanel3.SetColumn(this.btnGsm1Ara, 1);
-            this.btnGsm1Ara.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnGsm1Ara.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
-            this.btnGsm1Ara.Location = new System.Drawing.Point(90, 315);
-            this.btnGsm1Ara.Name = "btnGsm1Ara";
-            this.tablePanel3.SetRow(this.btnGsm1Ara, 12);
-            this.btnGsm1Ara.Size = new System.Drawing.Size(26, 20);
-            this.btnGsm1Ara.TabIndex = 24;
-            this.btnGsm1Ara.Click += new System.EventHandler(this.btnGsm1Ara_Click);
+            this.navBarGroupControlContainer2.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.navBarGroupControlContainer2.Appearance.Options.UseBackColor = true;
+            this.navBarGroupControlContainer2.Controls.Add(this.xtraTabControl1);
+            this.navBarGroupControlContainer2.Name = "navBarGroupControlContainer2";
+            this.navBarGroupControlContainer2.Size = new System.Drawing.Size(386, 657);
+            this.navBarGroupControlContainer2.TabIndex = 0;
             // 
-            // btnGsm2Ara
+            // xtraTabControl1
             // 
-            this.tablePanel3.SetColumn(this.btnGsm2Ara, 1);
-            this.btnGsm2Ara.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnGsm2Ara.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
-            this.btnGsm2Ara.Location = new System.Drawing.Point(90, 341);
-            this.btnGsm2Ara.Name = "btnGsm2Ara";
-            this.tablePanel3.SetRow(this.btnGsm2Ara, 13);
-            this.btnGsm2Ara.Size = new System.Drawing.Size(26, 20);
-            this.btnGsm2Ara.TabIndex = 25;
-            this.btnGsm2Ara.Click += new System.EventHandler(this.btnGsm2Ara_Click);
-            // 
-            // gridView2
-            // 
-            this.gridView2.GridControl = this.gridControl1;
-            this.gridView2.Name = "gridView2";
-            this.gridView2.OptionsView.ShowGroupPanel = false;
-            // 
-            // gridControl1
-            // 
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(310, 0);
-            this.gridControl1.MainView = this.gridView2;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(609, 522);
-            this.gridControl1.TabIndex = 37;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView2});
-            // 
-            // panelControl4
-            // 
-            this.panelControl4.Controls.Add(this.simpleButton4);
-            this.panelControl4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl4.Location = new System.Drawing.Point(0, 522);
-            this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(919, 49);
-            this.panelControl4.TabIndex = 38;
-            // 
-            // gridVestelTamamlanan
-            // 
-            this.gridVestelTamamlanan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridVestelTamamlanan.Location = new System.Drawing.Point(0, 0);
-            this.gridVestelTamamlanan.MainView = this.ViewVestelTamamlanan;
-            this.gridVestelTamamlanan.Name = "gridVestelTamamlanan";
-            this.gridVestelTamamlanan.Size = new System.Drawing.Size(1355, 620);
-            this.gridVestelTamamlanan.TabIndex = 0;
-            this.gridVestelTamamlanan.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.ViewVestelTamamlanan});
-            // 
-            // ViewVestelTamamlanan
-            // 
-            this.ViewVestelTamamlanan.GridControl = this.gridVestelTamamlanan;
-            this.ViewVestelTamamlanan.Name = "ViewVestelTamamlanan";
+            this.xtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xtraTabControl1.Location = new System.Drawing.Point(0, 0);
+            this.xtraTabControl1.Name = "xtraTabControl1";
+            this.xtraTabControl1.Size = new System.Drawing.Size(386, 657);
+            this.xtraTabControl1.TabIndex = 0;
             // 
             // frmMain
             // 
@@ -2206,8 +2781,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1355, 762);
-            this.Controls.Add(this.lblSayfaIsmi);
             this.Controls.Add(this.navigationFrame);
+            this.Controls.Add(this.navBarControl3);
+            this.Controls.Add(this.lblSayfaIsmi);
             this.Controls.Add(this.tileBar);
             this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("frmMain.IconOptions.Image")));
             this.MinimizeBox = false;
@@ -2226,8 +2802,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).EndInit();
             this.navBarControl1.ResumeLayout(false);
             this.navBarGroupControlContainer3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridUrunler)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ViewUrunler)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridVestelUrunler)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewVestelUrunler)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel15)).EndInit();
@@ -2237,19 +2813,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).EndInit();
             this.tablePanel3.ResumeLayout(false);
             this.tablePanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtmail.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtgsm2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtgsm1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDefrent.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtXity.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMail_V.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGsm2_V.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGsm1_V.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDefrent_V.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCity_V.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHtp.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMerred.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtsex.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtVdate.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtIdnty.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCode.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSAdi.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMadi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMerred_V.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSex_V.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVdate_V.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIdnty_V.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCode_V.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSAdi_V.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMadi_V.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).EndInit();
@@ -2257,37 +2833,59 @@
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
             this.tablePanel1.ResumeLayout(false);
             this.tablePanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.srcMagaza.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.srcVestelMagaza.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dteBitTarih.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dteBitTarih.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dteBasTarih.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dteBasTarih.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteVestelBitTarih.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteVestelBitTarih.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteVestelBasTarih.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteVestelBasTarih.Properties)).EndInit();
             this.navigationPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridVestelTamamlanan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewVestelTamamlanan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
+            this.groupControl4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel9)).EndInit();
+            this.tablePanel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel10)).EndInit();
+            this.tablePanel10.ResumeLayout(false);
+            this.tablePanel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.srcVestelMagaza2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteVestelBitTarih2.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteVestelBitTarih2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteVestelBasTarih2.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteVestelBasTarih2.Properties)).EndInit();
             this.navigationPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.navigationFrame2)).EndInit();
+            this.navigationFrame2.ResumeLayout(false);
+            this.navigationPage5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridProfiloSatis)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewProfiloSatis)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl2)).EndInit();
             this.navBarControl2.ResumeLayout(false);
             this.navBarGroupControlContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridProfiloUrunler)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewProfiloUrunler)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
+            this.panelControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel6)).EndInit();
             this.tablePanel6.ResumeLayout(false);
             this.tablePanel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEPOSTAP.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textTEL2P.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textTEL1P.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textILCEP.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textSEHIRP.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMail_P.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGsm2_P.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGsm1_P.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDefrent_P.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCity_P.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textUNVANP.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textMEDENIP.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textCINSIYETP.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textDOGUMP.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textVERGIKIMLIKP.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textKARTNOP.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textSOYADIP.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textMUSTERIADIP.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMerred_P.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSex_P.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVdate_P.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIdnty_P.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCode_P.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSAdi_P.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMadi_P.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).EndInit();
@@ -2295,18 +2893,32 @@
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel5)).EndInit();
             this.tablePanel5.ResumeLayout(false);
             this.tablePanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.srcProfiloMagaza.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
-            this.panelControl4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridVestelTamamlanan)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ViewVestelTamamlanan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteProfiloBitTarih.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteProfiloBitTarih.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteProfiloBasTarih.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteProfiloBasTarih.Properties)).EndInit();
+            this.navigationPage6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
+            this.groupControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel7)).EndInit();
+            this.tablePanel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel8)).EndInit();
+            this.tablePanel8.ResumeLayout(false);
+            this.tablePanel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.srcProfiloMagaza2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteProfiloBitTarih2.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteProfiloBitTarih2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteProfiloBasTarih2.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dteProfiloBasTarih2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.navBarControl3)).EndInit();
+            this.navBarControl3.ResumeLayout(false);
+            this.navBarGroupControlContainer2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2326,17 +2938,17 @@
         private DevExpress.XtraBars.Navigation.TileBarItem tileBarItem1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.Utils.Layout.TablePanel tablePanel2;
-        private DevExpress.XtraEditors.SimpleButton btnYeni;
-        private DevExpress.XtraEditors.SimpleButton btnIadeListele;
-        private DevExpress.XtraEditors.SimpleButton btnSatisListele;
+        private DevExpress.XtraEditors.SimpleButton btnVestelYeni;
+        private DevExpress.XtraEditors.SimpleButton btnVestelIadeListele;
+        private DevExpress.XtraEditors.SimpleButton btnVestelSatisListele;
         private DevExpress.Utils.Layout.TablePanel tablePanel1;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.SearchLookUpEdit srcMagaza;
+        private DevExpress.XtraEditors.SearchLookUpEdit srcVestelMagaza;
         private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit1View;
-        private DevExpress.XtraEditors.DateEdit dteBitTarih;
+        private DevExpress.XtraEditors.DateEdit dteVestelBitTarih;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.DateEdit dteBasTarih;
+        private DevExpress.XtraEditors.DateEdit dteVestelBasTarih;
         private DevExpress.XtraGrid.GridControl gridVestelSatis;
         private DevExpress.XtraGrid.Views.Grid.GridView ViewVestelSatis;
         private DevExpress.XtraBars.Navigation.NavigationFrame navigationFrame1;
@@ -2348,8 +2960,8 @@
         private DevExpress.XtraEditors.PanelControl panelControl3;
         private DevExpress.Utils.Layout.TablePanel tablePanel15;
         private DevExpress.XtraEditors.SimpleButton btnVestelTamamlandi;
-        private DevExpress.XtraGrid.GridControl gridUrunler;
-        private DevExpress.XtraGrid.Views.Grid.GridView ViewUrunler;
+        private DevExpress.XtraGrid.GridControl gridVestelUrunler;
+        private DevExpress.XtraGrid.Views.Grid.GridView ViewVestelUrunler;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.Utils.Layout.TablePanel tablePanel3;
         private DevExpress.XtraEditors.LabelControl labelControl15;
@@ -2364,19 +2976,19 @@
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private System.Windows.Forms.RichTextBox txtadr;
-        private DevExpress.XtraEditors.TextEdit txtgsm2;
-        private DevExpress.XtraEditors.TextEdit txtgsm1;
-        private DevExpress.XtraEditors.TextEdit txtDefrent;
-        private DevExpress.XtraEditors.TextEdit txtXity;
+        private System.Windows.Forms.RichTextBox txtAdr_V;
+        private DevExpress.XtraEditors.TextEdit txtGsm2_V;
+        private DevExpress.XtraEditors.TextEdit txtGsm1_V;
+        private DevExpress.XtraEditors.TextEdit txtDefrent_V;
+        private DevExpress.XtraEditors.TextEdit txtCity_V;
         private DevExpress.XtraEditors.TextEdit txtHtp;
-        private DevExpress.XtraEditors.TextEdit txtMerred;
-        private DevExpress.XtraEditors.TextEdit txtsex;
-        private DevExpress.XtraEditors.TextEdit txtVdate;
-        private DevExpress.XtraEditors.TextEdit txtIdnty;
-        private DevExpress.XtraEditors.TextEdit txtCode;
-        private DevExpress.XtraEditors.TextEdit txtSAdi;
-        private DevExpress.XtraEditors.TextEdit txtMadi;
+        private DevExpress.XtraEditors.TextEdit txtMerred_V;
+        private DevExpress.XtraEditors.TextEdit txtSex_V;
+        private DevExpress.XtraEditors.TextEdit txtVdate_V;
+        private DevExpress.XtraEditors.TextEdit txtIdnty_V;
+        private DevExpress.XtraEditors.TextEdit txtCode_V;
+        private DevExpress.XtraEditors.TextEdit txtSAdi_V;
+        private DevExpress.XtraEditors.TextEdit txtMadi_V;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
@@ -2398,11 +3010,11 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn19;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn20;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn21;
-        private DevExpress.XtraEditors.TextEdit txtmail;
+        private DevExpress.XtraEditors.TextEdit txtMail_V;
         private DevExpress.XtraEditors.LabelControl labelControl17;
         private DevExpress.XtraEditors.LabelControl labelControl12;
-        private DevExpress.XtraGrid.GridControl gridControl2;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
+        private DevExpress.XtraGrid.GridControl gridProfiloSatis;
+        private DevExpress.XtraGrid.Views.Grid.GridView ViewProfiloSatis;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn22;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn23;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn24;
@@ -2429,7 +3041,7 @@
         private DevExpress.XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer1;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.Utils.Layout.TablePanel tablePanel6;
-        private DevExpress.XtraEditors.TextEdit textEPOSTAP;
+        private DevExpress.XtraEditors.TextEdit txtMail_P;
         private DevExpress.XtraEditors.LabelControl labelControl21;
         private DevExpress.XtraEditors.LabelControl labelControl22;
         private DevExpress.XtraEditors.LabelControl labelControl23;
@@ -2444,33 +3056,33 @@
         private DevExpress.XtraEditors.LabelControl labelControl32;
         private DevExpress.XtraEditors.LabelControl labelControl33;
         private DevExpress.XtraEditors.LabelControl labelControl34;
-        private System.Windows.Forms.RichTextBox txtADRESP;
-        private DevExpress.XtraEditors.TextEdit textTEL2P;
-        private DevExpress.XtraEditors.TextEdit textTEL1P;
-        private DevExpress.XtraEditors.TextEdit textILCEP;
-        private DevExpress.XtraEditors.TextEdit textSEHIRP;
+        private System.Windows.Forms.RichTextBox txtAdr_P;
+        private DevExpress.XtraEditors.TextEdit txtGsm2_P;
+        private DevExpress.XtraEditors.TextEdit txtGsm1_P;
+        private DevExpress.XtraEditors.TextEdit txtDefrent_P;
+        private DevExpress.XtraEditors.TextEdit txtCity_P;
         private DevExpress.XtraEditors.TextEdit textUNVANP;
-        private DevExpress.XtraEditors.TextEdit textMEDENIP;
-        private DevExpress.XtraEditors.TextEdit textCINSIYETP;
-        private DevExpress.XtraEditors.TextEdit textDOGUMP;
-        private DevExpress.XtraEditors.TextEdit textVERGIKIMLIKP;
-        private DevExpress.XtraEditors.TextEdit textKARTNOP;
-        private DevExpress.XtraEditors.TextEdit textSOYADIP;
-        private DevExpress.XtraEditors.TextEdit textMUSTERIADIP;
+        private DevExpress.XtraEditors.TextEdit txtMerred_P;
+        private DevExpress.XtraEditors.TextEdit txtSex_P;
+        private DevExpress.XtraEditors.TextEdit txtVdate_P;
+        private DevExpress.XtraEditors.TextEdit txtIdnty_P;
+        private DevExpress.XtraEditors.TextEdit txtCode_P;
+        private DevExpress.XtraEditors.TextEdit txtSAdi_P;
+        private DevExpress.XtraEditors.TextEdit txtMadi_P;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
         private DevExpress.XtraEditors.GroupControl groupControl2;
         private DevExpress.Utils.Layout.TablePanel tablePanel4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.SimpleButton btnProfiloYeni;
+        private DevExpress.XtraEditors.SimpleButton btnProfiloIade;
+        private DevExpress.XtraEditors.SimpleButton btnProfiloSatis;
         private DevExpress.Utils.Layout.TablePanel tablePanel5;
         private DevExpress.XtraEditors.LabelControl labelControl18;
-        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEdit1;
+        private DevExpress.XtraEditors.SearchLookUpEdit srcProfiloMagaza;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraEditors.DateEdit dateEdit1;
+        private DevExpress.XtraEditors.DateEdit dteProfiloBitTarih;
         private DevExpress.XtraEditors.LabelControl labelControl19;
         private DevExpress.XtraEditors.LabelControl labelControl20;
-        private DevExpress.XtraEditors.DateEdit dateEdit2;
+        private DevExpress.XtraEditors.DateEdit dteProfiloBasTarih;
         private DevExpress.XtraEditors.LabelControl lblSayfaIsmi;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn43;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn44;
@@ -2479,12 +3091,51 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn47;
         private DevExpress.XtraBars.Navigation.TileBarGroup tileBarGroup3;
         private DevExpress.XtraBars.Navigation.TileBarItem tileBarItem3;
-        private DevExpress.XtraEditors.SimpleButton btnGsm2Ara;
-        private DevExpress.XtraEditors.SimpleButton btnGsm1Ara;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private DevExpress.XtraEditors.SimpleButton btnGsm2Ara_V;
+        private DevExpress.XtraEditors.SimpleButton btnGsm1Ara_V;
+        private DevExpress.XtraGrid.GridControl gridProfiloUrunler;
+        private DevExpress.XtraGrid.Views.Grid.GridView ViewProfiloUrunler;
         private DevExpress.XtraEditors.PanelControl panelControl4;
         private DevExpress.XtraGrid.GridControl gridVestelTamamlanan;
         private DevExpress.XtraGrid.Views.Grid.GridView ViewVestelTamamlanan;
+        private DevExpress.XtraNavBar.NavBarControl navBarControl3;
+        private DevExpress.XtraNavBar.NavBarGroup navBarGroup2;
+        private DevExpress.XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer2;
+        private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
+        private DevExpress.XtraBars.Navigation.NavigationFrame navigationFrame2;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage5;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage6;
+        private DevExpress.XtraEditors.GroupControl groupControl3;
+        private DevExpress.Utils.Layout.TablePanel tablePanel7;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.Utils.Layout.TablePanel tablePanel8;
+        private DevExpress.XtraEditors.LabelControl labelControl35;
+        private DevExpress.XtraEditors.SearchLookUpEdit srcProfiloMagaza2;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
+        private DevExpress.XtraEditors.DateEdit dteProfiloBitTarih2;
+        private DevExpress.XtraEditors.LabelControl labelControl36;
+        private DevExpress.XtraEditors.LabelControl labelControl37;
+        private DevExpress.XtraEditors.DateEdit dteProfiloBasTarih2;
+        private DevExpress.XtraBars.Navigation.TileBar tileBar2;
+        private DevExpress.XtraBars.Navigation.TileBarGroup tileBarGroup2;
+        private DevExpress.XtraBars.Navigation.TileBarItem tileBarItem4;
+        private DevExpress.XtraBars.Navigation.TileBarItem tileBarItem5;
+        private DevExpress.XtraGrid.GridControl gridControl2;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView4;
+        private DevExpress.XtraEditors.GroupControl groupControl4;
+        private DevExpress.Utils.Layout.TablePanel tablePanel9;
+        private DevExpress.XtraEditors.SimpleButton btnVestelGirisIade;
+        private DevExpress.XtraEditors.SimpleButton btnVestelGirlien;
+        private DevExpress.Utils.Layout.TablePanel tablePanel10;
+        private DevExpress.XtraEditors.LabelControl labelControl38;
+        private DevExpress.XtraEditors.SearchLookUpEdit srcVestelMagaza2;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView5;
+        private DevExpress.XtraEditors.DateEdit dteVestelBitTarih2;
+        private DevExpress.XtraEditors.LabelControl labelControl39;
+        private DevExpress.XtraEditors.LabelControl labelControl40;
+        private DevExpress.XtraEditors.DateEdit dteVestelBasTarih2;
+        private DevExpress.XtraEditors.SimpleButton btnGsm2Ara_P;
+        private DevExpress.XtraEditors.SimpleButton btnGsm1Ara_P;
     }
 }

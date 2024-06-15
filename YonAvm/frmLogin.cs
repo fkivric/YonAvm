@@ -90,7 +90,17 @@ namespace YonAvm
             }
             catch (Exception exp)
             {
-                XtraMessageBox.Show(exp.Message);
+                //XtraMessageBox.Show(exp.Message);
+                DialogResult result = XtraMessageBox.Show(exp.Message + "\r\nHarici Baglantı Kullanılsın mı", "Seçim", MessageBoxButtons.OKCancel,MessageBoxIcon.Information);
+                if (result == DialogResult.OK)
+                {
+                    Properties.Settings.Default.connectionstring = "Server=212.174.235.106,1436;Database=VDB_YON01;User Id=sa;Password=MagicUser2023!;";
+                    Properties.Settings.Default.Save();
+                }
+                else
+                {
+                    Application.Exit();
+                }
             }
         }
         void DataCek()
@@ -204,7 +214,7 @@ namespace YonAvm
             }
         }
         private void simpleButton2_Click(object sender, EventArgs e)
-        {
+        {            
             var yetki = Sorgu(string.Format(@"select * from SOCIAL where SOCODE = '{0}' and SOENTERKEY = '{1}'", txtVolantUser.Text, txtVolantPassword.Text), Settings.Default.connectionstring);
 
             if (yetki.Rows.Count > 0)
@@ -264,15 +274,44 @@ namespace YonAvm
         }
         private void txtVolantUser_TextChanged(object sender, EventArgs e)
         {
-            var sonuc = Sorgu("select SONAME +SPACE(1)+SOSURNAME from SOCIAL left outer join DEPARTMENT on DEPVAL = SODEPART where SOCODE = '" + txtVolantUser.Text + "'", Settings.Default.connectionstring);
-            if (sonuc.Rows.Count > 0)
+            //var sonuc = Sorgu("select SONAME +SPACE(1)+SOSURNAME from SOCIAL left outer join DEPARTMENT on DEPVAL = SODEPART where SOCODE = '" + txtVolantUser.Text + "'", Settings.Default.connectionstring);
+            //if (sonuc.Rows.Count > 0)
+            //{
+            //    togsKullanici.IsOn = true; 
+            //    togsKullanici.Properties.OnText = sonuc.Rows[0][0].ToString();
+            //}
+            //else
+            //{
+            //    togsKullanici.IsOn = false;
+            //}
+        }
+
+        private void togsKullanici_Toggled(object sender, EventArgs e)
+        {
+            if (togsKullanici.IsOn)
             {
-                togsKullanici.IsOn = true; 
-                togsKullanici.Properties.OnText = sonuc.Rows[0][0].ToString();
+                Properties.Settings.Default.connectionstring = "Server=212.174.235.106,1436;Database=VDB_YON01;User Id=sa;Password=MagicUser2023!;";
+                Properties.Settings.Default.Save();
+                //DataCek();
+                FirmaBilgileri();
+                DataTable Compny = Sorgu("select distinct CATALOG_NAME from INFORMATION_SCHEMA.SCHEMATA", Settings.Default.connectionstring);
+                cmbVolantSirket.Properties.DataSource = firmas;// Compny;
+                cmbVolantSirket.Properties.DisplayMember = "COMPANYNAME";
+                cmbVolantSirket.Properties.ValueMember = "COMPANYDB";
+                cmbVolantSirket.EditValue = Compny.Rows[0]["CATALOG_NAME"];
             }
             else
             {
-                togsKullanici.IsOn = false;
+                Properties.Settings.Default.connectionstring = "Server=192.168.4.24;Database=VDB_YON01;User Id=sa;Password=MagicUser2023!;";
+                Properties.Settings.Default.Save();
+                //DataCek();
+                FirmaBilgileri();
+
+                DataTable Compny = Sorgu("select distinct CATALOG_NAME from INFORMATION_SCHEMA.SCHEMATA", Settings.Default.connectionstring);
+                cmbVolantSirket.Properties.DataSource = firmas;// Compny;
+                cmbVolantSirket.Properties.DisplayMember = "COMPANYNAME";
+                cmbVolantSirket.Properties.ValueMember = "COMPANYDB";
+                cmbVolantSirket.EditValue = Compny.Rows[0]["CATALOG_NAME"];
             }
         }
     }

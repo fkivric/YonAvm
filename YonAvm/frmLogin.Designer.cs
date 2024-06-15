@@ -48,6 +48,8 @@
             this.tablePanel3 = new DevExpress.Utils.Layout.TablePanel();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).BeginInit();
             this.navigationFrame.SuspendLayout();
             this.navigationPage1.SuspendLayout();
@@ -63,6 +65,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).BeginInit();
             this.tablePanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tileNavCategory1
@@ -89,7 +94,7 @@
             // 
             this.navigationPage1.Caption = "navigationPage1";
             this.navigationPage1.Controls.Add(this.tablePanel1);
-            this.navigationPage1.Controls.Add(this.pictureEdit2);
+            this.navigationPage1.Controls.Add(this.panelControl1);
             this.navigationPage1.Controls.Add(this.tablePanel3);
             this.navigationPage1.Name = "navigationPage1";
             this.navigationPage1.Size = new System.Drawing.Size(379, 250);
@@ -110,7 +115,7 @@
             this.tablePanel1.Controls.Add(this.txtVolantPassword);
             this.tablePanel1.Controls.Add(this.txtVolantUser);
             this.tablePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tablePanel1.Location = new System.Drawing.Point(0, 72);
+            this.tablePanel1.Location = new System.Drawing.Point(0, 73);
             this.tablePanel1.Name = "tablePanel1";
             this.tablePanel1.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
@@ -118,7 +123,7 @@
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
-            this.tablePanel1.Size = new System.Drawing.Size(379, 134);
+            this.tablePanel1.Size = new System.Drawing.Size(379, 133);
             this.tablePanel1.TabIndex = 0;
             // 
             // togsKullanici
@@ -132,6 +137,7 @@
             this.tablePanel1.SetRow(this.togsKullanici, 1);
             this.togsKullanici.Size = new System.Drawing.Size(258, 18);
             this.togsKullanici.TabIndex = 9;
+            this.togsKullanici.Toggled += new System.EventHandler(this.togsKullanici_Toggled);
             // 
             // labelControl4
             // 
@@ -141,14 +147,14 @@
             this.labelControl4.Location = new System.Drawing.Point(3, 107);
             this.labelControl4.Name = "labelControl4";
             this.tablePanel1.SetRow(this.labelControl4, 4);
-            this.labelControl4.Size = new System.Drawing.Size(109, 24);
+            this.labelControl4.Size = new System.Drawing.Size(109, 23);
             this.labelControl4.TabIndex = 8;
             this.labelControl4.Text = "Şirket";
             // 
             // cmbVolantSirket
             // 
             this.tablePanel1.SetColumn(this.cmbVolantSirket, 1);
-            this.cmbVolantSirket.Location = new System.Drawing.Point(118, 109);
+            this.cmbVolantSirket.Location = new System.Drawing.Point(118, 108);
             this.cmbVolantSirket.Name = "cmbVolantSirket";
             this.cmbVolantSirket.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -248,13 +254,13 @@
             // 
             // pictureEdit2
             // 
-            this.pictureEdit2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureEdit2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
-            this.pictureEdit2.Location = new System.Drawing.Point(0, 0);
+            this.pictureEdit2.Location = new System.Drawing.Point(287, 2);
             this.pictureEdit2.Name = "pictureEdit2";
-            this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
-            this.pictureEdit2.Size = new System.Drawing.Size(379, 72);
+            this.pictureEdit2.Properties.PictureAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.StretchVertical;
+            this.pictureEdit2.Size = new System.Drawing.Size(90, 69);
             this.pictureEdit2.TabIndex = 0;
             // 
             // tablePanel3
@@ -300,6 +306,26 @@
             this.simpleButton1.Text = "KAPAT";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
+            // pictureEdit1
+            // 
+            this.pictureEdit1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
+            this.pictureEdit1.Location = new System.Drawing.Point(2, 2);
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit1.Size = new System.Drawing.Size(285, 69);
+            this.pictureEdit1.TabIndex = 3;
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Controls.Add(this.pictureEdit2);
+            this.panelControl1.Controls.Add(this.pictureEdit1);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelControl1.Location = new System.Drawing.Point(0, 0);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(379, 73);
+            this.panelControl1.TabIndex = 4;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -327,6 +353,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).EndInit();
             this.tablePanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -351,5 +380,7 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit2;
         private DevExpress.XtraEditors.ToggleSwitch togsKullanici;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
     }
 }

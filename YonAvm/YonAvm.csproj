@@ -138,6 +138,10 @@
     <Reference Include="Infragistics4.Win.UltraWinToolbars.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.UltraWinTree.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Interop.SIPVoipSDK">
+      <HintPath>bin\Debug\Abto\Interop.SIPVoipSDK.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -295,6 +299,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
+    <None Include="Logo.png" />
     <None Include="YON_AVM_400.png" />
   </ItemGroup>
   <ItemGroup>

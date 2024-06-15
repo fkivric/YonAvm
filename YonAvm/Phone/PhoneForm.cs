@@ -717,7 +717,7 @@ namespace YonAvm
             {
                 ChageLineCaption(lnInfo);
             }
-            FtpTransfer(Fullpath);
+            //FtpTransfer(Fullpath);
         }
         private void AbtoPhone_OnIncomingCall(string adress, int lineId)
         {

@@ -32,8 +32,8 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>index.html</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>2</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.5.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -148,6 +148,11 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -160,7 +165,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\ApiClass.cs" />
+    <Compile Include="Class\FaturaVeri.cs" />
+    <Compile Include="Class\ListtoDataTableConverter.cs" />
     <Compile Include="Class\Volant.cs" />
+    <Compile Include="Connected Services\Logo\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +185,13 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="logodeneme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logodeneme.Designer.cs">
+      <DependentUpon>logodeneme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="logoservis.cs" />
     <Compile Include="Phone\AboutForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,15 +247,202 @@
       <DependentUpon>TransferAddrForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="ProgressBarFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressBarFrm.Designer.cs">
+      <DependentUpon>ProgressBarFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="SqlConnectionObject.cs" />
+    <Compile Include="Web References\EFaturaIntegrationService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Connected Services\Logo\PostBoxService1.wsdl" />
+    <None Include="Connected Services\Logo\PostBoxService12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Logo\PostBoxService121.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Logo\PostBoxService1210.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Logo\PostBoxService1211.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Logo\PostBoxService122.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Logo\PostBoxService123.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Logo\PostBoxService124.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Logo\PostBoxService125.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Logo\PostBoxService126.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Logo\PostBoxService127.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Logo\PostBoxService128.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Logo\PostBoxService129.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.ActivateVUK507ServicesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.AppRespStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.CheckGibUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.DiagnosticParameter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.Document.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.DocumentStatusBatchType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.DocumentStatusType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.DocumentType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.eFaturaWebServiceResultType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.ElementType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.getApplicationResponseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.getAppRespStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.getApprovalFlowListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.getApprovalFlowResResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.GetDocumentDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.GetDocumentListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.GetDocumentListWithDepartmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.GetDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.GetDocumentStatusBatchResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.getDocumentStatusExResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.getDocumentStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.GetDocumentStatusResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.getEArchiveInvoicePdfDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.getEArchiveXsltResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.getInvoiceResponseDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.getInvoiceStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.GetMailStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.GetPrefixLastNumberListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.GetReceiverInfoFromTurmobResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.GetReportListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.GetUserAccountServicesByVknTcknResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.GibUserType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.InvoiceStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.LoginResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.MailStatusResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.PrefixLastNumber.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.receiveApplicationResponseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.receiveDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.receiveInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.Report.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.SendDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.ServiceActivationResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.ServiceVersionResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.TurmobResponseModel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Logo\YonAvm.Logo.UserAccountServiceList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\licenses.licx" />
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logodeneme.resx">
+      <DependentUpon>logodeneme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Phone\AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
@@ -273,6 +479,9 @@
       <DependentUpon>TransferAddrForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProgressBarFrm.resx">
+      <DependentUpon>ProgressBarFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -292,13 +501,70 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Web References\EFaturaIntegrationService\CancelDraftInvoiceResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EFaturaIntegrationService\CreditNoteSummary.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EFaturaIntegrationService\DespatchSummary.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EFaturaIntegrationService\DisaridanYuklenenBelge.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EFaturaIntegrationService\EFaturaIntegration.wsdl" />
+    <None Include="Web References\EFaturaIntegrationService\GIBUSER.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EFaturaIntegrationService\GtbResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EFaturaIntegrationService\InvoiceResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EFaturaIntegrationService\InvoiceSummary.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EFaturaIntegrationService\KontorSorgulamaResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EFaturaIntegrationService\LoginRes.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EFaturaIntegrationService\ParkInvoiceStatusRes.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EFaturaIntegrationService\PARKInvoiceType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EFaturaIntegrationService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\EFaturaIntegrationService\SendInvoiceResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EFaturaIntegrationService\Stylefiles.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EFaturaIntegrationService\TurmobSorgulamaClass.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
     <None Include="YonAvm_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\Logo\configuration91.svcinfo" />
+    <None Include="Connected Services\Logo\configuration.svcinfo" />
+    <None Include="Connected Services\Logo\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="logo.ico" />
+    <None Include="Web References\EFaturaIntegrationService\EFaturaIntegration.disco" />
     <None Include="Logo.png" />
     <None Include="YON_AVM_400.png" />
   </ItemGroup>
@@ -313,6 +579,28 @@
       <ProductName>.NET Framework 3.5 SP1 </ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://ws.parkentegrasyon.com.tr/EFaturaIntegration.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\EFaturaIntegrationService\</RelPath>
+      <UpdateFromURL>https://ws.parkentegrasyon.com.tr/EFaturaIntegration.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>YonAvm_EFaturaIntegrationService_EFaturaIntegration</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\Logo\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

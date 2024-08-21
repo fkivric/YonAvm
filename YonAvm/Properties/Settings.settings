@@ -29,5 +29,14 @@
     <Setting Name="DidApikey" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="YonAvm_EFaturaIntegrationService_EFaturaIntegration" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://ws.parkentegrasyon.com.tr/EFaturaIntegration.asmx</Value>
+    </Setting>
+    <Setting Name="ParkToken" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="LogoToken" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

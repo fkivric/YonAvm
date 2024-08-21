@@ -131,5 +131,39 @@ namespace YonAvm.Properties {
                 this["DidApikey"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://ws.parkentegrasyon.com.tr/EFaturaIntegration.asmx")]
+        public string YonAvm_EFaturaIntegrationService_EFaturaIntegration {
+            get {
+                return ((string)(this["YonAvm_EFaturaIntegrationService_EFaturaIntegration"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ParkToken {
+            get {
+                return ((string)(this["ParkToken"]));
+            }
+            set {
+                this["ParkToken"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LogoToken {
+            get {
+                return ((string)(this["LogoToken"]));
+            }
+            set {
+                this["LogoToken"] = value;
+            }
+        }
     }
 }

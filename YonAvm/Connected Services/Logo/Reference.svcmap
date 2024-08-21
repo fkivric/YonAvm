@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="109c62d0-6609-4922-b3bd-750bd3a90c0e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ArrayList" Category="List" />
+      <CollectionMapping TypeName="System.Collections.Generic.SortedList`2" Category="Dictionary" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://pb.elogo.com.tr/PostBoxService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PostBoxService12.xsd" MetadataType="Schema" ID="0ea69077-e2f5-457a-9af6-711d37586dff" SourceId="1" SourceUrl="https://pb-g.elogo.com.tr/PostBoxService.svc?xsd=xsd6" />
+    <MetadataFile FileName="PostBoxService121.xsd" MetadataType="Schema" ID="4e6806c5-4b15-49a8-a336-3e544a8055cb" SourceId="1" SourceUrl="https://pb-g.elogo.com.tr/PostBoxService.svc?xsd=xsd7" />
+    <MetadataFile FileName="PostBoxService122.xsd" MetadataType="Schema" ID="43e600df-8f17-4262-a7c9-dba6118766fc" SourceId="1" SourceUrl="https://pb-g.elogo.com.tr/PostBoxService.svc?xsd=xsd4" />
+    <MetadataFile FileName="PostBoxService123.xsd" MetadataType="Schema" ID="89cd9808-ee80-456f-ae1f-0fa13b4b157d" SourceId="1" SourceUrl="https://pb-g.elogo.com.tr/PostBoxService.svc?xsd=xsd5" />
+    <MetadataFile FileName="PostBoxService124.xsd" MetadataType="Schema" ID="00a75a67-6824-4495-9e40-9d83ec2327f2" SourceId="1" SourceUrl="https://pb-g.elogo.com.tr/PostBoxService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PostBoxService125.xsd" MetadataType="Schema" ID="a64e1942-fa5f-497d-8b8b-f30a52ff4d99" SourceId="1" SourceUrl="https://pb-g.elogo.com.tr/PostBoxService.svc?xsd=xsd3" />
+    <MetadataFile FileName="PostBoxService126.xsd" MetadataType="Schema" ID="3764cbdb-c19f-4fe8-85b8-55f4ceb5091b" SourceId="1" SourceUrl="https://pb-g.elogo.com.tr/PostBoxService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PostBoxService127.xsd" MetadataType="Schema" ID="2d243b7e-f0f4-496c-9549-b37466030256" SourceId="1" SourceUrl="https://pb-g.elogo.com.tr/PostBoxService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PostBoxService128.xsd" MetadataType="Schema" ID="e0fdef95-4b3d-4067-bb6d-dfcea148d364" SourceId="1" SourceUrl="https://pb-g.elogo.com.tr/PostBoxService.svc?xsd=xsd11" />
+    <MetadataFile FileName="PostBoxService129.xsd" MetadataType="Schema" ID="6269922d-e86c-4e59-a5c1-4d3b92a308b7" SourceId="1" SourceUrl="https://pb-g.elogo.com.tr/PostBoxService.svc?xsd=xsd8" />
+    <MetadataFile FileName="PostBoxService1210.xsd" MetadataType="Schema" ID="107388f3-a81a-4e34-9945-51e76911b3b7" SourceId="1" SourceUrl="https://pb-g.elogo.com.tr/PostBoxService.svc?xsd=xsd9" />
+    <MetadataFile FileName="PostBoxService1211.xsd" MetadataType="Schema" ID="ad3493a5-2633-408f-bc0f-4ae6ff23af2c" SourceId="1" SourceUrl="https://pb-g.elogo.com.tr/PostBoxService.svc?xsd=xsd10" />
+    <MetadataFile FileName="PostBoxService1.wsdl" MetadataType="Wsdl" ID="0b9cbf51-09f4-4e04-92a9-cab7c781e8a5" SourceId="1" SourceUrl="https://pb.elogo.com.tr/PostBoxService.svc" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

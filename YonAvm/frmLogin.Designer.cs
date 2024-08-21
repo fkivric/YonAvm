@@ -44,12 +44,13 @@
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.txtVolantPassword = new DevExpress.XtraEditors.TextEdit();
             this.txtVolantUser = new DevExpress.XtraEditors.TextEdit();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.tablePanel3 = new DevExpress.Utils.Layout.TablePanel();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.lblversion = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).BeginInit();
             this.navigationFrame.SuspendLayout();
             this.navigationPage1.SuspendLayout();
@@ -62,12 +63,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtVolantPassword.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtVolantUser.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).BeginInit();
-            this.tablePanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).BeginInit();
+            this.tablePanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tileNavCategory1
@@ -105,6 +106,7 @@
             this.tablePanel1.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 30.6F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 69.84F)});
+            this.tablePanel1.Controls.Add(this.lblversion);
             this.tablePanel1.Controls.Add(this.togsKullanici);
             this.tablePanel1.Controls.Add(this.labelControl4);
             this.tablePanel1.Controls.Add(this.cmbVolantSirket);
@@ -252,6 +254,16 @@
             this.txtVolantUser.TabIndex = 1;
             this.txtVolantUser.TextChanged += new System.EventHandler(this.txtVolantUser_TextChanged);
             // 
+            // panelControl1
+            // 
+            this.panelControl1.Controls.Add(this.pictureEdit2);
+            this.panelControl1.Controls.Add(this.pictureEdit1);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelControl1.Location = new System.Drawing.Point(0, 0);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(379, 73);
+            this.panelControl1.TabIndex = 4;
+            // 
             // pictureEdit2
             // 
             this.pictureEdit2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -262,6 +274,16 @@
             this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.StretchVertical;
             this.pictureEdit2.Size = new System.Drawing.Size(90, 69);
             this.pictureEdit2.TabIndex = 0;
+            // 
+            // pictureEdit1
+            // 
+            this.pictureEdit1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
+            this.pictureEdit1.Location = new System.Drawing.Point(2, 2);
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit1.Size = new System.Drawing.Size(285, 69);
+            this.pictureEdit1.TabIndex = 3;
             // 
             // tablePanel3
             // 
@@ -306,25 +328,15 @@
             this.simpleButton1.Text = "KAPAT";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
-            // pictureEdit1
+            // lblversion
             // 
-            this.pictureEdit1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-            this.pictureEdit1.Location = new System.Drawing.Point(2, 2);
-            this.pictureEdit1.Name = "pictureEdit1";
-            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit1.Size = new System.Drawing.Size(285, 69);
-            this.pictureEdit1.TabIndex = 3;
-            // 
-            // panelControl1
-            // 
-            this.panelControl1.Controls.Add(this.pictureEdit2);
-            this.panelControl1.Controls.Add(this.pictureEdit1);
-            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl1.Location = new System.Drawing.Point(0, 0);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(379, 73);
-            this.panelControl1.TabIndex = 4;
+            this.tablePanel1.SetColumn(this.lblversion, 0);
+            this.lblversion.Location = new System.Drawing.Point(3, 32);
+            this.lblversion.Name = "lblversion";
+            this.tablePanel1.SetRow(this.lblversion, 1);
+            this.lblversion.Size = new System.Drawing.Size(63, 13);
+            this.lblversion.TabIndex = 10;
+            this.lblversion.Text = "labelControl5";
             // 
             // frmLogin
             // 
@@ -343,6 +355,7 @@
             this.navigationPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
             this.tablePanel1.ResumeLayout(false);
+            this.tablePanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.togsKullanici.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbVolantSirket.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit2View)).EndInit();
@@ -350,12 +363,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtVolantPassword.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtVolantUser.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).EndInit();
-            this.tablePanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).EndInit();
+            this.tablePanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -382,5 +395,6 @@
         private DevExpress.XtraEditors.ToggleSwitch togsKullanici;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
+        private DevExpress.XtraEditors.LabelControl lblversion;
     }
 }

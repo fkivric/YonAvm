@@ -44,7 +44,19 @@ namespace YonAvm
             cmbVolantSirket.Properties.DataSource = firmas;// Compny;
             cmbVolantSirket.Properties.DisplayMember = "COMPANYNAME";
             cmbVolantSirket.Properties.ValueMember = "COMPANYDB";
-            cmbVolantSirket.EditValue = Compny.Rows[0]["CATALOG_NAME"];            
+            cmbVolantSirket.EditValue = Compny.Rows[0]["CATALOG_NAME"];
+
+            if (System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed)
+            {
+                System.Deployment.Application.ApplicationDeployment ad = System.Deployment.Application.ApplicationDeployment.CurrentDeployment;
+                lblversion.Text = "Version : " + ad.CurrentVersion.Major + "." + ad.CurrentVersion.Minor + "." + ad.CurrentVersion.Build + "." + ad.CurrentVersion.Revision;
+                //version = ad.CurrentVersion.Revision.ToString();
+            }
+            else
+            {
+                string _s1 = Application.ProductVersion; // versiyon
+                lblversion.Text = "Version : " + _s1;
+            }
         }
         private void VolXml()
         {
@@ -274,45 +286,45 @@ namespace YonAvm
         }
         private void txtVolantUser_TextChanged(object sender, EventArgs e)
         {
-            //var sonuc = Sorgu("select SONAME +SPACE(1)+SOSURNAME from SOCIAL left outer join DEPARTMENT on DEPVAL = SODEPART where SOCODE = '" + txtVolantUser.Text + "'", Settings.Default.connectionstring);
-            //if (sonuc.Rows.Count > 0)
-            //{
-            //    togsKullanici.IsOn = true; 
-            //    togsKullanici.Properties.OnText = sonuc.Rows[0][0].ToString();
-            //}
-            //else
-            //{
-            //    togsKullanici.IsOn = false;
-            //}
+            var sonuc = Sorgu("select SONAME +SPACE(1)+SOSURNAME from SOCIAL left outer join DEPARTMENT on DEPVAL = SODEPART where SOCODE = '" + txtVolantUser.Text + "'", Settings.Default.connectionstring);
+            if (sonuc.Rows.Count > 0)
+            {
+                togsKullanici.IsOn = true;
+                togsKullanici.Properties.OnText = sonuc.Rows[0][0].ToString();
+            }
+            else
+            {
+                togsKullanici.IsOn = false;
+            }
         }
 
         private void togsKullanici_Toggled(object sender, EventArgs e)
         {
-            if (togsKullanici.IsOn)
-            {
-                Properties.Settings.Default.connectionstring = "Server=212.174.235.106,1436;Database=VDB_YON01;User Id=sa;Password=MagicUser2023!;";
-                Properties.Settings.Default.Save();
-                //DataCek();
-                FirmaBilgileri();
-                DataTable Compny = Sorgu("select distinct CATALOG_NAME from INFORMATION_SCHEMA.SCHEMATA", Settings.Default.connectionstring);
-                cmbVolantSirket.Properties.DataSource = firmas;// Compny;
-                cmbVolantSirket.Properties.DisplayMember = "COMPANYNAME";
-                cmbVolantSirket.Properties.ValueMember = "COMPANYDB";
-                cmbVolantSirket.EditValue = Compny.Rows[0]["CATALOG_NAME"];
-            }
-            else
-            {
-                Properties.Settings.Default.connectionstring = "Server=192.168.4.24;Database=VDB_YON01;User Id=sa;Password=MagicUser2023!;";
-                Properties.Settings.Default.Save();
-                //DataCek();
-                FirmaBilgileri();
+            //if (togsKullanici.IsOn)
+            //{
+            //    Properties.Settings.Default.connectionstring = "Server=212.174.235.106,1436;Database=VDB_YON01;User Id=sa;Password=MagicUser2023!;";
+            //    Properties.Settings.Default.Save();
+            //    //DataCek();
+            //    FirmaBilgileri();
+            //    DataTable Compny = Sorgu("select distinct CATALOG_NAME from INFORMATION_SCHEMA.SCHEMATA", Settings.Default.connectionstring);
+            //    cmbVolantSirket.Properties.DataSource = firmas;// Compny;
+            //    cmbVolantSirket.Properties.DisplayMember = "COMPANYNAME";
+            //    cmbVolantSirket.Properties.ValueMember = "COMPANYDB";
+            //    cmbVolantSirket.EditValue = Compny.Rows[0]["CATALOG_NAME"];
+            //}
+            //else
+            //{
+            //    Properties.Settings.Default.connectionstring = "Server=192.168.4.24;Database=VDB_YON01;User Id=sa;Password=MagicUser2023!;";
+            //    Properties.Settings.Default.Save();
+            //    //DataCek();
+            //    FirmaBilgileri();
 
-                DataTable Compny = Sorgu("select distinct CATALOG_NAME from INFORMATION_SCHEMA.SCHEMATA", Settings.Default.connectionstring);
-                cmbVolantSirket.Properties.DataSource = firmas;// Compny;
-                cmbVolantSirket.Properties.DisplayMember = "COMPANYNAME";
-                cmbVolantSirket.Properties.ValueMember = "COMPANYDB";
-                cmbVolantSirket.EditValue = Compny.Rows[0]["CATALOG_NAME"];
-            }
+            //    DataTable Compny = Sorgu("select distinct CATALOG_NAME from INFORMATION_SCHEMA.SCHEMATA", Settings.Default.connectionstring);
+            //    cmbVolantSirket.Properties.DataSource = firmas;// Compny;
+            //    cmbVolantSirket.Properties.DisplayMember = "COMPANYNAME";
+            //    cmbVolantSirket.Properties.ValueMember = "COMPANYDB";
+            //    cmbVolantSirket.EditValue = Compny.Rows[0]["CATALOG_NAME"];
+            //}
         }
     }
 }

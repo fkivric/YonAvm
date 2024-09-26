@@ -123,6 +123,7 @@ namespace YonAvm
         {
             navBarControl2.OptionsNavPane.NavPaneState = DevExpress.XtraNavBar.NavPaneState.Collapsed;
             navBarControl1.OptionsNavPane.NavPaneState = DevExpress.XtraNavBar.NavPaneState.Collapsed;
+            navBarControl4.OptionsNavPane.NavPaneState = DevExpress.XtraNavBar.NavPaneState.Collapsed;
             srcVestelMagaza.Properties.DataSource = conn.GetDataTableConnectionSql("select DIVVAL, DIVNAME from DIVISON where DIVSTS = 1 and DIVSALESTS = 1", sql);
             srcVestelMagaza.Properties.ValueMember = "DIVVAL";
             srcVestelMagaza.Properties.DisplayMember = "DIVNAME";
@@ -165,15 +166,6 @@ namespace YonAvm
             {
                 string _s1 = Application.ProductVersion; // versiyon
                 this.Text = "Version : " + _s1;
-            }
-        }
-        EFaturaIntegration Clint = new EFaturaIntegration();
-        void ParkToken()
-        {
-            var token = Clint.OturumAc("yonavm", "123456");
-            if (token.IsSuccessLogin)
-            {
-                Properties.Settings.Default.ParkToken = token.SessionId;
             }
         }
         private void btnSatisListele_Click(object sender, EventArgs e)
@@ -1723,17 +1715,17 @@ namespace YonAvm
                 for (int i = 0; i < sonuc.Rows.Count; i++)
                 {
                     var PRONAME = sonuc.Rows[i]["PRONAME"].ToString();
-                    string pattern = @"PROFILO.*";
-                    Match match = Regex.Match(PRONAME, pattern);
-                    if (match.Success)
-                    {
-                        Urunler s = new Urunler();
+                    //string pattern = @"PROFILO.*";
+                    //Match match = Regex.Match(PRONAME, pattern);
+                    //if (match.Success)
+                    //{
+                    Urunler s = new Urunler();
                         s.PROVAL = sonuc.Rows[i]["PROVAL"].ToString();
                         s.PRONAME = PRONAME;
                         s.QUAN = sonuc.Rows[i]["QUAN"].ToString();
                         s.Detayid = sonuc.Rows[i]["Detayid"].ToString();
                         urunlers.Add(s);
-                    }
+                    //}
                 }
                 gridProfiloUrunler.DataSource = urunlers;
             }
@@ -2044,6 +2036,13 @@ namespace YonAvm
 
         private void btnDosyaSec_ItemClick(object sender, TileItemEventArgs e)
         {
+            cmbMusterino.Items.Clear();
+            cmbMusteriAdi.Items.Clear();
+            cmbDivaID.Items.Clear();
+            cmbFaturaTarihi.Items.Clear();
+            cmbFaturaTipi.Items.Clear();
+            cmbFatid.Items.Clear();
+            cmbETTN.Items.Clear();
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Excel Dosyaları (*.xlsx;*.xls)|*.xlsx;*.xls|Tüm Dosyalar (*.*)|*.*";
 
@@ -2069,10 +2068,15 @@ namespace YonAvm
                     string columnName = GetColumnName(columnIndex);
                     // Sütun ismini listeye ekleyin
                     cmbMusterino.Items.Add(new ComboBoxItem(columnIndex, columnName));
+                    cmbMusteriAdi.Items.Add(new ComboBoxItem(columnIndex, columnName));
+                    cmbDivaID.Items.Add(new ComboBoxItem(columnIndex, columnName));
+                    cmbFaturaTarihi.Items.Add(new ComboBoxItem(columnIndex, columnName));
+                    cmbFaturaTipi.Items.Add(new ComboBoxItem(columnIndex, columnName));
                     cmbFatid.Items.Add(new ComboBoxItem(columnIndex, columnName));
-                    cmbEETN.Items.Add(new ComboBoxItem(columnIndex, columnName));
+                    cmbETTN.Items.Add(new ComboBoxItem(columnIndex, columnName));
                 }
                 spreadsheetControl.Document.Worksheets.ActiveWorksheet.Cells.AutoFitColumns();
+                navBarControl4.OptionsNavPane.NavPaneState = DevExpress.XtraNavBar.NavPaneState.Expanded;
             }
         }
         public class ComboBoxItem
@@ -2151,34 +2155,89 @@ namespace YonAvm
                 Position = 0,
                 ToplamAdet = usedRange.RowCount.ToString(),
             };
-            var a1 = HarfinSirasi(cmbMusterino.Text);
-            var a2 = HarfinSirasi(cmbFatid.Text);
-            var a3 = HarfinSirasi(cmbEETN.Text);
+            var Musterino = HarfinSirasi(cmbMusterino.Text);
+            var MusteriAdi = HarfinSirasi(cmbMusteriAdi.Text);
+            var DivaID = HarfinSirasi(cmbDivaID.Text);
+            var FaturaTarihi = HarfinSirasi(cmbFaturaTarihi.Text);
+            var FaturaTipi = HarfinSirasi(cmbFaturaTipi.Text);
+            var Fatid = HarfinSirasi(cmbFatid.Text);
+            var ETTN = HarfinSirasi(cmbETTN.Text);
             int success = 0;
             int error = 0;
             this.Enabled = false;
             if (Properties.Settings.Default.LogoToken == "")
             {
-                LogoLogin();
+                LogoToken();
             }
             if (Properties.Settings.Default.ParkToken == "")
             {
                 ParkToken();
             }
             Logo.PostBoxServiceClient client = new Logo.PostBoxServiceClient("PostBoxServiceEndpoint");
+            EFaturaIntegration parkclient = new EFaturaIntegration();
             executeBackground(
        () =>
        {
            progressForm.Show(this);
            for (int rowIndex = index; rowIndex < usedRange.RowCount; rowIndex++)
            {
-               string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), lblSayfaIsmi.Text, usedRange[rowIndex, a1-1].Value.ToString());
-               CreateDirectoryIfNotExists(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), lblSayfaIsmi.Text, usedRange[rowIndex, a1-1].Value.ToString()));
+               if (rowIndex == 600)
+               {
+
+               }
+               EArsiv fat = new EArsiv();
+               fat.sira = rowIndex;
+               string q = String.Format(@"select d.CURID,d.SALID,Convert(char(10),IslemTarihi,121) as FTRDATE,SALAMOUNT from MDE_GENEL.dbo.DivaEklenenler d
+                left outer join VDB_YON01.dbo.SALES vs on vs.SALID = d.SALID
+                left outer join VDB_YON01.dbo.CURRENTS vc on vc.CURID = d.CURID
+                where CURVAL = '{0}'
+                and not exists (select * from MDE_GENEL.dbo.DivaFaturaListesi where VOL_CURID = d.CURID and VOL_SALID = d.SALID)
+                --and not exists (select * from VDB_YON01.dbo.SALESINVOICE where SALINVSALID = d.SALID)", usedRange[rowIndex,Musterino -1].Value.ToString());
+               var satisverisi = conn.GetDataTableConnectionSql(q, sql);
+               if (satisverisi.Rows.Count > 1)
+               {
+                   SatisSec sec = new SatisSec(usedRange[rowIndex, Musterino -1].Value.ToString());
+                   sec.MUSTERIADI = usedRange[rowIndex,MusteriAdi -1].Value.ToString();
+                   sec.SATISTARİHİ = usedRange[rowIndex, FaturaTarihi - 1].Value.ToString();
+                   sec.ShowDialog();
+                   if (sec.CURID != null)
+                   {
+                       fat.VOL_CURID = sec.CURID;
+                   }
+                   else
+                   {
+                       fat.VOL_CURID = satisverisi.Rows[0]["CURID"].ToString();
+                   }
+                   fat.VOL_SALID = sec.SALID;
+               }
+               else if (satisverisi.Rows.Count == 1)
+               {
+                   fat.VOL_CURID = satisverisi.Rows[0]["CURID"].ToString();
+                   fat.VOL_SALID = satisverisi.Rows[0]["SALID"].ToString();
+               }
+               else
+               {
+
+               }
+               fat.DIV_SALID = usedRange[rowIndex, DivaID - 1].Value.ToString();
+               fat.DIV_FTRDATE = usedRange[rowIndex, FaturaTarihi - 1].Value.ToString();
+               fat.DIV_FTRNO = usedRange[rowIndex, Fatid - 1].Value.ToString();
+               fat.DIV_ETTN = usedRange[rowIndex, ETTN - 1].Value.ToString().ToUpper();
+               string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), lblSayfaIsmi.Text, usedRange[rowIndex, MusteriAdi - 1].Value.ToString());
+               CreateDirectoryIfNotExists(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), lblSayfaIsmi.Text, usedRange[rowIndex, MusteriAdi - 1].Value.ToString()));
                try
                {
-                   Logo.GetDocumentType document = Logo.GetDocumentType.EARCHIVE;
+                   Logo.GetDocumentType document;
+                   if (usedRange[rowIndex, FaturaTipi - 1].Value.ToString() == "e-Arşivlendi")
+                   {
+                       document = Logo.GetDocumentType.EARCHIVE;
+                   }
+                   else
+                   {
+                       document = Logo.GetDocumentType.EINVOICE;
+                   }
                    Logo.DocumentDataType dataType = Logo.DocumentDataType.UBL;
-                   string UUID = usedRange[rowIndex, a3 - 1].Value.ToString().ToUpper();
+                   string UUID = usedRange[rowIndex, ETTN - 1].Value.ToString().ToUpper();
                    var sonuc = client.getDocumentData(Properties.Settings.Default.LogoToken, UUID, document, dataType);
 
                    byte[] zipData = sonuc.binaryData.Value;
@@ -2191,7 +2250,8 @@ namespace YonAvm
                    string fileName = filePath+"/"+sonuc.fileName;
 
                    // ZIP dosyasını kaydedin
-                   //File.WriteAllBytes(fileName, zipData);
+                   File.WriteAllBytes(fileName, zipData);
+
                    string zipFilePath = fileName;
 
                    // Çıkartılacak klasörün yolu
@@ -2227,16 +2287,41 @@ namespace YonAvm
                                {
                                    entryStream.CopyTo(fileStream);
                                }
+                               var ssss = File.ReadAllBytes(filePath2);
+                               var data = parkclient.ESaklamaFaturaYukle(Properties.Settings.Default.ParkToken, usedRange[rowIndex, Fatid - 1].Value.ToString(), File.ReadAllBytes(filePath2));
+                               if (data.data != null)
+                               {
+                                   fat.PARK_NEWID = data.data.contents.First().id.ToString();
+                               }
+                               else
+                               {
+                                   fat.PARK_NEWID = 0000001.ToString();
+                               }
+                               //var gidenfatura = parkclient.ESaklamaGidenFaturaListele(Properties.Settings.Default.ParkToken, DateTime.Now.AddDays(-30), DateTime.Now);
+                               string insertq = String.Format(@"insert into MDE_GENEL.dbo.DivaFaturaListesi values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}')", fat.VOL_CURID, fat.VOL_SALID, fat.DIV_SALID, Convert.ToDateTime(fat.DIV_FTRDATE).ToString("yyyy-MM-dd"), fat.DIV_FTRNO, fat.DIV_ETTN, fat.PARK_NEWID);
+                               int insert = conn.insertData(insertq, sql);
+                               //using (SqlCommand cmd = new SqlCommand())
+                               //{
+                               //    cmd.CommandType = CommandType.Text;
+                               //    cmd.Connection = sql;
+                               //    cmd.CommandTimeout = 300;
+                               //    cmd.CommandText = "insert into MDE_GENEL.dbo.DivaFaturaListesi values ('@VOL_CURID','@VOL_SALID','@DIV_SALID','@DIV_FTRDATE','@DIV_FTRNO','@DIV_ETTN','@PARK_NEWID')";
+                               //    cmd.Parameters.AddWithValue("@VOL_CURID", fat.VOL_CURID);
+                               //    cmd.Parameters.AddWithValue("@VOL_SALID", fat.VOL_SALID);
+                               //    cmd.Parameters.AddWithValue("@DIV_SALID", fat.DIV_SALID);
+                               //    cmd.Parameters.AddWithValue("@DIV_FTRDATE", fat.DIV_FTRDATE);
+                               //    cmd.Parameters.AddWithValue("@DIV_FTRNO", fat.DIV_FTRNO);
+                               //    cmd.Parameters.AddWithValue("@DIV_ETTN", fat.DIV_ETTN);
+                               //    cmd.Parameters.AddWithValue("@PARK_NEWID", fat.PARK_NEWID);
+                               //    if (sql.State == ConnectionState.Closed)
+                               //    {
+                               //        sql.Open();
+                               //    }
+                               //    cmd.ExecuteNonQuery();
+                               //}
                            }
                        }
                    }
-
-
-                   EArsiv fat = new EArsiv();
-                   fat.sira = rowIndex;
-                   fat.CURVAL = usedRange[rowIndex, a1-1].Value.ToString();
-                   fat.FaturaID = usedRange[rowIndex, a2-1].Value.ToString();
-                   fat.ETTN = usedRange[rowIndex, a3-1].Value.ToString();
                    faturlar.Add(fat);
                    progressForm.PerformStep(this);
                    success++;
@@ -2258,9 +2343,20 @@ namespace YonAvm
                                   Properties.Settings.Default.LogoToken = "";
                                   Properties.Settings.Default.ParkToken = "";
                                   var sonuc = converter.ToDataTable(faturlar);
+                                  XtraMessageBox.Show("Başarılı :" + success + " adet işlem kaydetildi. Hatalı işlem Toplamı :" + error, "Sonuç", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                  worksheet.Clear(worksheet.GetDataRange());
                               });
         }
-        public void LogoLogin()
+        EFaturaIntegration Clint = new EFaturaIntegration();
+        void ParkToken()
+        {
+            var token = Clint.OturumAc("yonavm", "123456");
+            if (token.IsSuccessLogin)
+            {
+                Properties.Settings.Default.ParkToken = token.SessionId;
+            }
+        }
+        public void LogoToken()
         {
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             BasicHttpBinding binding = new BasicHttpBinding
@@ -2309,6 +2405,53 @@ namespace YonAvm
             catch (Exception ex)
             {
                 MessageBox.Show($"Bir hata oluştu: {ex.Message}");
+            }
+        }
+
+        private void btnFaturaListesiGetir_Click(object sender, EventArgs e)
+        {
+            IslenecekSorgu();
+        }
+        void IslenecekSorgu()
+        {
+            string q = String.Format(@"
+            select CURVAL, CURNAME, DIV_FTRDATE, SALID, PARK_NEWID from MDE_GENEL.dbo.DivaFaturaListesi d
+            left outer join VDB_YON01.dbo.SALES on SALID = VOL_SALID
+            left outer join VDB_YON01.dbo.CURRENTS on CURID = VOL_CURID
+            where SALID is not NULL
+            and not exists (select * from MDE_GENEL.dbo.DivaFaturaIslenen i where i.VOL_SALID = d.VOL_SALID)
+            order by DIV_FTRDATE desc");
+            gridFaturaListesi.DataSource = conn.GetDataTableConnectionSql(q, sql);
+            ViewFaturaListesi.OptionsView.BestFitMaxRowCount = -1;
+            ViewFaturaListesi.BestFitColumns(true);
+        }
+        private void btnFaturaKaydet_Click(object sender, EventArgs e)
+        {
+            var selected = ViewFaturaListesi.GetSelectedRows();
+            if (selected.Length != 0)
+            {
+                try
+                {
+                    var SALID = ViewFaturaListesi.GetRowCellValue(selected[0], "SALID").ToString();
+                    string q = String.Format(@"insert into MDE_GENEL.dbo.DivaFaturaIslenen values ('{0}',getdate())", SALID);
+                    SqlCommand cmd = new SqlCommand(q, sql);
+                    if (sql.State == ConnectionState.Closed)
+                    {
+                        sql.Open();
+                    }
+                    cmd.ExecuteNonQuery();
+                    IslenecekSorgu();
+
+                }
+                catch (Exception exmessage)
+                {
+                    XtraMessageBox.Show(exmessage.Message);
+                }
+
+            }
+            else
+            {
+                XtraMessageBox.Show("Seçim Yapılmadı");
             }
         }
     }    

@@ -11,9 +11,13 @@ namespace YonAvm.Class
         public class EArsiv
         {
             public int sira{ get; set; }
-            public string CURVAL{ get; set; }
-            public string FaturaID{ get; set; }
-            public string ETTN { get; set; }
+            public string VOL_CURID { get; set; }
+            public string VOL_SALID { get; set; }
+            public string DIV_SALID { get; set; }
+            public string DIV_FTRDATE { get; set; }
+            public string DIV_FTRNO { get; set; }
+            public string DIV_ETTN { get; set; }
+            public string PARK_NEWID { get; set; }
         }
     }
 }

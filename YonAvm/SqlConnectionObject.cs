@@ -40,6 +40,15 @@ namespace YonAvm
                 return dataTable;
             }
         }
+        public int insertData(string query, SqlConnection sql)
+        {
+            SqlCommand cmd = new SqlCommand(query, sql);
+            if (sql.State == ConnectionState.Closed)
+            {
+                sql.Open();
+            }
+            return cmd.ExecuteNonQuery();
+        }
 
     }
 }

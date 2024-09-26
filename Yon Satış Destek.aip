@@ -11,10 +11,10 @@
     <ROW Property="AiEmbeddedUI" Value="1"/>
     <ROW Property="AiWinUI" Value="1"/>
     <ROW Property="Manufacturer" Value="Yön AVM IT Ekibi"/>
-    <ROW Property="ProductCode" Value="1055:{335FCF1D-EFED-464F-954D-4E929BFF9938} " Type="16"/>
+    <ROW Property="ProductCode" Value="1055:{F1FA8B00-608E-44EA-BA74-7512390CF97A} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="Yon Satış Destek"/>
-    <ROW Property="ProductVersion" Value="1.0.4" Options="32"/>
+    <ROW Property="ProductVersion" Value="1.0.6" Options="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{F5B794A0-B748-42A8-9AF4-CA537879AF4E}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>

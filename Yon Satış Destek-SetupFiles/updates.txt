@@ -2,12 +2,14 @@
 
 [Update]
 Name = Yon Satýþ Destek
-ProductVersion = 1.0.4
+ProductVersion = 1.0.6
 URL = http://192.168.4.8:1080/Yon Satýþ Destek.msi
 URL1 = http://192.168.4.8:1080/
-Size = 85915136
-SHA256 = F93EB5EED2C94DC4AFF32EFE451D51174ECDCB5BDDAD2CB7C25AF6284730D3CB
-MD5 = 69041f82b2cda09b4df8da4d65a7fda6
+Size = 86294528
+SHA256 = 44DC71F02C4E21BBBFFCEE47D2AE07D2BBC0CD52F1ED9831BC0928E4DF72764C
+MD5 = 118bf4b6d071e5bf8d1dafcdde5864e2
 ServerFileName = Yon Satýþ Destek.msi
 FilePath = [APPDIR]YourApplication.exe
-Version = 1.0.4
+Version = 1.0.6
+Description = Fatura Ýþleme Ekraný Eklendi
+Description1 = Diva Faturalarý Park üzerine Taþýndý

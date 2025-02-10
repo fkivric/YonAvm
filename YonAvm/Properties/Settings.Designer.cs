@@ -165,5 +165,18 @@ namespace YonAvm.Properties {
                 this["LogoToken"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Server = 192.168.4.24; Database = VDB_YON02; User Id = sa; Password = MagicUser20" +
+            "23!;")]
+        public string connectionstring2 {
+            get {
+                return ((string)(this["connectionstring2"]));
+            }
+            set {
+                this["connectionstring2"] = value;
+            }
+        }
     }
 }

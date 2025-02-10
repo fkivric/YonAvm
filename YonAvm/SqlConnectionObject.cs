@@ -23,7 +23,14 @@ namespace YonAvm
             SqlDataAdapter adapter = new SqlDataAdapter(q, conn);
             DataTable dataTable = new DataTable();
             adapter.Fill(dataTable);
-            return dataTable.Rows[0][0].ToString();
+            if (dataTable.Rows.Count > 0)
+            {
+                return dataTable.Rows[0][0].ToString();
+            }
+            else
+            {
+                return "";
+            }
         }
         public DataTable GetDataTableConnectionString(string q, string con)
         {

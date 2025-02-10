@@ -22,6 +22,7 @@ using DevExpress.XtraEditors.Design;
 using System.Net.Http;
 using Newtonsoft.Json;
 using YonAvm.Class;
+using System.Text.RegularExpressions;
 
 namespace YonAvm
 {
@@ -206,10 +207,33 @@ namespace YonAvm
         }
         private void cmbVolantSirket_EditValueChanged(object sender, EventArgs e)
         {
+            var data2last = GetDatabaseFromConnectionString(Settings.Default.connectionstring2.ToString());
+            var data2new = cmbVolantSirket.EditValue.ToString().Replace("1", "2");
+
             Settings.Default.connectionstring = Settings.Default.connectionstring.Replace(Settings.Default.Company.ToString(), cmbVolantSirket.EditValue.ToString());
+            Settings.Default.connectionstring2 = Settings.Default.connectionstring2.Replace(data2last, data2new);
             Settings.Default.Company = cmbVolantSirket.EditValue.ToString();
             Settings.Default.Save();
             FirmaBilgileri();
+
+            string company = cmbVolantSirket.EditValue.ToString();
+            if (company.Contains("YON"))
+            {
+                pictureEdit1.Image = Properties.Resources.YON_AVM_400;
+            }
+            else if (company.Contains("KAMALAR"))
+            {
+                pictureEdit1.Image = Properties.Resources.Kamalar_logo;
+            }
+        }
+        private string GetDatabaseFromConnectionString(string connectionString)
+        {
+            var match = Regex.Match(connectionString, @"Database = ([^;]+)");
+            if (match.Success)
+            {
+                return match.Groups[1].Value;
+            }
+            return string.Empty;
         }
         public DataTable Sorgu(string sorgu, string connection)
         {

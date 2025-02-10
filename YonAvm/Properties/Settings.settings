@@ -38,5 +38,8 @@
     <Setting Name="LogoToken" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="connectionstring2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Server = 192.168.4.24; Database = VDB_YON02; User Id = sa; Password = MagicUser2023!;</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

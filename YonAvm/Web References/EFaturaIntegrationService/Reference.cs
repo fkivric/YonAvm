@@ -108,6 +108,8 @@ namespace YonAvm.EFaturaIntegrationService {
         
         private System.Threading.SendOrPostCallback ESaklamaGelenFaturaPdfAlByIdOperationCompleted;
         
+        private System.Threading.SendOrPostCallback ESaklamaGidenFaturaPdfAlByFaturaNoOperationCompleted;
+        
         private System.Threading.SendOrPostCallback ESaklamaFaturaYukleOperationCompleted;
         
         private System.Threading.SendOrPostCallback OturumAcOperationCompleted;
@@ -430,6 +432,9 @@ namespace YonAvm.EFaturaIntegrationService {
         
         /// <remarks/>
         public event ESaklamaGelenFaturaPdfAlByIdCompletedEventHandler ESaklamaGelenFaturaPdfAlByIdCompleted;
+        
+        /// <remarks/>
+        public event ESaklamaGidenFaturaPdfAlByFaturaNoCompletedEventHandler ESaklamaGidenFaturaPdfAlByFaturaNoCompleted;
         
         /// <remarks/>
         public event ESaklamaFaturaYukleCompletedEventHandler ESaklamaFaturaYukleCompleted;
@@ -1964,6 +1969,38 @@ namespace YonAvm.EFaturaIntegrationService {
             if ((this.ESaklamaGelenFaturaPdfAlByIdCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.ESaklamaGelenFaturaPdfAlByIdCompleted(this, new ESaklamaGelenFaturaPdfAlByIdCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ESaklamaGidenFaturaPdfAlByFaturaNo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
+        public byte[] ESaklamaGidenFaturaPdfAlByFaturaNo(string token, string faturaNumarasi) {
+            object[] results = this.Invoke("ESaklamaGidenFaturaPdfAlByFaturaNo", new object[] {
+                        token,
+                        faturaNumarasi});
+            return ((byte[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ESaklamaGidenFaturaPdfAlByFaturaNoAsync(string token, string faturaNumarasi) {
+            this.ESaklamaGidenFaturaPdfAlByFaturaNoAsync(token, faturaNumarasi, null);
+        }
+        
+        /// <remarks/>
+        public void ESaklamaGidenFaturaPdfAlByFaturaNoAsync(string token, string faturaNumarasi, object userState) {
+            if ((this.ESaklamaGidenFaturaPdfAlByFaturaNoOperationCompleted == null)) {
+                this.ESaklamaGidenFaturaPdfAlByFaturaNoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnESaklamaGidenFaturaPdfAlByFaturaNoOperationCompleted);
+            }
+            this.InvokeAsync("ESaklamaGidenFaturaPdfAlByFaturaNo", new object[] {
+                        token,
+                        faturaNumarasi}, this.ESaklamaGidenFaturaPdfAlByFaturaNoOperationCompleted, userState);
+        }
+        
+        private void OnESaklamaGidenFaturaPdfAlByFaturaNoOperationCompleted(object arg) {
+            if ((this.ESaklamaGidenFaturaPdfAlByFaturaNoCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ESaklamaGidenFaturaPdfAlByFaturaNoCompleted(this, new ESaklamaGidenFaturaPdfAlByFaturaNoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -5198,13 +5235,17 @@ namespace YonAvm.EFaturaIntegrationService {
         
         private string documentCurrencyField;
         
+        private string fromField;
+        
+        private string toField;
+        
         private decimal payableAmountField;
         
         private int invoiceCountField;
         
-        private System.Nullable<System.DateTime> issueDateField;
+        private System.DateTime issueDateField;
         
-        private System.Nullable<System.DateTime> senderDateField;
+        private System.DateTime senderDateField;
         
         private ParkInvoiceStatusRes statuField;
         
@@ -5301,6 +5342,26 @@ namespace YonAvm.EFaturaIntegrationService {
         }
         
         /// <remarks/>
+        public string From {
+            get {
+                return this.fromField;
+            }
+            set {
+                this.fromField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string To {
+            get {
+                return this.toField;
+            }
+            set {
+                this.toField = value;
+            }
+        }
+        
+        /// <remarks/>
         public decimal PayableAmount {
             get {
                 return this.payableAmountField;
@@ -5321,8 +5382,7 @@ namespace YonAvm.EFaturaIntegrationService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<System.DateTime> IssueDate {
+        public System.DateTime IssueDate {
             get {
                 return this.issueDateField;
             }
@@ -5332,8 +5392,7 @@ namespace YonAvm.EFaturaIntegrationService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<System.DateTime> SenderDate {
+        public System.DateTime SenderDate {
             get {
                 return this.senderDateField;
             }
@@ -13236,6 +13295,32 @@ namespace YonAvm.EFaturaIntegrationService {
         private object[] results;
         
         internal ESaklamaGelenFaturaPdfAlByIdCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public byte[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((byte[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void ESaklamaGidenFaturaPdfAlByFaturaNoCompletedEventHandler(object sender, ESaklamaGidenFaturaPdfAlByFaturaNoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ESaklamaGidenFaturaPdfAlByFaturaNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ESaklamaGidenFaturaPdfAlByFaturaNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
                 base(exception, cancelled, userState) {
             this.results = results;
         }

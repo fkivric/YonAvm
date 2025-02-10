@@ -43,12 +43,18 @@
             DevExpress.XtraEditors.TileItemElement tileItemElement10 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement11 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement12 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement13 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement14 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement15 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement16 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement17 = new DevExpress.XtraEditors.TileItemElement();
             this.tileBar = new DevExpress.XtraBars.Navigation.TileBar();
             this.tileBarGroupTables = new DevExpress.XtraBars.Navigation.TileBarGroup();
             this.VESTEL = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.PROFİLO = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.tileBarGroup3 = new DevExpress.XtraBars.Navigation.TileBarGroup();
             this.tileBarItem3 = new DevExpress.XtraBars.Navigation.TileBarItem();
+            this.tileBarItem7 = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.navigationFrame = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.navigationPage3 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.navigationFrame1 = new DevExpress.XtraBars.Navigation.NavigationFrame();
@@ -346,13 +352,34 @@
             this.gridColumn104 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn105 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
-            this.btnFaturaKaydet = new DevExpress.XtraEditors.SimpleButton();
-            this.btnFaturaListesiGetir = new DevExpress.XtraEditors.SimpleButton();
+            this.tileBar6 = new DevExpress.XtraBars.Navigation.TileBar();
+            this.tileBarGroup8 = new DevExpress.XtraBars.Navigation.TileBarGroup();
+            this.tileBarbtnFaturaListesiGetir = new DevExpress.XtraBars.Navigation.TileBarItem();
+            this.tileBarbtnFaturaKaydet = new DevExpress.XtraBars.Navigation.TileBarItem();
+            this.tileBarbtnFaturaPdfKaydet = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.tileBar2 = new DevExpress.XtraBars.Navigation.TileBar();
             this.tileBarGroup2 = new DevExpress.XtraBars.Navigation.TileBarGroup();
             this.tileBarItem4 = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.tileBarItem5 = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.tileBarItem6 = new DevExpress.XtraBars.Navigation.TileBarItem();
+            this.navigationPage8 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.gridXmlFatura = new DevExpress.XtraGrid.GridControl();
+            this.ViewXmlFatura = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn106 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn107 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn108 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn109 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn110 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.tileBar3 = new DevExpress.XtraBars.Navigation.TileBar();
+            this.tileBarGroup5 = new DevExpress.XtraBars.Navigation.TileBarGroup();
+            this.btnXmlKaydet = new DevExpress.XtraBars.Navigation.TileBarItem();
+            this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
+            this.tablePanel12 = new DevExpress.Utils.Layout.TablePanel();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnXmlAl = new DevExpress.XtraEditors.SimpleButton();
+            this.tablePanel13 = new DevExpress.Utils.Layout.TablePanel();
+            this.txtSiraNo = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl48 = new DevExpress.XtraEditors.LabelControl();
             this.lblSayfaIsmi = new DevExpress.XtraEditors.LabelControl();
             this.navBarControl3 = new DevExpress.XtraNavBar.NavBarControl();
             this.navBarGroup2 = new DevExpress.XtraNavBar.NavBarGroup();
@@ -499,6 +526,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.ViewFaturaListesi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
             this.groupControl6.SuspendLayout();
+            this.navigationPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridXmlFatura)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewXmlFatura)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
+            this.groupControl7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel12)).BeginInit();
+            this.tablePanel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel13)).BeginInit();
+            this.tablePanel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSiraNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl3)).BeginInit();
             this.navBarControl3.SuspendLayout();
             this.navBarGroupControlContainer2.SuspendLayout();
@@ -522,7 +559,7 @@
             this.tileBar.ItemPadding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.tileBar.Location = new System.Drawing.Point(0, 0);
             this.tileBar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tileBar.MaxId = 4;
+            this.tileBar.MaxId = 5;
             this.tileBar.MaximumSize = new System.Drawing.Size(0, 110);
             this.tileBar.Name = "tileBar";
             this.tileBar.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
@@ -577,6 +614,7 @@
             // tileBarGroup3
             // 
             this.tileBarGroup3.Items.Add(this.tileBarItem3);
+            this.tileBarGroup3.Items.Add(this.tileBarItem7);
             this.tileBarGroup3.Name = "tileBarGroup3";
             // 
             // tileBarItem3
@@ -593,17 +631,31 @@
             this.tileBarItem3.Name = "tileBarItem3";
             this.tileBarItem3.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileBarItem3_ItemClick);
             // 
+            // tileBarItem7
+            // 
+            this.tileBarItem7.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement4.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement4.ImageOptions.ImageUri.Uri = "ExportToXML";
+            tileItemElement4.Text = "XML Al";
+            this.tileBarItem7.Elements.Add(tileItemElement4);
+            this.tileBarItem7.Id = 4;
+            this.tileBarItem7.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Medium;
+            this.tileBarItem7.Name = "tileBarItem7";
+            this.tileBarItem7.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileBarItem7_ItemClick);
+            // 
             // navigationFrame
             // 
             this.navigationFrame.Controls.Add(this.navigationPage3);
             this.navigationFrame.Controls.Add(this.navigationPage4);
+            this.navigationFrame.Controls.Add(this.navigationPage8);
             this.navigationFrame.Dock = System.Windows.Forms.DockStyle.Fill;
             this.navigationFrame.Location = new System.Drawing.Point(0, 73);
             this.navigationFrame.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.navigationFrame.Name = "navigationFrame";
             this.navigationFrame.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.navigationPage3,
-            this.navigationPage4});
+            this.navigationPage4,
+            this.navigationPage8});
             this.navigationFrame.SelectedPage = this.navigationPage3;
             this.navigationFrame.Size = new System.Drawing.Size(1323, 623);
             this.navigationFrame.TabIndex = 0;
@@ -611,7 +663,6 @@
             // 
             // navigationPage3
             // 
-            this.navigationPage3.Caption = "navigationPage3";
             this.navigationPage3.Controls.Add(this.navigationFrame1);
             this.navigationPage3.Controls.Add(this.tileBar1);
             this.navigationPage3.Name = "navigationPage3";
@@ -1959,12 +2010,12 @@
             this.tileBarItem2.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.Black;
             this.tileBarItem2.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBarItem2.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement4.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement4.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
-            tileItemElement4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage")));
-            tileItemElement4.Text = "Satış Listesi";
-            tileItemElement4.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tileBarItem2.Elements.Add(tileItemElement4);
+            tileItemElement5.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement5.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage")));
+            tileItemElement5.Text = "Satış Listesi";
+            tileItemElement5.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tileBarItem2.Elements.Add(tileItemElement5);
             this.tileBarItem2.Id = 4;
             this.tileBarItem2.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem2.Name = "tileBarItem2";
@@ -1975,19 +2026,18 @@
             this.tileBarItem1.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.Black;
             this.tileBarItem1.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBarItem1.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement5.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement5.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
-            tileItemElement5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage1")));
-            tileItemElement5.Text = "Girişi Olanlar";
-            tileItemElement5.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tileBarItem1.Elements.Add(tileItemElement5);
+            tileItemElement6.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement6.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage1")));
+            tileItemElement6.Text = "Girişi Olanlar";
+            tileItemElement6.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tileBarItem1.Elements.Add(tileItemElement6);
             this.tileBarItem1.Id = 3;
             this.tileBarItem1.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem1.Name = "tileBarItem1";
             // 
             // navigationPage4
             // 
-            this.navigationPage4.Caption = "navigationPage4";
             this.navigationPage4.Controls.Add(this.navigationFrame2);
             this.navigationPage4.Controls.Add(this.tileBar2);
             this.navigationPage4.Name = "navigationPage4";
@@ -2012,7 +2062,6 @@
             // 
             // navigationPage5
             // 
-            this.navigationPage5.Caption = "navigationPage5";
             this.navigationPage5.Controls.Add(this.gridProfiloSatis);
             this.navigationPage5.Controls.Add(this.navBarControl2);
             this.navigationPage5.Controls.Add(this.groupControl2);
@@ -3412,12 +3461,12 @@
             this.btnDosyaSec.AppearanceItem.Normal.Options.UseBackColor = true;
             this.btnDosyaSec.AppearanceItem.Normal.Options.UseForeColor = true;
             this.btnDosyaSec.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
-            tileItemElement6.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleLeft;
-            tileItemElement6.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Top;
-            tileItemElement6.Text = "Excel Al";
-            tileItemElement6.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.btnDosyaSec.Elements.Add(tileItemElement6);
+            tileItemElement7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            tileItemElement7.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleLeft;
+            tileItemElement7.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Top;
+            tileItemElement7.Text = "Excel Al";
+            tileItemElement7.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.btnDosyaSec.Elements.Add(tileItemElement7);
             this.btnDosyaSec.Id = 0;
             this.btnDosyaSec.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Medium;
             this.btnDosyaSec.Name = "btnDosyaSec";
@@ -3489,10 +3538,10 @@
             this.btnKaydet.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.White;
             this.btnKaydet.AppearanceItem.Normal.Options.UseBackColor = true;
             this.btnKaydet.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
-            tileItemElement7.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Top;
-            tileItemElement7.Text = "Kaydet";
-            this.btnKaydet.Elements.Add(tileItemElement7);
+            tileItemElement8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            tileItemElement8.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Top;
+            tileItemElement8.Text = "Kaydet";
+            this.btnKaydet.Elements.Add(tileItemElement8);
             this.btnKaydet.Id = 0;
             this.btnKaydet.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Medium;
             this.btnKaydet.Name = "btnKaydet";
@@ -3504,10 +3553,10 @@
             this.btnSmsSil.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.Black;
             this.btnSmsSil.AppearanceItem.Normal.Options.UseBackColor = true;
             this.btnSmsSil.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
-            tileItemElement8.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Top;
-            tileItemElement8.Text = "SİL";
-            this.btnSmsSil.Elements.Add(tileItemElement8);
+            tileItemElement9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            tileItemElement9.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Top;
+            tileItemElement9.Text = "SİL";
+            this.btnSmsSil.Elements.Add(tileItemElement9);
             this.btnSmsSil.Enabled = false;
             this.btnSmsSil.Id = 1;
             this.btnSmsSil.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Medium;
@@ -3519,10 +3568,10 @@
             this.btnSmsYeni.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.Yellow;
             this.btnSmsYeni.AppearanceItem.Normal.Options.UseBackColor = true;
             this.btnSmsYeni.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
-            tileItemElement9.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Top;
-            tileItemElement9.Text = "Yeni";
-            this.btnSmsYeni.Elements.Add(tileItemElement9);
+            tileItemElement10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
+            tileItemElement10.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Top;
+            tileItemElement10.Text = "Yeni";
+            this.btnSmsYeni.Elements.Add(tileItemElement10);
             this.btnSmsYeni.Id = 2;
             this.btnSmsYeni.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Medium;
             this.btnSmsYeni.Name = "btnSmsYeni";
@@ -3753,10 +3802,10 @@
             // gridFaturaListesi
             // 
             this.gridFaturaListesi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridFaturaListesi.Location = new System.Drawing.Point(0, 69);
+            this.gridFaturaListesi.Location = new System.Drawing.Point(0, 110);
             this.gridFaturaListesi.MainView = this.ViewFaturaListesi;
             this.gridFaturaListesi.Name = "gridFaturaListesi";
-            this.gridFaturaListesi.Size = new System.Drawing.Size(1321, 460);
+            this.gridFaturaListesi.Size = new System.Drawing.Size(1321, 419);
             this.gridFaturaListesi.TabIndex = 1;
             this.gridFaturaListesi.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.ViewFaturaListesi});
@@ -3774,6 +3823,8 @@
             this.ViewFaturaListesi.OptionsSelection.MultiSelect = true;
             this.ViewFaturaListesi.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             this.ViewFaturaListesi.OptionsView.ColumnAutoWidth = false;
+            this.ViewFaturaListesi.OptionsView.ShowAutoFilterRow = true;
+            this.ViewFaturaListesi.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn101
             // 
@@ -3822,34 +3873,83 @@
             // 
             // groupControl6
             // 
-            this.groupControl6.Controls.Add(this.btnFaturaKaydet);
-            this.groupControl6.Controls.Add(this.btnFaturaListesiGetir);
+            this.groupControl6.Controls.Add(this.tileBar6);
             this.groupControl6.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl6.Location = new System.Drawing.Point(0, 0);
             this.groupControl6.Name = "groupControl6";
-            this.groupControl6.Size = new System.Drawing.Size(1321, 69);
+            this.groupControl6.Size = new System.Drawing.Size(1321, 110);
             this.groupControl6.TabIndex = 0;
             this.groupControl6.Text = "Filitre";
             // 
-            // btnFaturaKaydet
+            // tileBar6
             // 
-            this.btnFaturaKaydet.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
-            this.btnFaturaKaydet.Appearance.Options.UseBackColor = true;
-            this.btnFaturaKaydet.Location = new System.Drawing.Point(1121, 27);
-            this.btnFaturaKaydet.Name = "btnFaturaKaydet";
-            this.btnFaturaKaydet.Size = new System.Drawing.Size(195, 36);
-            this.btnFaturaKaydet.TabIndex = 1;
-            this.btnFaturaKaydet.Text = "Kayıt Yapıldı Olarak İşaretle";
-            this.btnFaturaKaydet.Click += new System.EventHandler(this.btnFaturaKaydet_Click);
+            this.tileBar6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tileBar6.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            this.tileBar6.Groups.Add(this.tileBarGroup8);
+            this.tileBar6.ItemPadding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.tileBar6.Location = new System.Drawing.Point(2, 23);
+            this.tileBar6.MaxId = 3;
+            this.tileBar6.Name = "tileBar6";
+            this.tileBar6.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.tileBar6.ScrollMode = DevExpress.XtraEditors.TileControlScrollMode.ScrollButtons;
+            this.tileBar6.Size = new System.Drawing.Size(524, 85);
+            this.tileBar6.TabIndex = 2;
+            this.tileBar6.Text = "tileBar6";
             // 
-            // btnFaturaListesiGetir
+            // tileBarGroup8
             // 
-            this.btnFaturaListesiGetir.Location = new System.Drawing.Point(11, 27);
-            this.btnFaturaListesiGetir.Name = "btnFaturaListesiGetir";
-            this.btnFaturaListesiGetir.Size = new System.Drawing.Size(98, 37);
-            this.btnFaturaListesiGetir.TabIndex = 0;
-            this.btnFaturaListesiGetir.Text = "Listeyi Getir";
-            this.btnFaturaListesiGetir.Click += new System.EventHandler(this.btnFaturaListesiGetir_Click);
+            this.tileBarGroup8.Items.Add(this.tileBarbtnFaturaListesiGetir);
+            this.tileBarGroup8.Items.Add(this.tileBarbtnFaturaKaydet);
+            this.tileBarGroup8.Items.Add(this.tileBarbtnFaturaPdfKaydet);
+            this.tileBarGroup8.Name = "tileBarGroup8";
+            // 
+            // tileBarbtnFaturaListesiGetir
+            // 
+            this.tileBarbtnFaturaListesiGetir.AppearanceItem.Normal.BackColor = System.Drawing.Color.Red;
+            this.tileBarbtnFaturaListesiGetir.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.Black;
+            this.tileBarbtnFaturaListesiGetir.AppearanceItem.Normal.Options.UseBackColor = true;
+            this.tileBarbtnFaturaListesiGetir.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement11.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement11.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement11.ImageOptions.SvgImage = global::YonAvm.Properties.Resources.listviewappointmentpattern;
+            tileItemElement11.Text = "Listeyi Getir";
+            this.tileBarbtnFaturaListesiGetir.Elements.Add(tileItemElement11);
+            this.tileBarbtnFaturaListesiGetir.Id = 0;
+            this.tileBarbtnFaturaListesiGetir.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
+            this.tileBarbtnFaturaListesiGetir.Name = "tileBarbtnFaturaListesiGetir";
+            this.tileBarbtnFaturaListesiGetir.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileBarbtnFaturaListesiGetir_ItemClick);
+            // 
+            // tileBarbtnFaturaKaydet
+            // 
+            this.tileBarbtnFaturaKaydet.AppearanceItem.Normal.BackColor = System.Drawing.Color.Red;
+            this.tileBarbtnFaturaKaydet.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.Black;
+            this.tileBarbtnFaturaKaydet.AppearanceItem.Normal.Options.UseBackColor = true;
+            this.tileBarbtnFaturaKaydet.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement12.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement12.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement12.ImageOptions.SvgImage = global::YonAvm.Properties.Resources.itemtypechecked;
+            tileItemElement12.Text = "Kayıt Yapıldı Olarak İşaretle";
+            this.tileBarbtnFaturaKaydet.Elements.Add(tileItemElement12);
+            this.tileBarbtnFaturaKaydet.Id = 1;
+            this.tileBarbtnFaturaKaydet.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
+            this.tileBarbtnFaturaKaydet.Name = "tileBarbtnFaturaKaydet";
+            this.tileBarbtnFaturaKaydet.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileBarbtnFaturaKaydet_ItemClick);
+            // 
+            // tileBarbtnFaturaPdfKaydet
+            // 
+            this.tileBarbtnFaturaPdfKaydet.AppearanceItem.Normal.BackColor = System.Drawing.Color.Red;
+            this.tileBarbtnFaturaPdfKaydet.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.Black;
+            this.tileBarbtnFaturaPdfKaydet.AppearanceItem.Normal.Options.UseBackColor = true;
+            this.tileBarbtnFaturaPdfKaydet.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement13.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement13.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement13.ImageOptions.SvgImage = global::YonAvm.Properties.Resources.documentpdf;
+            tileItemElement13.Text = "Listenin işaretlilerinin Fatura Görünütüsünü Kaydet";
+            this.tileBarbtnFaturaPdfKaydet.Elements.Add(tileItemElement13);
+            this.tileBarbtnFaturaPdfKaydet.Id = 2;
+            this.tileBarbtnFaturaPdfKaydet.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
+            this.tileBarbtnFaturaPdfKaydet.Name = "tileBarbtnFaturaPdfKaydet";
+            this.tileBarbtnFaturaPdfKaydet.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileBarbtnFaturaPdfKaydet_ItemClick);
             // 
             // tileBar2
             // 
@@ -3870,7 +3970,7 @@
             this.tileBar2.MaxId = 7;
             this.tileBar2.MaximumSize = new System.Drawing.Size(0, 110);
             this.tileBar2.Name = "tileBar2";
-            this.tileBar2.Padding = new System.Windows.Forms.Padding(0, 0, 12, 0);
+            this.tileBar2.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.tileBar2.ScrollMode = DevExpress.XtraEditors.TileControlScrollMode.None;
             this.tileBar2.SelectionBorderWidth = 2;
             this.tileBar2.SelectionColorMode = DevExpress.XtraBars.Navigation.SelectionColorMode.UseItemBackColor;
@@ -3894,12 +3994,12 @@
             this.tileBarItem4.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.Black;
             this.tileBarItem4.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBarItem4.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement10.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement10.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
-            tileItemElement10.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage2")));
-            tileItemElement10.Text = "Satış Listesi";
-            tileItemElement10.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tileBarItem4.Elements.Add(tileItemElement10);
+            tileItemElement14.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement14.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement14.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage2")));
+            tileItemElement14.Text = "Satış Listesi";
+            tileItemElement14.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tileBarItem4.Elements.Add(tileItemElement14);
             this.tileBarItem4.Id = 4;
             this.tileBarItem4.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem4.Name = "tileBarItem4";
@@ -3910,12 +4010,12 @@
             this.tileBarItem5.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.Black;
             this.tileBarItem5.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBarItem5.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement11.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement11.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
-            tileItemElement11.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage3")));
-            tileItemElement11.Text = "Girişi Olanlar";
-            tileItemElement11.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tileBarItem5.Elements.Add(tileItemElement11);
+            tileItemElement15.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement15.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement15.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage3")));
+            tileItemElement15.Text = "Girişi Olanlar";
+            tileItemElement15.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tileBarItem5.Elements.Add(tileItemElement15);
             this.tileBarItem5.Id = 3;
             this.tileBarItem5.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem5.Name = "tileBarItem5";
@@ -3926,14 +4026,228 @@
             this.tileBarItem6.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.Black;
             this.tileBarItem6.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBarItem6.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement12.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement12.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
-            tileItemElement12.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage4")));
-            tileItemElement12.Text = "E-Fatura Süreçleri";
-            this.tileBarItem6.Elements.Add(tileItemElement12);
+            tileItemElement16.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement16.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement16.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage4")));
+            tileItemElement16.Text = "E-Fatura Süreçleri";
+            this.tileBarItem6.Elements.Add(tileItemElement16);
             this.tileBarItem6.Id = 6;
             this.tileBarItem6.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem6.Name = "tileBarItem6";
+            // 
+            // navigationPage8
+            // 
+            this.navigationPage8.Caption = "navigationPage8";
+            this.navigationPage8.Controls.Add(this.gridXmlFatura);
+            this.navigationPage8.Controls.Add(this.tileBar3);
+            this.navigationPage8.Controls.Add(this.groupControl7);
+            this.navigationPage8.Name = "navigationPage8";
+            this.navigationPage8.Size = new System.Drawing.Size(1323, 623);
+            // 
+            // gridXmlFatura
+            // 
+            this.gridXmlFatura.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridXmlFatura.Location = new System.Drawing.Point(0, 86);
+            this.gridXmlFatura.MainView = this.ViewXmlFatura;
+            this.gridXmlFatura.Name = "gridXmlFatura";
+            this.gridXmlFatura.Size = new System.Drawing.Size(1323, 476);
+            this.gridXmlFatura.TabIndex = 7;
+            this.gridXmlFatura.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.ViewXmlFatura});
+            // 
+            // ViewXmlFatura
+            // 
+            this.ViewXmlFatura.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn106,
+            this.gridColumn107,
+            this.gridColumn108,
+            this.gridColumn109,
+            this.gridColumn110});
+            this.ViewXmlFatura.GridControl = this.gridXmlFatura;
+            this.ViewXmlFatura.Name = "ViewXmlFatura";
+            this.ViewXmlFatura.OptionsSelection.MultiSelect = true;
+            this.ViewXmlFatura.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
+            this.ViewXmlFatura.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn106
+            // 
+            this.gridColumn106.Caption = "Musteri";
+            this.gridColumn106.FieldName = "CURNAME";
+            this.gridColumn106.Name = "gridColumn106";
+            this.gridColumn106.Visible = true;
+            this.gridColumn106.VisibleIndex = 1;
+            // 
+            // gridColumn107
+            // 
+            this.gridColumn107.Caption = "Tarih";
+            this.gridColumn107.FieldName = "SALDATE";
+            this.gridColumn107.Name = "gridColumn107";
+            this.gridColumn107.Visible = true;
+            this.gridColumn107.VisibleIndex = 2;
+            // 
+            // gridColumn108
+            // 
+            this.gridColumn108.Caption = "Tutar";
+            this.gridColumn108.FieldName = "SALAMOUNT";
+            this.gridColumn108.Name = "gridColumn108";
+            this.gridColumn108.Visible = true;
+            this.gridColumn108.VisibleIndex = 3;
+            // 
+            // gridColumn109
+            // 
+            this.gridColumn109.Caption = "Mağaza";
+            this.gridColumn109.FieldName = "DIVNAME";
+            this.gridColumn109.Name = "gridColumn109";
+            this.gridColumn109.Visible = true;
+            this.gridColumn109.VisibleIndex = 4;
+            // 
+            // gridColumn110
+            // 
+            this.gridColumn110.Caption = "Fatura No";
+            this.gridColumn110.FieldName = "FaturaNo";
+            this.gridColumn110.Name = "gridColumn110";
+            this.gridColumn110.Visible = true;
+            this.gridColumn110.VisibleIndex = 5;
+            // 
+            // tileBar3
+            // 
+            this.tileBar3.AllowGlyphSkinning = true;
+            this.tileBar3.AllowSelectedItem = true;
+            this.tileBar3.AppearanceGroupText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.tileBar3.AppearanceGroupText.Options.UseForeColor = true;
+            this.tileBar3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.tileBar3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tileBar3.DropDownButtonWidth = 30;
+            this.tileBar3.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            this.tileBar3.Groups.Add(this.tileBarGroup5);
+            this.tileBar3.IndentBetweenGroups = 10;
+            this.tileBar3.IndentBetweenItems = 10;
+            this.tileBar3.ItemPadding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.tileBar3.Location = new System.Drawing.Point(0, 562);
+            this.tileBar3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tileBar3.MaxId = 6;
+            this.tileBar3.MaximumSize = new System.Drawing.Size(0, 110);
+            this.tileBar3.Name = "tileBar3";
+            this.tileBar3.Padding = new System.Windows.Forms.Padding(0, 0, 12, 0);
+            this.tileBar3.ScrollMode = DevExpress.XtraEditors.TileControlScrollMode.None;
+            this.tileBar3.SelectionBorderWidth = 2;
+            this.tileBar3.SelectionColorMode = DevExpress.XtraBars.Navigation.SelectionColorMode.UseItemBackColor;
+            this.tileBar3.ShowGroupText = false;
+            this.tileBar3.Size = new System.Drawing.Size(1323, 61);
+            this.tileBar3.TabIndex = 8;
+            this.tileBar3.Text = "tileBar3";
+            this.tileBar3.WideTileWidth = 150;
+            // 
+            // tileBarGroup5
+            // 
+            this.tileBarGroup5.Items.Add(this.btnXmlKaydet);
+            this.tileBarGroup5.Name = "tileBarGroup5";
+            // 
+            // btnXmlKaydet
+            // 
+            this.btnXmlKaydet.AppearanceItem.Normal.BackColor = System.Drawing.Color.Blue;
+            this.btnXmlKaydet.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.Black;
+            this.btnXmlKaydet.AppearanceItem.Normal.Options.UseBackColor = true;
+            this.btnXmlKaydet.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement17.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement17.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement17.ImageOptions.SvgImage = global::YonAvm.Properties.Resources.saveas;
+            tileItemElement17.Text = "Kaydet";
+            tileItemElement17.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.btnXmlKaydet.Elements.Add(tileItemElement17);
+            this.btnXmlKaydet.Id = 4;
+            this.btnXmlKaydet.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
+            this.btnXmlKaydet.Name = "btnXmlKaydet";
+            this.btnXmlKaydet.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.btnXmlKaydet_ItemClick);
+            // 
+            // groupControl7
+            // 
+            this.groupControl7.Controls.Add(this.tablePanel12);
+            this.groupControl7.Controls.Add(this.tablePanel13);
+            this.groupControl7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupControl7.Location = new System.Drawing.Point(0, 0);
+            this.groupControl7.Name = "groupControl7";
+            this.groupControl7.Size = new System.Drawing.Size(1323, 86);
+            this.groupControl7.TabIndex = 6;
+            this.groupControl7.Text = "Satış Filitresi";
+            // 
+            // tablePanel12
+            // 
+            this.tablePanel12.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 33F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 33F)});
+            this.tablePanel12.Controls.Add(this.simpleButton1);
+            this.tablePanel12.Controls.Add(this.btnXmlAl);
+            this.tablePanel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablePanel12.Location = new System.Drawing.Point(265, 23);
+            this.tablePanel12.Name = "tablePanel12";
+            this.tablePanel12.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
+            this.tablePanel12.Size = new System.Drawing.Size(1056, 61);
+            this.tablePanel12.TabIndex = 2;
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary;
+            this.simpleButton1.Appearance.Options.UseBackColor = true;
+            this.tablePanel12.SetColumn(this.simpleButton1, 1);
+            this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton1.Enabled = false;
+            this.simpleButton1.Location = new System.Drawing.Point(531, 3);
+            this.simpleButton1.Name = "simpleButton1";
+            this.tablePanel12.SetRow(this.simpleButton1, 0);
+            this.simpleButton1.Size = new System.Drawing.Size(522, 55);
+            this.simpleButton1.TabIndex = 4;
+            this.simpleButton1.Text = "Yeni Sorgu";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
+            // btnXmlAl
+            // 
+            this.btnXmlAl.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
+            this.btnXmlAl.Appearance.Options.UseBackColor = true;
+            this.tablePanel12.SetColumn(this.btnXmlAl, 0);
+            this.btnXmlAl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnXmlAl.Location = new System.Drawing.Point(3, 3);
+            this.btnXmlAl.Name = "btnXmlAl";
+            this.tablePanel12.SetRow(this.btnXmlAl, 0);
+            this.btnXmlAl.Size = new System.Drawing.Size(522, 55);
+            this.btnXmlAl.TabIndex = 3;
+            this.btnXmlAl.Text = "Satış Listesini Getir";
+            this.btnXmlAl.Click += new System.EventHandler(this.btnXmlAl_Click);
+            // 
+            // tablePanel13
+            // 
+            this.tablePanel13.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26.6F)});
+            this.tablePanel13.Controls.Add(this.txtSiraNo);
+            this.tablePanel13.Controls.Add(this.labelControl48);
+            this.tablePanel13.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tablePanel13.Location = new System.Drawing.Point(2, 23);
+            this.tablePanel13.Name = "tablePanel13";
+            this.tablePanel13.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 27F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
+            this.tablePanel13.Size = new System.Drawing.Size(263, 61);
+            this.tablePanel13.TabIndex = 1;
+            // 
+            // txtSiraNo
+            // 
+            this.tablePanel13.SetColumn(this.txtSiraNo, 0);
+            this.txtSiraNo.Location = new System.Drawing.Point(3, 34);
+            this.txtSiraNo.Name = "txtSiraNo";
+            this.tablePanel13.SetRow(this.txtSiraNo, 1);
+            this.txtSiraNo.Size = new System.Drawing.Size(257, 20);
+            this.txtSiraNo.TabIndex = 8;
+            // 
+            // labelControl48
+            // 
+            this.tablePanel13.SetColumn(this.labelControl48, 0);
+            this.labelControl48.Location = new System.Drawing.Point(3, 7);
+            this.labelControl48.Name = "labelControl48";
+            this.tablePanel13.SetRow(this.labelControl48, 0);
+            this.labelControl48.Size = new System.Drawing.Size(51, 13);
+            this.labelControl48.TabIndex = 7;
+            this.labelControl48.Text = "Müşteri No";
             // 
             // lblSayfaIsmi
             // 
@@ -3944,9 +4258,9 @@
             this.lblSayfaIsmi.Appearance.Options.UseTextOptions = true;
             this.lblSayfaIsmi.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.lblSayfaIsmi.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblSayfaIsmi.Location = new System.Drawing.Point(494, 8);
+            this.lblSayfaIsmi.Location = new System.Drawing.Point(593, 10);
             this.lblSayfaIsmi.Name = "lblSayfaIsmi";
-            this.lblSayfaIsmi.Size = new System.Drawing.Size(849, 57);
+            this.lblSayfaIsmi.Size = new System.Drawing.Size(672, 57);
             this.lblSayfaIsmi.TabIndex = 2;
             this.lblSayfaIsmi.Text = "VESTEL";
             // 
@@ -4157,6 +4471,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.ViewFaturaListesi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
             this.groupControl6.ResumeLayout(false);
+            this.navigationPage8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridXmlFatura)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewXmlFatura)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).EndInit();
+            this.groupControl7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel12)).EndInit();
+            this.tablePanel12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel13)).EndInit();
+            this.tablePanel13.ResumeLayout(false);
+            this.tablePanel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSiraNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl3)).EndInit();
             this.navBarControl3.ResumeLayout(false);
             this.navBarGroupControlContainer2.ResumeLayout(false);
@@ -4481,7 +4806,29 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn103;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn104;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn105;
-        private DevExpress.XtraEditors.SimpleButton btnFaturaKaydet;
-        private DevExpress.XtraEditors.SimpleButton btnFaturaListesiGetir;
+        private DevExpress.XtraBars.Navigation.TileBarItem tileBarItem7;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage8;
+        private DevExpress.XtraEditors.GroupControl groupControl7;
+        private DevExpress.Utils.Layout.TablePanel tablePanel12;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btnXmlAl;
+        private DevExpress.Utils.Layout.TablePanel tablePanel13;
+        private DevExpress.XtraEditors.LabelControl labelControl48;
+        private DevExpress.XtraEditors.TextEdit txtSiraNo;
+        private DevExpress.XtraGrid.GridControl gridXmlFatura;
+        private DevExpress.XtraGrid.Views.Grid.GridView ViewXmlFatura;
+        private DevExpress.XtraBars.Navigation.TileBar tileBar3;
+        private DevExpress.XtraBars.Navigation.TileBarGroup tileBarGroup5;
+        private DevExpress.XtraBars.Navigation.TileBarItem btnXmlKaydet;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn106;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn107;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn108;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn109;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn110;
+        private DevExpress.XtraBars.Navigation.TileBar tileBar6;
+        private DevExpress.XtraBars.Navigation.TileBarGroup tileBarGroup8;
+        private DevExpress.XtraBars.Navigation.TileBarItem tileBarbtnFaturaListesiGetir;
+        private DevExpress.XtraBars.Navigation.TileBarItem tileBarbtnFaturaKaydet;
+        private DevExpress.XtraBars.Navigation.TileBarItem tileBarbtnFaturaPdfKaydet;
     }
 }

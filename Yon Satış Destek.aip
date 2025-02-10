@@ -11,10 +11,10 @@
     <ROW Property="AiEmbeddedUI" Value="1"/>
     <ROW Property="AiWinUI" Value="1"/>
     <ROW Property="Manufacturer" Value="Yön AVM IT Ekibi"/>
-    <ROW Property="ProductCode" Value="1055:{F1FA8B00-608E-44EA-BA74-7512390CF97A} " Type="16"/>
+    <ROW Property="ProductCode" Value="1055:{C1100419-A642-41CB-8317-C29B99BA7EEF} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="Yon Satış Destek"/>
-    <ROW Property="ProductVersion" Value="1.0.6" Options="32"/>
+    <ROW Property="ProductVersion" Value="1.0.8" Options="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{F5B794A0-B748-42A8-9AF4-CA537879AF4E}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
@@ -45,31 +45,31 @@
     <ROW Component="APPDIR" ComponentId="{F25985F4-087A-4077-9BA7-5E74752862A7}" Directory_="APPDIR" Attributes="0"/>
     <ROW Component="DevExpress.Blazor.resources.dll" ComponentId="{4DE8D2FA-B098-44A2-9301-C3EF2DDDC27A}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.Blazor.resources.dll"/>
     <ROW Component="DevExpress.Charts.Designer.v19.2.resources.dll" ComponentId="{1961FC68-84F7-4C0E-A08A-6C1F2E8E499E}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.Charts.Designer.v19.2.resources.dll"/>
-    <ROW Component="DevExpress.Charts.v19.2.Core.dll" ComponentId="{DE793734-B04B-47B3-B411-56C2E8811BC1}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Charts.v19.2.Core.dll"/>
-    <ROW Component="DevExpress.CodeParser.v19.2.dll" ComponentId="{36656A1B-43E8-4C86-B53F-08182943041E}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.CodeParser.v19.2.dll"/>
+    <ROW Component="DevExpress.Charts.v19.2.Core.dll" ComponentId="{8E78E502-F7F2-4E63-BE10-7381B6A8B7D0}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Charts.v19.2.Core.dll"/>
+    <ROW Component="DevExpress.CodeParser.v19.2.dll" ComponentId="{F048191C-5EF5-48B8-B8E9-3CCE14922C41}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.CodeParser.v19.2.dll"/>
     <ROW Component="DevExpress.Dashboard.v19.2.Core.resources.dll" ComponentId="{667AA95A-AA2F-4C62-9546-E9F1E612DE59}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.Dashboard.v19.2.Core.resources.dll"/>
     <ROW Component="DevExpress.Dashboard.v19.2.Web.resources.dll" ComponentId="{0700932E-8F3A-40AF-97D5-1F698E08A12E}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.Dashboard.v19.2.Web.resources.dll"/>
     <ROW Component="DevExpress.Dashboard.v19.2.Win.resources.dll" ComponentId="{FE6768A3-30D9-46F2-9DEE-BDEC8BA8EC9F}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.Dashboard.v19.2.Win.resources.dll"/>
-    <ROW Component="DevExpress.Data.v19.2.dll" ComponentId="{E9E5ECA2-2045-40E7-95EA-FEFCC828808E}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Data.v19.2.dll"/>
+    <ROW Component="DevExpress.Data.v19.2.dll" ComponentId="{A3F62CAD-7483-4959-8D41-316A728CACFA}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Data.v19.2.dll"/>
     <ROW Component="DevExpress.Data.v19.2.resources.dll" ComponentId="{C9CBA00D-CF2E-4E38-B609-E3D006A56C76}" Directory_="de_Dir" Attributes="0" KeyPath="DevExpress.Data.v19.2.resources.dll"/>
     <ROW Component="DevExpress.Data.v19.2.resources.dll_1" ComponentId="{45F041FA-2318-429D-A1E6-BDF7290FFB25}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.Data.v19.2.resources.dll_1"/>
     <ROW Component="DevExpress.Data.v19.2.resources.dll_2" ComponentId="{061EA2FA-50A7-4202-A6C3-7241E2E86181}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.Data.v19.2.resources.dll_2"/>
     <ROW Component="DevExpress.Data.v19.2.resources.dll_3" ComponentId="{77C75ECA-4C37-4EAC-B6A4-8573F32FD051}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.Data.v19.2.resources.dll_3"/>
     <ROW Component="DevExpress.Data.v19.2.resources.dll_4" ComponentId="{973D4DAF-C373-4E05-8513-1BE0E7DD9CB0}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.Data.v19.2.resources.dll_4"/>
-    <ROW Component="DevExpress.Data.v19.2.xml" ComponentId="{62AD47DD-4AD1-46E4-A592-3C1645247792}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Data.v19.2.xml" Type="0"/>
-    <ROW Component="DevExpress.DataAccess.v19.2.UI.dll" ComponentId="{6E44A48C-E6F4-40AF-A92C-87DE2D21E4B5}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.DataAccess.v19.2.UI.dll"/>
+    <ROW Component="DevExpress.Data.v19.2.xml" ComponentId="{E4ACC12D-AB5E-403E-826B-373E6E38FA39}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Data.v19.2.xml" Type="0"/>
+    <ROW Component="DevExpress.DataAccess.v19.2.UI.dll" ComponentId="{082087E8-575F-4059-82E9-E44F3AE5E451}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.DataAccess.v19.2.UI.dll"/>
     <ROW Component="DevExpress.DataAccess.v19.2.UI.resou_1_rces.dll" ComponentId="{DD6167CD-FD6D-4BFD-B339-D67B48643D0B}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.DataAccess.v19.2.UI.resou_1_rces.dll"/>
     <ROW Component="DevExpress.DataAccess.v19.2.UI.resou_2_rces.dll" ComponentId="{E1A36221-3386-468C-9594-0D344C5CA29E}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.DataAccess.v19.2.UI.resou_2_rces.dll"/>
     <ROW Component="DevExpress.DataAccess.v19.2.UI.resou_3_rces.dll" ComponentId="{7576DB1A-F6C5-4124-8259-FC7B5702ADF9}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.DataAccess.v19.2.UI.resou_3_rces.dll"/>
     <ROW Component="DevExpress.DataAccess.v19.2.UI.resou_4_rces.dll" ComponentId="{EFA8FFE4-7AAA-4129-9BE4-1962A3888AE5}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.DataAccess.v19.2.UI.resou_4_rces.dll"/>
     <ROW Component="DevExpress.DataAccess.v19.2.UI.resources.dll" ComponentId="{E3F03BBE-F913-406D-A73D-C9098A9A1A32}" Directory_="de_Dir" Attributes="0" KeyPath="DevExpress.DataAccess.v19.2.UI.resources.dll"/>
-    <ROW Component="DevExpress.DataAccess.v19.2.dll" ComponentId="{9F5372A9-CA71-4F44-9075-9CF7513E6FE8}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.DataAccess.v19.2.dll"/>
+    <ROW Component="DevExpress.DataAccess.v19.2.dll" ComponentId="{52BC63E2-908C-4C52-A095-91DA890BABB6}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.DataAccess.v19.2.dll"/>
     <ROW Component="DevExpress.DataAccess.v19.2.resource_1_s.dll" ComponentId="{707AB43B-E54C-4A6E-8A2B-C9688792C736}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.DataAccess.v19.2.resource_1_s.dll"/>
     <ROW Component="DevExpress.DataAccess.v19.2.resource_2_s.dll" ComponentId="{4B2651D8-F8D2-4919-8010-35620FE4073B}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.DataAccess.v19.2.resource_2_s.dll"/>
     <ROW Component="DevExpress.DataAccess.v19.2.resource_3_s.dll" ComponentId="{CB22399E-42FC-49BC-B587-EF4B50E23066}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.DataAccess.v19.2.resource_3_s.dll"/>
     <ROW Component="DevExpress.DataAccess.v19.2.resource_4_s.dll" ComponentId="{0BCCA9BE-4771-4233-8345-69543BAA8E3D}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.DataAccess.v19.2.resource_4_s.dll"/>
     <ROW Component="DevExpress.DataAccess.v19.2.resources.dll" ComponentId="{08637659-DAE2-4D4A-997B-EBA6B3A0DEDF}" Directory_="de_Dir" Attributes="0" KeyPath="DevExpress.DataAccess.v19.2.resources.dll"/>
-    <ROW Component="DevExpress.Diagram.v19.2.Core.dll" ComponentId="{290C2BB5-0ACD-42B2-AB8F-347919445C19}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Diagram.v19.2.Core.dll"/>
+    <ROW Component="DevExpress.Diagram.v19.2.Core.dll" ComponentId="{B4DCF060-6A4A-44AD-9D90-A5FEA6F45E84}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Diagram.v19.2.Core.dll"/>
     <ROW Component="DevExpress.Diagram.v19.2.Core.resour_1_ces.dll" ComponentId="{E8AE2710-6B84-4F73-9F13-C9317DB37AA2}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.Diagram.v19.2.Core.resour_1_ces.dll"/>
     <ROW Component="DevExpress.Diagram.v19.2.Core.resour_2_ces.dll" ComponentId="{4F04D0EC-7400-430C-85DF-7DAB31D9BF93}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.Diagram.v19.2.Core.resour_2_ces.dll"/>
     <ROW Component="DevExpress.Diagram.v19.2.Core.resour_3_ces.dll" ComponentId="{8777A965-2EA3-4E6C-99E7-8C0AA1F4DE94}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.Diagram.v19.2.Core.resour_3_ces.dll"/>
@@ -121,16 +121,16 @@
     <ROW Component="DevExpress.ExpressApp.Workflow.Win.v19.2.resources.dll" ComponentId="{B1677988-6DF9-4509-8AE2-B9609B6778F2}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.ExpressApp.Workflow.Win.v19.2.resources.dll"/>
     <ROW Component="DevExpress.ExpressApp.Workflow.v19.2.resources.dll" ComponentId="{023E194D-F8E9-4855-B835-704C15DDBE75}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.ExpressApp.Workflow.v19.2.resources.dll"/>
     <ROW Component="DevExpress.ExpressApp.v19.2.resources.dll" ComponentId="{706DFA64-E95A-42C2-A8D3-FC8A19833EB5}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.ExpressApp.v19.2.resources.dll"/>
-    <ROW Component="DevExpress.Images.v19.2.dll" ComponentId="{5DE0A381-69E2-4286-AD0F-232B88CBD8DC}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Images.v19.2.dll"/>
+    <ROW Component="DevExpress.Images.v19.2.dll" ComponentId="{BA773C13-C320-4AC3-B446-C18B4042FF72}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Images.v19.2.dll"/>
     <ROW Component="DevExpress.Map.v19.2.Core.resources.dll" ComponentId="{8840EFEB-850E-42F6-8497-7FCC29E582B4}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.Map.v19.2.Core.resources.dll"/>
     <ROW Component="DevExpress.Mvvm.v19.2.DataModel.resources.dll" ComponentId="{1427C2C2-37C2-4193-8ECA-3E4FB96E27A5}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.Mvvm.v19.2.DataModel.resources.dll"/>
-    <ROW Component="DevExpress.Office.v19.2.Core.dll" ComponentId="{3E38A584-1AE3-40D1-8F23-68EFAE2BE465}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Office.v19.2.Core.dll"/>
+    <ROW Component="DevExpress.Office.v19.2.Core.dll" ComponentId="{501F258C-02D3-452C-ADCA-61F05EEA9EAC}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Office.v19.2.Core.dll"/>
     <ROW Component="DevExpress.Office.v19.2.Core.resourc_1_es.dll" ComponentId="{70130292-52E8-49AC-92BA-7B265D46FFF4}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.Office.v19.2.Core.resourc_1_es.dll"/>
     <ROW Component="DevExpress.Office.v19.2.Core.resourc_2_es.dll" ComponentId="{35EFF2A1-E191-4677-99C5-C20566DF3DC0}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.Office.v19.2.Core.resourc_2_es.dll"/>
     <ROW Component="DevExpress.Office.v19.2.Core.resourc_3_es.dll" ComponentId="{D034298D-B529-49E4-8B75-5B18D0B2EFE8}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.Office.v19.2.Core.resourc_3_es.dll"/>
     <ROW Component="DevExpress.Office.v19.2.Core.resourc_4_es.dll" ComponentId="{13A5ECCA-865B-416B-9B0F-A32BA546B5EE}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.Office.v19.2.Core.resourc_4_es.dll"/>
     <ROW Component="DevExpress.Office.v19.2.Core.resources.dll" ComponentId="{BF7EC6C7-B720-4123-A462-BEF2464B4B84}" Directory_="de_Dir" Attributes="0" KeyPath="DevExpress.Office.v19.2.Core.resources.dll"/>
-    <ROW Component="DevExpress.Pdf.v19.2.Core.dll" ComponentId="{AA870ED3-9836-4B42-9E09-BDA798B37239}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Pdf.v19.2.Core.dll"/>
+    <ROW Component="DevExpress.Pdf.v19.2.Core.dll" ComponentId="{AB19FA57-8AB8-4D9F-9700-B4C534FC87DB}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Pdf.v19.2.Core.dll"/>
     <ROW Component="DevExpress.Pdf.v19.2.Core.resources._1_dll" ComponentId="{BA909A27-30D6-4421-87A7-5EE81D76F62A}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.Pdf.v19.2.Core.resources._1_dll"/>
     <ROW Component="DevExpress.Pdf.v19.2.Core.resources._2_dll" ComponentId="{BC977CE0-1695-47A2-8E25-A7F1FFEE544C}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.Pdf.v19.2.Core.resources._2_dll"/>
     <ROW Component="DevExpress.Pdf.v19.2.Core.resources._3_dll" ComponentId="{8A933E32-8763-4CE1-AD2F-7C06912057A1}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.Pdf.v19.2.Core.resources._3_dll"/>
@@ -138,14 +138,14 @@
     <ROW Component="DevExpress.Pdf.v19.2.Core.resources.dll" ComponentId="{2BCBFA6D-0F28-4605-BF2E-E18DE8A0CE64}" Directory_="de_Dir" Attributes="0" KeyPath="DevExpress.Pdf.v19.2.Core.resources.dll"/>
     <ROW Component="DevExpress.Persistent.Base.v19.2.resources.dll" ComponentId="{997D3558-3A48-42E5-9A68-4F504BA5C824}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.Persistent.Base.v19.2.resources.dll"/>
     <ROW Component="DevExpress.PivotGrid.v19.2.Core.resources.dll" ComponentId="{D3C77956-923C-48B9-B66D-739CCA221981}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.PivotGrid.v19.2.Core.resources.dll"/>
-    <ROW Component="DevExpress.Printing.v19.2.Core.dll" ComponentId="{AB7E51DF-A578-473B-A713-C7281CBD4C36}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Printing.v19.2.Core.dll"/>
+    <ROW Component="DevExpress.Printing.v19.2.Core.dll" ComponentId="{65C845E2-E748-41C3-A1F3-DC74C80A69C2}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Printing.v19.2.Core.dll"/>
     <ROW Component="DevExpress.Printing.v19.2.Core.resou_1_rces.dll" ComponentId="{1775A377-8E49-460C-B60A-9FD73C77DAA9}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.Printing.v19.2.Core.resou_1_rces.dll"/>
     <ROW Component="DevExpress.Printing.v19.2.Core.resou_2_rces.dll" ComponentId="{E2EA6F15-304D-467E-B2B2-F79C3375B9D1}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.Printing.v19.2.Core.resou_2_rces.dll"/>
     <ROW Component="DevExpress.Printing.v19.2.Core.resou_3_rces.dll" ComponentId="{1EDF7B91-1453-4D34-A793-75A10BDE7B57}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.Printing.v19.2.Core.resou_3_rces.dll"/>
     <ROW Component="DevExpress.Printing.v19.2.Core.resou_4_rces.dll" ComponentId="{C668D2CC-0131-471E-B4EE-399E39066B3D}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.Printing.v19.2.Core.resou_4_rces.dll"/>
     <ROW Component="DevExpress.Printing.v19.2.Core.resources.dll" ComponentId="{CCB3973C-2398-447E-850D-C37EBD10FEEF}" Directory_="de_Dir" Attributes="0" KeyPath="DevExpress.Printing.v19.2.Core.resources.dll"/>
     <ROW Component="DevExpress.ReportServer.v19.2.Localization.resources.dll" ComponentId="{D9F961BB-0F7C-4244-A000-497CE536A91F}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.ReportServer.v19.2.Localization.resources.dll"/>
-    <ROW Component="DevExpress.RichEdit.v19.2.Core.dll" ComponentId="{4E23018F-9F34-4635-9A87-B016BDBCF487}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.RichEdit.v19.2.Core.dll"/>
+    <ROW Component="DevExpress.RichEdit.v19.2.Core.dll" ComponentId="{58F2782B-AEED-4D6A-BB8C-778824DDDFD5}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.RichEdit.v19.2.Core.dll"/>
     <ROW Component="DevExpress.RichEdit.v19.2.Core.resou_1_rces.dll" ComponentId="{267C2396-0960-40E8-A23F-D03B856EF3B1}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.RichEdit.v19.2.Core.resou_1_rces.dll"/>
     <ROW Component="DevExpress.RichEdit.v19.2.Core.resou_2_rces.dll" ComponentId="{2244A64C-BDAA-4512-9827-D9024D173D86}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.RichEdit.v19.2.Core.resou_2_rces.dll"/>
     <ROW Component="DevExpress.RichEdit.v19.2.Core.resou_3_rces.dll" ComponentId="{38224F7E-CD5B-4460-A970-38E09513D744}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.RichEdit.v19.2.Core.resou_3_rces.dll"/>
@@ -154,25 +154,25 @@
     <ROW Component="DevExpress.Snap.v19.2.Core.resources.dll" ComponentId="{4D036A3D-4C92-42BA-A015-C541F86B6CE6}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.Snap.v19.2.Core.resources.dll"/>
     <ROW Component="DevExpress.Snap.v19.2.Extensions.resources.dll" ComponentId="{CAEC56DC-93C5-4D0D-BD82-252C16E73066}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.Snap.v19.2.Extensions.resources.dll"/>
     <ROW Component="DevExpress.Snap.v19.2.resources.dll" ComponentId="{DCF9C284-B7A0-42F2-9110-E44BDA27A166}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.Snap.v19.2.resources.dll"/>
-    <ROW Component="DevExpress.Sparkline.v19.2.Core.dll" ComponentId="{4004246A-2B99-4818-83AD-88BD2A7F25CA}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Sparkline.v19.2.Core.dll"/>
+    <ROW Component="DevExpress.Sparkline.v19.2.Core.dll" ComponentId="{3533B39E-A307-47E3-B2AD-7BCAFDF7E87F}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Sparkline.v19.2.Core.dll"/>
     <ROW Component="DevExpress.Sparkline.v19.2.Core.reso_1_urces.dll" ComponentId="{C38B4FED-0C37-4A8E-AE2F-AACFE5ECD76B}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.Sparkline.v19.2.Core.reso_1_urces.dll"/>
     <ROW Component="DevExpress.Sparkline.v19.2.Core.reso_2_urces.dll" ComponentId="{286AE636-1786-40F7-95AB-7D2860D58DA1}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.Sparkline.v19.2.Core.reso_2_urces.dll"/>
     <ROW Component="DevExpress.Sparkline.v19.2.Core.reso_3_urces.dll" ComponentId="{B59AB6C5-68E0-4308-AE15-B8D83C8A64DB}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.Sparkline.v19.2.Core.reso_3_urces.dll"/>
     <ROW Component="DevExpress.Sparkline.v19.2.Core.reso_4_urces.dll" ComponentId="{3A0724B1-FCCB-44CE-A635-D8B25668E9E0}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.Sparkline.v19.2.Core.reso_4_urces.dll"/>
     <ROW Component="DevExpress.Sparkline.v19.2.Core.resources.dll" ComponentId="{234ACFA8-6E66-4D3D-883E-9EF8727F9C1B}" Directory_="de_Dir" Attributes="0" KeyPath="DevExpress.Sparkline.v19.2.Core.resources.dll"/>
-    <ROW Component="DevExpress.Spreadsheet.v19.2.Core.dll" ComponentId="{65A0DB0F-A3AE-427C-969C-17E4A617E1C8}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Spreadsheet.v19.2.Core.dll"/>
+    <ROW Component="DevExpress.Spreadsheet.v19.2.Core.dll" ComponentId="{F05B15A1-40D9-48E0-8FF5-C0366156F33D}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Spreadsheet.v19.2.Core.dll"/>
     <ROW Component="DevExpress.Spreadsheet.v19.2.Core.re_1_sources.dll" ComponentId="{D197F2C4-48CA-47EE-8936-0477B1FD79AD}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.Spreadsheet.v19.2.Core.re_1_sources.dll"/>
     <ROW Component="DevExpress.Spreadsheet.v19.2.Core.re_2_sources.dll" ComponentId="{0CBB2D22-844E-4652-B2EF-0E0B6853308A}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.Spreadsheet.v19.2.Core.re_2_sources.dll"/>
     <ROW Component="DevExpress.Spreadsheet.v19.2.Core.re_3_sources.dll" ComponentId="{62BF4C53-E4DC-4399-A0F7-85E7AB714646}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.Spreadsheet.v19.2.Core.re_3_sources.dll"/>
     <ROW Component="DevExpress.Spreadsheet.v19.2.Core.re_4_sources.dll" ComponentId="{783AD0BC-108A-4E12-AAB4-BF6306EEF5AF}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.Spreadsheet.v19.2.Core.re_4_sources.dll"/>
     <ROW Component="DevExpress.Spreadsheet.v19.2.Core.resources.dll" ComponentId="{A1F6B37C-7895-4E28-B6B7-BA6351B585DB}" Directory_="de_Dir" Attributes="0" KeyPath="DevExpress.Spreadsheet.v19.2.Core.resources.dll"/>
-    <ROW Component="DevExpress.Utils.v19.2.UI.dll" ComponentId="{E8729BF4-3C0F-450A-BDB9-A284F9D462C8}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Utils.v19.2.UI.dll"/>
+    <ROW Component="DevExpress.Utils.v19.2.UI.dll" ComponentId="{B9057AFD-294F-41EE-BC14-F3BFBF638DD9}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Utils.v19.2.UI.dll"/>
     <ROW Component="DevExpress.Utils.v19.2.UI.resources._1_dll" ComponentId="{3BF2786C-1784-4A89-9D16-80C598508B13}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.Utils.v19.2.UI.resources._1_dll"/>
     <ROW Component="DevExpress.Utils.v19.2.UI.resources._2_dll" ComponentId="{AB3B54ED-EC5B-4661-9AE3-B60750F0AFF9}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.Utils.v19.2.UI.resources._2_dll"/>
     <ROW Component="DevExpress.Utils.v19.2.UI.resources._3_dll" ComponentId="{590A805F-B960-4F97-8D78-ACA8469780C8}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.Utils.v19.2.UI.resources._3_dll"/>
     <ROW Component="DevExpress.Utils.v19.2.UI.resources._4_dll" ComponentId="{63C19439-C703-4A24-8C5D-3CFE0796BA73}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.Utils.v19.2.UI.resources._4_dll"/>
     <ROW Component="DevExpress.Utils.v19.2.UI.resources.dll" ComponentId="{7E3506DC-A135-4FD8-B945-33CC9DDA469C}" Directory_="de_Dir" Attributes="0" KeyPath="DevExpress.Utils.v19.2.UI.resources.dll"/>
-    <ROW Component="DevExpress.Utils.v19.2.dll" ComponentId="{822DB62F-1841-49A4-9760-5C72BF4E2B82}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Utils.v19.2.dll"/>
+    <ROW Component="DevExpress.Utils.v19.2.dll" ComponentId="{A7F8CACA-CD38-4DAC-8B62-5D44FC2B8608}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Utils.v19.2.dll"/>
     <ROW Component="DevExpress.Utils.v19.2.resources.dll" ComponentId="{C055C3EC-125C-4487-ACE3-D75D3669BA3C}" Directory_="de_Dir" Attributes="0" KeyPath="DevExpress.Utils.v19.2.resources.dll"/>
     <ROW Component="DevExpress.Utils.v19.2.resources.dll_1" ComponentId="{0FE7C313-DB42-461D-A94C-2B3E168B9CFA}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.Utils.v19.2.resources.dll_1"/>
     <ROW Component="DevExpress.Utils.v19.2.resources.dll_2" ComponentId="{3EDFDE67-6C2C-4D64-B6F4-DA2DB4C26786}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.Utils.v19.2.resources.dll_2"/>
@@ -207,27 +207,27 @@
     <ROW Component="DevExpress.Xpf.Scheduling.v19.2.resources.dll" ComponentId="{D24608EA-5D08-4827-A011-DCFFE99441D2}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.Xpf.Scheduling.v19.2.resources.dll"/>
     <ROW Component="DevExpress.Xpf.SpellChecker.v19.2.resources.dll" ComponentId="{801013CE-F8A6-4A7E-BF67-78E666B389F6}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.Xpf.SpellChecker.v19.2.resources.dll"/>
     <ROW Component="DevExpress.Xpf.Spreadsheet.v19.2.resources.dll" ComponentId="{D4BBB17F-2D4B-4C7F-A27E-C0F904FD521E}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.Xpf.Spreadsheet.v19.2.resources.dll"/>
-    <ROW Component="DevExpress.Xpo.v19.2.dll" ComponentId="{8D3E87BB-49FE-4D15-A668-D93EE04BB516}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Xpo.v19.2.dll"/>
+    <ROW Component="DevExpress.Xpo.v19.2.dll" ComponentId="{E7EB3379-F052-4277-8565-9271F5625603}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Xpo.v19.2.dll"/>
     <ROW Component="DevExpress.Xpo.v19.2.resources.dll" ComponentId="{EB1AF8BA-D70F-48FA-8F18-4A26567FE0A2}" Directory_="de_Dir" Attributes="0" KeyPath="DevExpress.Xpo.v19.2.resources.dll"/>
     <ROW Component="DevExpress.Xpo.v19.2.resources.dll_1" ComponentId="{CAFE31CA-727B-4254-8B39-8049FD60BF8D}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.Xpo.v19.2.resources.dll_1"/>
     <ROW Component="DevExpress.Xpo.v19.2.resources.dll_2" ComponentId="{1283F5EF-DC1C-4563-9B77-A72B61E9E4E1}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.Xpo.v19.2.resources.dll_2"/>
     <ROW Component="DevExpress.Xpo.v19.2.resources.dll_3" ComponentId="{9DAEC994-AD78-4252-8C92-6888AA96C446}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.Xpo.v19.2.resources.dll_3"/>
     <ROW Component="DevExpress.Xpo.v19.2.resources.dll_4" ComponentId="{92C177DA-5D07-4FA3-BB47-8F4C2C7FB513}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.Xpo.v19.2.resources.dll_4"/>
-    <ROW Component="DevExpress.XtraBars.v19.2.dll" ComponentId="{8BDACFA0-FFF9-40EE-B188-D5E68C85318B}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraBars.v19.2.dll"/>
+    <ROW Component="DevExpress.XtraBars.v19.2.dll" ComponentId="{FC6B73A5-A357-4BEC-A399-7D51E5E976B8}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraBars.v19.2.dll"/>
     <ROW Component="DevExpress.XtraBars.v19.2.resources._1_dll" ComponentId="{7D45DEF3-818E-49C9-A370-F0D9931A8147}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.XtraBars.v19.2.resources._1_dll"/>
     <ROW Component="DevExpress.XtraBars.v19.2.resources._2_dll" ComponentId="{EF7A650E-6DA1-42C3-9985-BE458DB6F909}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.XtraBars.v19.2.resources._2_dll"/>
     <ROW Component="DevExpress.XtraBars.v19.2.resources._3_dll" ComponentId="{663CA6D7-D0DE-4D6D-A970-D8005A8D4F68}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.XtraBars.v19.2.resources._3_dll"/>
     <ROW Component="DevExpress.XtraBars.v19.2.resources._4_dll" ComponentId="{EDFF8572-906D-4AEB-9FE4-99D7931DB8A8}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.XtraBars.v19.2.resources._4_dll"/>
     <ROW Component="DevExpress.XtraBars.v19.2.resources.dll" ComponentId="{400541FD-919D-4053-99F4-D2DADA892F84}" Directory_="de_Dir" Attributes="0" KeyPath="DevExpress.XtraBars.v19.2.resources.dll"/>
     <ROW Component="DevExpress.XtraCharts.v19.2.Wizard.resources.dll" ComponentId="{E27A8EE1-0C1C-4BA7-9CD9-E3A827531CBB}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.XtraCharts.v19.2.Wizard.resources.dll"/>
-    <ROW Component="DevExpress.XtraCharts.v19.2.dll" ComponentId="{24B16C77-F610-4083-8984-02FAAA95315E}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraCharts.v19.2.dll"/>
+    <ROW Component="DevExpress.XtraCharts.v19.2.dll" ComponentId="{3141CCB1-8166-41B2-8E6C-683479DDA8BD}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraCharts.v19.2.dll"/>
     <ROW Component="DevExpress.XtraCharts.v19.2.resource_1_s.dll" ComponentId="{E5648F91-CE76-45B0-84BB-C243A9C5FB40}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.XtraCharts.v19.2.resource_1_s.dll"/>
     <ROW Component="DevExpress.XtraCharts.v19.2.resource_2_s.dll" ComponentId="{20E048B6-9411-4F71-A00A-EEA4E7D32C5C}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.XtraCharts.v19.2.resource_2_s.dll"/>
     <ROW Component="DevExpress.XtraCharts.v19.2.resource_3_s.dll" ComponentId="{EC41919E-77D7-4E61-AB69-653AFFBC5C95}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.XtraCharts.v19.2.resource_3_s.dll"/>
     <ROW Component="DevExpress.XtraCharts.v19.2.resource_4_s.dll" ComponentId="{C473277B-0CAC-4560-9B7E-81E3160863DA}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.XtraCharts.v19.2.resource_4_s.dll"/>
     <ROW Component="DevExpress.XtraCharts.v19.2.resources.dll" ComponentId="{5BEC833D-4014-4765-9FB0-BC732A2C074B}" Directory_="de_Dir" Attributes="0" KeyPath="DevExpress.XtraCharts.v19.2.resources.dll"/>
-    <ROW Component="DevExpress.XtraDiagram.v19.2.dll" ComponentId="{69BCE048-7071-46F4-89FD-AFE5940F8F7B}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraDiagram.v19.2.dll"/>
-    <ROW Component="DevExpress.XtraEditors.v19.2.dll" ComponentId="{E5F41305-A5BF-4D8B-947C-9B5F9200F808}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraEditors.v19.2.dll"/>
+    <ROW Component="DevExpress.XtraDiagram.v19.2.dll" ComponentId="{CADDC64C-314E-467F-985A-CC2B7677A509}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraDiagram.v19.2.dll"/>
+    <ROW Component="DevExpress.XtraEditors.v19.2.dll" ComponentId="{7CE7F76E-8D8B-4CE4-8D5E-07DB042E499E}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraEditors.v19.2.dll"/>
     <ROW Component="DevExpress.XtraEditors.v19.2.resourc_1_es.dll" ComponentId="{D8087F24-F0DD-45D8-8B2A-9B97C6C955B3}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.XtraEditors.v19.2.resourc_1_es.dll"/>
     <ROW Component="DevExpress.XtraEditors.v19.2.resourc_2_es.dll" ComponentId="{F47D176F-6454-4387-A015-03D8D14BB8F3}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.XtraEditors.v19.2.resourc_2_es.dll"/>
     <ROW Component="DevExpress.XtraEditors.v19.2.resourc_3_es.dll" ComponentId="{E75FA766-6906-4EF5-B980-6EAD1127BC10}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.XtraEditors.v19.2.resourc_3_es.dll"/>
@@ -236,19 +236,19 @@
     <ROW Component="DevExpress.XtraGantt.v19.2.resources.dll" ComponentId="{CFDAE7CC-A826-4528-832C-588B06D6989D}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.XtraGantt.v19.2.resources.dll"/>
     <ROW Component="DevExpress.XtraGauges.v19.2.Core.resources.dll" ComponentId="{5DE07F8E-FD0E-4F8D-A357-3B6BEB602C49}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.XtraGauges.v19.2.Core.resources.dll"/>
     <ROW Component="DevExpress.XtraGauges.v19.2.Presets.resources.dll" ComponentId="{D34B1F5A-BA2B-4145-AF79-FEC74722D8A8}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.XtraGauges.v19.2.Presets.resources.dll"/>
-    <ROW Component="DevExpress.XtraGrid.v19.2.dll" ComponentId="{DA7200B3-E604-47D0-8624-4A5E6AB4AE5A}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraGrid.v19.2.dll"/>
+    <ROW Component="DevExpress.XtraGrid.v19.2.dll" ComponentId="{E1498075-4F8B-4248-B3D4-691059515D7F}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraGrid.v19.2.dll"/>
     <ROW Component="DevExpress.XtraGrid.v19.2.resources._1_dll" ComponentId="{B6451F57-C8E7-4B09-ABD8-81127280DD02}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.XtraGrid.v19.2.resources._1_dll"/>
     <ROW Component="DevExpress.XtraGrid.v19.2.resources._2_dll" ComponentId="{4DFA824B-19EF-4DF9-94B0-C29E07E18B3E}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.XtraGrid.v19.2.resources._2_dll"/>
     <ROW Component="DevExpress.XtraGrid.v19.2.resources._3_dll" ComponentId="{9F8D037C-89B3-43AA-AB4E-EFDAD5375C86}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.XtraGrid.v19.2.resources._3_dll"/>
     <ROW Component="DevExpress.XtraGrid.v19.2.resources._4_dll" ComponentId="{D02F2476-C3A5-4EAB-AA5F-4FA6C5EAF415}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.XtraGrid.v19.2.resources._4_dll"/>
     <ROW Component="DevExpress.XtraGrid.v19.2.resources.dll" ComponentId="{E51FF256-0C1F-418E-9C5F-1B784A1AFB6B}" Directory_="de_Dir" Attributes="0" KeyPath="DevExpress.XtraGrid.v19.2.resources.dll"/>
-    <ROW Component="DevExpress.XtraLayout.v19.2.dll" ComponentId="{51783A88-5FF8-4DC5-9CF7-8F0D9C5BFE7A}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraLayout.v19.2.dll"/>
+    <ROW Component="DevExpress.XtraLayout.v19.2.dll" ComponentId="{88BE8AB2-5835-47DD-9FB1-EE435D96A7BE}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraLayout.v19.2.dll"/>
     <ROW Component="DevExpress.XtraLayout.v19.2.resource_1_s.dll" ComponentId="{7CC83A88-3656-486B-BC14-2C988C4CED4F}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.XtraLayout.v19.2.resource_1_s.dll"/>
     <ROW Component="DevExpress.XtraLayout.v19.2.resource_2_s.dll" ComponentId="{0C2DE2CC-910D-4DA9-826E-1DB49442023E}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.XtraLayout.v19.2.resource_2_s.dll"/>
     <ROW Component="DevExpress.XtraLayout.v19.2.resource_3_s.dll" ComponentId="{83062FB6-8F9A-4FCC-A43A-4AF605E743E9}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.XtraLayout.v19.2.resource_3_s.dll"/>
     <ROW Component="DevExpress.XtraLayout.v19.2.resource_4_s.dll" ComponentId="{CB73EADC-23A3-4C10-8F19-A298C613E692}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.XtraLayout.v19.2.resource_4_s.dll"/>
     <ROW Component="DevExpress.XtraLayout.v19.2.resources.dll" ComponentId="{FD686676-E477-4BB7-A319-CEF12304FA60}" Directory_="de_Dir" Attributes="0" KeyPath="DevExpress.XtraLayout.v19.2.resources.dll"/>
-    <ROW Component="DevExpress.XtraNavBar.v19.2.dll" ComponentId="{C8EDFB3A-6D8F-4F70-9EC5-E6F301060D71}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraNavBar.v19.2.dll"/>
+    <ROW Component="DevExpress.XtraNavBar.v19.2.dll" ComponentId="{6665A8FC-FC93-4E8F-8E24-8B2E22E1601B}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraNavBar.v19.2.dll"/>
     <ROW Component="DevExpress.XtraNavBar.v19.2.resource_1_s.dll" ComponentId="{378359FD-EC5E-4355-AEA1-EB0D8949C363}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.XtraNavBar.v19.2.resource_1_s.dll"/>
     <ROW Component="DevExpress.XtraNavBar.v19.2.resource_2_s.dll" ComponentId="{F491E816-35F1-480F-9B09-FB53ED40C2E1}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.XtraNavBar.v19.2.resource_2_s.dll"/>
     <ROW Component="DevExpress.XtraNavBar.v19.2.resource_3_s.dll" ComponentId="{14B3ACD5-C839-4A2B-9D1C-BC0FE4C4BFDE}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.XtraNavBar.v19.2.resource_3_s.dll"/>
@@ -256,7 +256,7 @@
     <ROW Component="DevExpress.XtraNavBar.v19.2.resources.dll" ComponentId="{2DEB464D-66D8-44F4-BC9A-5BD70A63EC85}" Directory_="de_Dir" Attributes="0" KeyPath="DevExpress.XtraNavBar.v19.2.resources.dll"/>
     <ROW Component="DevExpress.XtraPdfViewer.v19.2.resources.dll" ComponentId="{88698C1C-8342-4290-82AA-3790684DC791}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.XtraPdfViewer.v19.2.resources.dll"/>
     <ROW Component="DevExpress.XtraPivotGrid.v19.2.resources.dll" ComponentId="{20236DB8-6AD9-446D-961A-3A83858546FD}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.XtraPivotGrid.v19.2.resources.dll"/>
-    <ROW Component="DevExpress.XtraPrinting.v19.2.dll" ComponentId="{7FA8646F-F067-4D6D-839A-4D4FEE869E38}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraPrinting.v19.2.dll"/>
+    <ROW Component="DevExpress.XtraPrinting.v19.2.dll" ComponentId="{B8C6D44F-EE19-4EC2-AC62-357C5DEB5C8D}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraPrinting.v19.2.dll"/>
     <ROW Component="DevExpress.XtraPrinting.v19.2.resour_1_ces.dll" ComponentId="{6B48FFF0-20FE-4FA1-88AC-4A67C48CFF1D}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.XtraPrinting.v19.2.resour_1_ces.dll"/>
     <ROW Component="DevExpress.XtraPrinting.v19.2.resour_2_ces.dll" ComponentId="{0AC5694F-51E0-4416-9A31-4817B99D0ABA}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.XtraPrinting.v19.2.resour_2_ces.dll"/>
     <ROW Component="DevExpress.XtraPrinting.v19.2.resour_3_ces.dll" ComponentId="{6CEBAE0C-C9F7-4F43-B36F-05F648E03AEF}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.XtraPrinting.v19.2.resour_3_ces.dll"/>
@@ -265,7 +265,7 @@
     <ROW Component="DevExpress.XtraReports.v19.2.Extensions.resources.dll" ComponentId="{6D7F0E79-B780-47B5-9FD8-D5EF241A210A}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.XtraReports.v19.2.Extensions.resources.dll"/>
     <ROW Component="DevExpress.XtraReports.v19.2.Web.resources.dll" ComponentId="{733F8729-F34B-4BFE-93F2-AC687411FE1E}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.XtraReports.v19.2.Web.resources.dll"/>
     <ROW Component="DevExpress.XtraReports.v19.2.resources.dll" ComponentId="{35951D02-4899-4458-B142-7C8F626B1763}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.XtraReports.v19.2.resources.dll"/>
-    <ROW Component="DevExpress.XtraRichEdit.v19.2.dll" ComponentId="{A5CB93ED-EFA2-43CE-ABB0-780683029BA4}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraRichEdit.v19.2.dll"/>
+    <ROW Component="DevExpress.XtraRichEdit.v19.2.dll" ComponentId="{D2E3AFDF-EFAE-4376-8EE2-F559E22399D4}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraRichEdit.v19.2.dll"/>
     <ROW Component="DevExpress.XtraRichEdit.v19.2.resour_1_ces.dll" ComponentId="{C2FE0284-CF01-4208-B75F-018834CFF349}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.XtraRichEdit.v19.2.resour_1_ces.dll"/>
     <ROW Component="DevExpress.XtraRichEdit.v19.2.resour_2_ces.dll" ComponentId="{17E6E1EB-544F-45EF-BE89-B205E528A9C4}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.XtraRichEdit.v19.2.resour_2_ces.dll"/>
     <ROW Component="DevExpress.XtraRichEdit.v19.2.resour_3_ces.dll" ComponentId="{3B3D6EEE-0BAE-40F1-84F1-2B0789E8911D}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.XtraRichEdit.v19.2.resour_3_ces.dll"/>
@@ -276,46 +276,46 @@
     <ROW Component="DevExpress.XtraScheduler.v19.2.Reporting.resources.dll" ComponentId="{B2B4215A-6B5A-40B6-BB53-4931F6DCD89C}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.XtraScheduler.v19.2.Reporting.resources.dll"/>
     <ROW Component="DevExpress.XtraScheduler.v19.2.resources.dll" ComponentId="{D0ECD49A-9D0D-4F48-9FA9-B1114C9C9A50}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.XtraScheduler.v19.2.resources.dll"/>
     <ROW Component="DevExpress.XtraSpellChecker.v19.2.resources.dll" ComponentId="{EAB7325D-619B-4C06-9205-B85C862D3F52}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.XtraSpellChecker.v19.2.resources.dll"/>
-    <ROW Component="DevExpress.XtraSpreadsheet.v19.2.dll" ComponentId="{4084A15F-9117-4BD5-88FB-16BC1E66721C}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraSpreadsheet.v19.2.dll"/>
+    <ROW Component="DevExpress.XtraSpreadsheet.v19.2.dll" ComponentId="{364B5396-3257-4A40-904D-628E1F3962C2}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraSpreadsheet.v19.2.dll"/>
     <ROW Component="DevExpress.XtraSpreadsheet.v19.2.res_1_ources.dll" ComponentId="{60D5AFC1-CDD7-44F8-B4C6-F8B7CC604363}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.XtraSpreadsheet.v19.2.res_1_ources.dll"/>
     <ROW Component="DevExpress.XtraSpreadsheet.v19.2.res_2_ources.dll" ComponentId="{B24AB8BC-5916-49C4-B32C-73C51A0097C2}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.XtraSpreadsheet.v19.2.res_2_ources.dll"/>
     <ROW Component="DevExpress.XtraSpreadsheet.v19.2.res_3_ources.dll" ComponentId="{FB723772-16BD-410E-8FFB-4F745F54DE1F}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.XtraSpreadsheet.v19.2.res_3_ources.dll"/>
     <ROW Component="DevExpress.XtraSpreadsheet.v19.2.res_4_ources.dll" ComponentId="{082DE5F1-5F89-4A46-AD68-38EC09DB3B2B}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.XtraSpreadsheet.v19.2.res_4_ources.dll"/>
     <ROW Component="DevExpress.XtraSpreadsheet.v19.2.resources.dll" ComponentId="{6C662503-8FCF-4F3F-A04B-37E9840B695D}" Directory_="de_Dir" Attributes="0" KeyPath="DevExpress.XtraSpreadsheet.v19.2.resources.dll"/>
-    <ROW Component="DevExpress.XtraTreeList.v19.2.dll" ComponentId="{181B0770-A178-4719-83FD-A3D45BD2ADCB}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraTreeList.v19.2.dll"/>
+    <ROW Component="DevExpress.XtraTreeList.v19.2.dll" ComponentId="{CD7E318D-76EE-4C6A-A900-AD5550C3DCA7}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraTreeList.v19.2.dll"/>
     <ROW Component="DevExpress.XtraTreeList.v19.2.resour_1_ces.dll" ComponentId="{A53E1319-7009-4A45-848D-03726A42DE2D}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.XtraTreeList.v19.2.resour_1_ces.dll"/>
     <ROW Component="DevExpress.XtraTreeList.v19.2.resour_2_ces.dll" ComponentId="{C12920C5-7382-460B-A2A0-E92F2A6C343A}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.XtraTreeList.v19.2.resour_2_ces.dll"/>
     <ROW Component="DevExpress.XtraTreeList.v19.2.resour_3_ces.dll" ComponentId="{9894FBBB-E067-4AA1-B6F4-BE2374AD00E4}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.XtraTreeList.v19.2.resour_3_ces.dll"/>
     <ROW Component="DevExpress.XtraTreeList.v19.2.resour_4_ces.dll" ComponentId="{DF6C341E-D665-426E-9E2B-1582F17EA9D1}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.XtraTreeList.v19.2.resour_4_ces.dll"/>
     <ROW Component="DevExpress.XtraTreeList.v19.2.resources.dll" ComponentId="{974C981F-83C8-4BF0-8032-3A3BC52C6949}" Directory_="de_Dir" Attributes="0" KeyPath="DevExpress.XtraTreeList.v19.2.resources.dll"/>
-    <ROW Component="DevExpress.XtraVerticalGrid.v19.2.dll" ComponentId="{4E844F9E-9E7B-45F9-B58D-3FD2CA16DA14}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraVerticalGrid.v19.2.dll"/>
+    <ROW Component="DevExpress.XtraVerticalGrid.v19.2.dll" ComponentId="{A3ABDA56-E34A-47CA-A832-85CDF6BD8B9E}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraVerticalGrid.v19.2.dll"/>
     <ROW Component="DevExpress.XtraVerticalGrid.v19.2.re_1_sources.dll" ComponentId="{B32FDBFC-77AB-4EB6-BA04-4E26BEE570C0}" Directory_="es_Dir" Attributes="0" KeyPath="DevExpress.XtraVerticalGrid.v19.2.re_1_sources.dll"/>
     <ROW Component="DevExpress.XtraVerticalGrid.v19.2.re_2_sources.dll" ComponentId="{8FE1B086-BB2E-446F-B343-65A2CFD62EA9}" Directory_="ja_Dir" Attributes="0" KeyPath="DevExpress.XtraVerticalGrid.v19.2.re_2_sources.dll"/>
     <ROW Component="DevExpress.XtraVerticalGrid.v19.2.re_3_sources.dll" ComponentId="{A7F33273-ACD8-47C5-B546-187F6E1DB064}" Directory_="ru_Dir" Attributes="0" KeyPath="DevExpress.XtraVerticalGrid.v19.2.re_3_sources.dll"/>
     <ROW Component="DevExpress.XtraVerticalGrid.v19.2.re_4_sources.dll" ComponentId="{7141C6A3-7687-4F72-9ED6-80743A2343F6}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.XtraVerticalGrid.v19.2.re_4_sources.dll"/>
     <ROW Component="DevExpress.XtraVerticalGrid.v19.2.resources.dll" ComponentId="{A38FB2B3-0A74-4253-9556-8E9BFBC0C136}" Directory_="de_Dir" Attributes="0" KeyPath="DevExpress.XtraVerticalGrid.v19.2.resources.dll"/>
     <ROW Component="DevExpress.XtraWizard.v19.2.resources.dll" ComponentId="{FADE438B-1E38-4B65-A9CB-6AAADACC08B4}" Directory_="tr_Dir" Attributes="0" KeyPath="DevExpress.XtraWizard.v19.2.resources.dll"/>
-    <ROW Component="Infragistics4.Shared.v19.2.dll" ComponentId="{A1FD752A-F78C-4F41-952D-39554FA0877C}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Shared.v19.2.dll"/>
-    <ROW Component="Infragistics4.Win.AppStylistSupport.v19.2.dll" ComponentId="{D4C55F96-853F-4CCF-AB74-24DA9D361876}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.AppStylistSupport.v19.2.dll"/>
-    <ROW Component="Infragistics4.Win.DataVisualization.Shared.v19.2.dll" ComponentId="{D88D1483-561B-457A-BF6B-8AE52301CC39}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.DataVisualization.Shared.v19.2.dll"/>
-    <ROW Component="Infragistics4.Win.DataVisualization.UltraDataChart.v19.2.dll" ComponentId="{10D7A7AB-2282-4C7D-ACB1-E237D306626F}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.DataVisualization.UltraDataChart.v19.2.dll"/>
-    <ROW Component="Infragistics4.Win.Misc.v19.2.dll" ComponentId="{C608FB20-43B6-45E1-A375-C9BA71A5F2F7}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.Misc.v19.2.dll"/>
-    <ROW Component="Infragistics4.Win.Portable.Core.v19.2.dll" ComponentId="{425C85C9-93E0-4569-9FEE-4504989FEA44}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.Portable.Core.v19.2.dll"/>
-    <ROW Component="Infragistics4.Win.UltraWinEditors.v19.2.dll" ComponentId="{5A928CAB-B87F-41C0-B931-3D4CC0971B43}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.UltraWinEditors.v19.2.dll"/>
-    <ROW Component="Infragistics4.Win.UltraWinExplorerBar.v19.2.dll" ComponentId="{EE35821D-7F36-4D2E-9557-DFDEDF9247DC}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.UltraWinExplorerBar.v19.2.dll"/>
-    <ROW Component="Infragistics4.Win.UltraWinGrid.v19.2.dll" ComponentId="{09E9A05A-0530-441E-AF2C-7E94A1DF7E2E}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.UltraWinGrid.v19.2.dll"/>
-    <ROW Component="Infragistics4.Win.UltraWinListView.v19.2.dll" ComponentId="{DC3D1623-564A-46DE-841C-83E2B56DCEE0}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.UltraWinListView.v19.2.dll"/>
-    <ROW Component="Infragistics4.Win.UltraWinStatusBar.v19.2.dll" ComponentId="{C75B7F5A-0F80-4E09-93CD-EF7A77F9BD47}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.UltraWinStatusBar.v19.2.dll"/>
-    <ROW Component="Infragistics4.Win.UltraWinTabControl.v19.2.dll" ComponentId="{D7865CE7-DE48-464A-BCAE-D7B916133430}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.UltraWinTabControl.v19.2.dll"/>
-    <ROW Component="Infragistics4.Win.UltraWinToolbars.v19.2.dll" ComponentId="{062D00D9-382A-46AA-BC93-6631BA01E31E}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.UltraWinToolbars.v19.2.dll"/>
-    <ROW Component="Infragistics4.Win.UltraWinTree.v19.2.dll" ComponentId="{03F99AEB-684E-4CA7-9882-3057463191B8}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.UltraWinTree.v19.2.dll"/>
-    <ROW Component="Infragistics4.Win.v19.2.dll" ComponentId="{B703619E-EFC8-488C-92CB-0A8FBD1ED6B6}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.v19.2.dll"/>
+    <ROW Component="Infragistics4.Shared.v19.2.dll" ComponentId="{057146AC-94E2-4E82-B1F5-309828A673D9}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Shared.v19.2.dll"/>
+    <ROW Component="Infragistics4.Win.AppStylistSupport.v19.2.dll" ComponentId="{8BD31412-6357-4E39-802F-C46E55D36AAE}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.AppStylistSupport.v19.2.dll"/>
+    <ROW Component="Infragistics4.Win.DataVisualization.Shared.v19.2.dll" ComponentId="{62D63642-05B2-4167-9B09-1C81E02386DF}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.DataVisualization.Shared.v19.2.dll"/>
+    <ROW Component="Infragistics4.Win.DataVisualization.UltraDataChart.v19.2.dll" ComponentId="{76BE81A3-5B64-484F-8939-1F4C37B090D5}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.DataVisualization.UltraDataChart.v19.2.dll"/>
+    <ROW Component="Infragistics4.Win.Misc.v19.2.dll" ComponentId="{FBC3A5CA-1A6D-4D11-B5D0-DCF0326D3B48}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.Misc.v19.2.dll"/>
+    <ROW Component="Infragistics4.Win.Portable.Core.v19.2.dll" ComponentId="{EFE8D0B0-2955-4BE7-81AE-B8151C1E1D85}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.Portable.Core.v19.2.dll"/>
+    <ROW Component="Infragistics4.Win.UltraWinEditors.v19.2.dll" ComponentId="{C3E91BB2-2036-49E7-BE76-73F1E05DD13A}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.UltraWinEditors.v19.2.dll"/>
+    <ROW Component="Infragistics4.Win.UltraWinExplorerBar.v19.2.dll" ComponentId="{5D2FEDB8-A90B-4629-8785-F4B16BB89ACB}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.UltraWinExplorerBar.v19.2.dll"/>
+    <ROW Component="Infragistics4.Win.UltraWinGrid.v19.2.dll" ComponentId="{3D3C92B3-39EC-49C9-81D8-96BB1E603152}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.UltraWinGrid.v19.2.dll"/>
+    <ROW Component="Infragistics4.Win.UltraWinListView.v19.2.dll" ComponentId="{6AD2782A-C187-45CD-B61C-8F6F27B5B775}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.UltraWinListView.v19.2.dll"/>
+    <ROW Component="Infragistics4.Win.UltraWinStatusBar.v19.2.dll" ComponentId="{FD9D1EEA-3F89-4896-8277-2776B110160D}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.UltraWinStatusBar.v19.2.dll"/>
+    <ROW Component="Infragistics4.Win.UltraWinTabControl.v19.2.dll" ComponentId="{400ED717-F628-4965-B26C-AA887A7DACE8}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.UltraWinTabControl.v19.2.dll"/>
+    <ROW Component="Infragistics4.Win.UltraWinToolbars.v19.2.dll" ComponentId="{7C89E868-AA05-4E34-8072-74BCB39E93B5}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.UltraWinToolbars.v19.2.dll"/>
+    <ROW Component="Infragistics4.Win.UltraWinTree.v19.2.dll" ComponentId="{5768AB6A-4B74-4FAC-AD06-2C0147CCB233}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.UltraWinTree.v19.2.dll"/>
+    <ROW Component="Infragistics4.Win.v19.2.dll" ComponentId="{219CCAE9-462B-4DED-B5B2-472C04FBDB9E}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics4.Win.v19.2.dll"/>
     <ROW Component="Interop.SIPVoipSDK.dll" ComponentId="{5DDD49DE-D8CC-4C0A-8ED4-4FB0F27FA96A}" Directory_="Abto_Dir" Attributes="256" KeyPath="Interop.SIPVoipSDK.dll"/>
-    <ROW Component="Newtonsoft.Json.dll" ComponentId="{0B9320B1-49F2-493E-B219-F3699AB31926}" Directory_="APPDIR" Attributes="0" KeyPath="Newtonsoft.Json.dll"/>
+    <ROW Component="Newtonsoft.Json.dll" ComponentId="{3C3E08E7-AEB5-402A-91B1-3AB342D80824}" Directory_="APPDIR" Attributes="0" KeyPath="Newtonsoft.Json.dll"/>
     <ROW Component="ProductInformation" ComponentId="{41D53A78-93B5-41C0-BCBE-D02536EED1E4}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
     <ROW Component="SHORTCUTDIR" ComponentId="{76BFD0C8-9E32-4526-8C1E-EC1E69AACA2C}" Directory_="SHORTCUTDIR" Attributes="0"/>
     <ROW Component="SIPVoipSDK64.dll" ComponentId="{F186ED0F-8CCF-4F5C-91A7-BEBB41D3A803}" Directory_="Abto_Dir" Attributes="256" KeyPath="SIPVoipSDK64.dll"/>
-    <ROW Component="YonAvm.exe" ComponentId="{0D77FCA7-6445-4A6E-8B70-D3AAA0FB3785}" Directory_="APPDIR" Attributes="0" KeyPath="YonAvm.exe"/>
+    <ROW Component="YonAvm.exe" ComponentId="{8836CF23-2F67-4892-A2EA-B6E4064E743C}" Directory_="APPDIR" Attributes="0" KeyPath="YonAvm.exe"/>
     <ROW Component="avcodec56.dll" ComponentId="{34F835B1-3975-4BE6-8A17-96E9DFF6F92B}" Directory_="Abto_Dir" Attributes="256" KeyPath="avcodec56.dll"/>
     <ROW Component="avutil54.dll" ComponentId="{EDBF7840-66FF-468C-BAF2-F0A616EBDC95}" Directory_="Abto_Dir" Attributes="256" KeyPath="avutil54.dll"/>
     <ROW Component="codec_amr.dll" ComponentId="{3704F1BA-1171-4606-A731-B4AF7F53825E}" Directory_="Abto_Dir" Attributes="256" KeyPath="codec_amr.dll"/>
@@ -1038,24 +1038,6 @@
     <ROW Feature_="MainFeature" Component_="DevExpress.XtraRichEdit.v19.2.dll"/>
     <ROW Feature_="MainFeature" Component_="DevExpress.XtraSpreadsheet.v19.2.dll"/>
     <ROW Feature_="MainFeature" Component_="DevExpress.XtraTreeList.v19.2.dll"/>
-    <ROW Feature_="MainFeature" Component_="DevExpress.XtraVerticalGrid.v19.2.dll"/>
-    <ROW Feature_="MainFeature" Component_="Infragistics4.Shared.v19.2.dll"/>
-    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.AppStylistSupport.v19.2.dll"/>
-    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.DataVisualization.Shared.v19.2.dll"/>
-    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.DataVisualization.UltraDataChart.v19.2.dll"/>
-    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.Misc.v19.2.dll"/>
-    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.Portable.Core.v19.2.dll"/>
-    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.UltraWinEditors.v19.2.dll"/>
-    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.UltraWinExplorerBar.v19.2.dll"/>
-    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.UltraWinGrid.v19.2.dll"/>
-    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.UltraWinListView.v19.2.dll"/>
-    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.UltraWinStatusBar.v19.2.dll"/>
-    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.UltraWinTabControl.v19.2.dll"/>
-    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.UltraWinToolbars.v19.2.dll"/>
-    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.UltraWinTree.v19.2.dll"/>
-    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.v19.2.dll"/>
-    <ROW Feature_="MainFeature" Component_="Newtonsoft.Json.dll"/>
-    <ROW Feature_="MainFeature" Component_="YonAvm.exe"/>
     <ROW Feature_="MainFeature" Component_="ABTO_Windows_SIP_SDK_DevManual.pdf"/>
     <ROW Feature_="MainFeature" Component_="avcodec56.dll"/>
     <ROW Feature_="MainFeature" Component_="avutil54.dll"/>
@@ -1074,6 +1056,24 @@
     <ROW Feature_="MainFeature" Component_="SIPVoipSDK64.dll"/>
     <ROW Feature_="MainFeature" Component_="swresample1.dll"/>
     <ROW Feature_="MainFeature" Component_="swscale3.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraVerticalGrid.v19.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="Infragistics4.Shared.v19.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.AppStylistSupport.v19.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.DataVisualization.Shared.v19.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.DataVisualization.UltraDataChart.v19.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.Misc.v19.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.Portable.Core.v19.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.UltraWinEditors.v19.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.UltraWinExplorerBar.v19.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.UltraWinGrid.v19.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.UltraWinListView.v19.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.UltraWinStatusBar.v19.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.UltraWinTabControl.v19.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.UltraWinToolbars.v19.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.UltraWinTree.v19.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="Infragistics4.Win.v19.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="Newtonsoft.Json.dll"/>
+    <ROW Feature_="MainFeature" Component_="YonAvm.exe"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
     <ROW Name="logo.exe" SourcePath="YonAvm\logo.ico" Index="0"/>
@@ -1123,8 +1123,6 @@
     <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
-    <ROW Shortcut="YonAvmDivalemleri" Directory_="SHORTCUTDIR" Name="YONAVM~1|Yon Avm Diva İşlemleri" Component_="YonAvm.exe" Target="[#YonAvm.exe]" Hotkey="0" Icon_="logo.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
-    <ROW Shortcut="YonAvmDivalemleri_1" Directory_="DesktopFolder" Name="YONAVM~1|Yon Avm Diva İşlemleri" Component_="YonAvm.exe" Target="[#YonAvm.exe]" Hotkey="0" Icon_="logo.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
     <ROW Shortcut="updaterYonAvmSatisDestek" Directory_="SHORTCUTDIR" Name="UPDATE~1|updater YonAvm Satis Destek" Component_="updater.exe" Target="[#updater.exe]" Hotkey="0" Icon_="updater.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
     <ROW Shortcut="updaterYonAvmSatisDestek_1" Directory_="DesktopFolder" Name="UPDATE~1|updater YonAvm Satis Destek" Component_="updater.exe" Target="[#updater.exe]" Hotkey="0" Icon_="updater.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
   </COMPONENT>

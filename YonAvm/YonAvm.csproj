@@ -32,8 +32,8 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>index.html</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>2</ApplicationRevision>
-    <ApplicationVersion>1.0.6.%2a</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.8.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -566,6 +566,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\documentpdf.svg" />
+    <None Include="Resources\itemtypechecked.svg" />
+    <None Include="Resources\listviewappointmentpattern.svg" />
+    <None Include="Resources\saveas.svg" />
+    <None Include="Resources\exporttoxml_32x32.png" />
+    <None Include="Resources\Kamalar_logo.png" />
     <None Include="Connected Services\Logo\configuration91.svcinfo" />
     <None Include="Connected Services\Logo\configuration.svcinfo" />
     <None Include="Connected Services\Logo\Reference.svcmap">

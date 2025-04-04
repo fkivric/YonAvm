@@ -7,7 +7,7 @@
     <ProjectGuid>{9A6DF26E-A697-4D52-BFD7-7D346338CF15}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>YonAvm</RootNamespace>
-    <AssemblyName>YonAvm</AssemblyName>
+    <AssemblyName>YonSatışDestek</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,7 @@
     <WebPage>index.html</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.8.%2a</ApplicationVersion>
+    <ApplicationVersion>1.0.11.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -62,16 +62,17 @@
     <ApplicationIcon>logo.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>2016E9122266BF18C6264AE86EF1371ACC653C38</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>35F537B79B4F5DF02966A63A6242CC017B8DDFC8</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>YonAvm_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>true</GenerateManifests>
+    <GenerateManifests>false</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>false</SignManifests>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
@@ -102,8 +103,15 @@
     <PlatformTarget>x64</PlatformTarget>
     <OutputPath>bin\x64\Release\</OutputPath>
   </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.DataAccess.v19.2.UI, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -111,6 +119,7 @@
     <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Spreadsheet.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -124,6 +133,9 @@
     <Reference Include="DevExpress.XtraRichEdit.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraSpreadsheet.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraTreeList.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="FoxLearn.License">
+      <HintPath>..\..\..\Porjeler\Entegref\Lisansing\FoxLearn.License.dll</HintPath>
+    </Reference>
     <Reference Include="Infragistics4.Shared.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.AppStylistSupport.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Win.DataVisualization.Shared.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
@@ -145,11 +157,16 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="SKGL, Version=2.0.5.3, Culture=neutral, PublicKeyToken=c2850a745143a030, processorArchitecture=MSIL">
+      <HintPath>..\packages\SKGL.2.0.5.3\lib\SKGL.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Services" />
@@ -165,6 +182,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\ApiClass.cs" />
+    <Compile Include="Class\CustomMessageBox.cs" />
+    <Compile Include="Class\Entegref.cs" />
     <Compile Include="Class\FaturaVeri.cs" />
     <Compile Include="Class\ListtoDataTableConverter.cs" />
     <Compile Include="Class\Volant.cs" />
@@ -185,11 +204,17 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="logodeneme.cs">
+    <Compile Include="frmMain2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="logodeneme.Designer.cs">
-      <DependentUpon>logodeneme.cs</DependentUpon>
+    <Compile Include="frmMain2.Designer.cs">
+      <DependentUpon>frmMain2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMessageBox.Designer.cs">
+      <DependentUpon>frmMessageBox.cs</DependentUpon>
     </Compile>
     <Compile Include="logoservis.cs" />
     <Compile Include="Phone\AboutForm.cs">
@@ -269,6 +294,12 @@
     </Compile>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain2.resx">
+      <DependentUpon>frmMain2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMessageBox.resx">
+      <DependentUpon>frmMessageBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SatisSec.resx">
       <DependentUpon>SatisSec.cs</DependentUpon>
@@ -446,12 +477,10 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\licenses.licx" />
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="logodeneme.resx">
-      <DependentUpon>logodeneme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Phone\AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
@@ -566,6 +595,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\question_32x32.png" />
+    <None Include="Resources\bodetails_32x32.png" />
+    <None Include="Resources\Entegref-_1_.jpg" />
     <None Include="Resources\documentpdf.svg" />
     <None Include="Resources\itemtypechecked.svg" />
     <None Include="Resources\listviewappointmentpattern.svg" />

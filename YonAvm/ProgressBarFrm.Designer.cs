@@ -32,13 +32,14 @@
             this.prgProgress = new DevExpress.XtraEditors.ProgressBarControl();
             this.progressPanel1 = new DevExpress.XtraWaitForm.ProgressPanel();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.lblİslemler = new DevExpress.XtraEditors.LabelControl();
             this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
-            this.lblAdet = new DevExpress.XtraEditors.LabelControl();
-            this.lblIslem = new DevExpress.XtraEditors.LabelControl();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.lblZaman = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.lblZaman = new DevExpress.XtraEditors.LabelControl();
+            this.lblIslem = new DevExpress.XtraEditors.LabelControl();
+            this.lblAdet = new DevExpress.XtraEditors.LabelControl();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.prgProgress.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
@@ -49,7 +50,7 @@
             // prgProgress
             // 
             this.prgProgress.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.prgProgress.Location = new System.Drawing.Point(0, 96);
+            this.prgProgress.Location = new System.Drawing.Point(0, 99);
             this.prgProgress.Name = "prgProgress";
             this.prgProgress.Size = new System.Drawing.Size(553, 30);
             this.prgProgress.TabIndex = 0;
@@ -63,18 +64,33 @@
             this.progressPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.progressPanel1.Location = new System.Drawing.Point(0, 0);
             this.progressPanel1.Name = "progressPanel1";
-            this.progressPanel1.Size = new System.Drawing.Size(553, 69);
+            this.progressPanel1.Size = new System.Drawing.Size(553, 47);
             this.progressPanel1.TabIndex = 1;
             this.progressPanel1.Text = "progressPanel1";
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.lblİslemler);
             this.panelControl1.Controls.Add(this.tablePanel1);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl1.Location = new System.Drawing.Point(0, 69);
+            this.panelControl1.Location = new System.Drawing.Point(0, 47);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(553, 27);
+            this.panelControl1.Size = new System.Drawing.Size(553, 52);
             this.panelControl1.TabIndex = 2;
+            // 
+            // lblİslemler
+            // 
+            this.lblİslemler.Appearance.Options.UseTextOptions = true;
+            this.lblİslemler.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblİslemler.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblİslemler.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.lblİslemler.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblİslemler.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblİslemler.Location = new System.Drawing.Point(2, 25);
+            this.lblİslemler.Name = "lblİslemler";
+            this.lblİslemler.Size = new System.Drawing.Size(549, 25);
+            this.lblİslemler.TabIndex = 1;
+            this.lblİslemler.Text = "labelControl3";
             // 
             // tablePanel1
             // 
@@ -89,7 +105,7 @@
             this.tablePanel1.Controls.Add(this.lblZaman);
             this.tablePanel1.Controls.Add(this.lblIslem);
             this.tablePanel1.Controls.Add(this.lblAdet);
-            this.tablePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablePanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tablePanel1.Location = new System.Drawing.Point(2, 2);
             this.tablePanel1.Name = "tablePanel1";
             this.tablePanel1.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
@@ -97,36 +113,33 @@
             this.tablePanel1.Size = new System.Drawing.Size(549, 23);
             this.tablePanel1.TabIndex = 0;
             // 
-            // lblAdet
+            // labelControl2
             // 
-            this.lblAdet.Appearance.Options.UseTextOptions = true;
-            this.lblAdet.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.lblAdet.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.tablePanel1.SetColumn(this.lblAdet, 1);
-            this.lblAdet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblAdet.Location = new System.Drawing.Point(162, 3);
-            this.lblAdet.Name = "lblAdet";
-            this.tablePanel1.SetRow(this.lblAdet, 0);
-            this.lblAdet.Size = new System.Drawing.Size(80, 17);
-            this.lblAdet.TabIndex = 0;
-            this.lblAdet.Text = "labelControl1";
+            this.labelControl2.Appearance.Options.UseTextOptions = true;
+            this.labelControl2.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.tablePanel1.SetColumn(this.labelControl2, 0);
+            this.labelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl2.Location = new System.Drawing.Point(3, 3);
+            this.labelControl2.Name = "labelControl2";
+            this.tablePanel1.SetRow(this.labelControl2, 0);
+            this.labelControl2.Size = new System.Drawing.Size(153, 17);
+            this.labelControl2.TabIndex = 5;
+            this.labelControl2.Text = "Toplam İşlem Sayısı / Yapılan =";
             // 
-            // lblIslem
+            // labelControl1
             // 
-            this.lblIslem.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.tablePanel1.SetColumn(this.lblIslem, 2);
-            this.lblIslem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblIslem.Location = new System.Drawing.Point(249, 3);
-            this.lblIslem.Name = "lblIslem";
-            this.tablePanel1.SetRow(this.lblIslem, 0);
-            this.lblIslem.Size = new System.Drawing.Size(94, 17);
-            this.lblIslem.TabIndex = 1;
-            this.lblIslem.Text = "labelControl2";
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.labelControl1.Appearance.Options.UseTextOptions = true;
+            this.labelControl1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.tablePanel1.SetColumn(this.labelControl1, 3);
+            this.labelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl1.Location = new System.Drawing.Point(349, 3);
+            this.labelControl1.Name = "labelControl1";
+            this.tablePanel1.SetRow(this.labelControl1, 0);
+            this.labelControl1.Size = new System.Drawing.Size(66, 17);
+            this.labelControl1.TabIndex = 4;
+            this.labelControl1.Text = "İşlem Süresi :";
             // 
             // lblZaman
             // 
@@ -143,39 +156,42 @@
             this.lblZaman.Text = "labelControl3";
             this.lblZaman.Click += new System.EventHandler(this.lblZaman_Click);
             // 
-            // labelControl1
+            // lblIslem
             // 
-            this.labelControl1.Appearance.Options.UseTextOptions = true;
-            this.labelControl1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.tablePanel1.SetColumn(this.labelControl1, 3);
-            this.labelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl1.Location = new System.Drawing.Point(349, 3);
-            this.labelControl1.Name = "labelControl1";
-            this.tablePanel1.SetRow(this.labelControl1, 0);
-            this.labelControl1.Size = new System.Drawing.Size(66, 17);
-            this.labelControl1.TabIndex = 4;
-            this.labelControl1.Text = "İşlem Süresi :";
+            this.lblIslem.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.tablePanel1.SetColumn(this.lblIslem, 2);
+            this.lblIslem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblIslem.Location = new System.Drawing.Point(249, 3);
+            this.lblIslem.Name = "lblIslem";
+            this.tablePanel1.SetRow(this.lblIslem, 0);
+            this.lblIslem.Size = new System.Drawing.Size(94, 17);
+            this.lblIslem.TabIndex = 1;
+            this.lblIslem.Text = "labelControl2";
             // 
-            // labelControl2
+            // lblAdet
             // 
-            this.labelControl2.Appearance.Options.UseTextOptions = true;
-            this.labelControl2.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.tablePanel1.SetColumn(this.labelControl2, 0);
-            this.labelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl2.Location = new System.Drawing.Point(3, 3);
-            this.labelControl2.Name = "labelControl2";
-            this.tablePanel1.SetRow(this.labelControl2, 0);
-            this.labelControl2.Size = new System.Drawing.Size(153, 17);
-            this.labelControl2.TabIndex = 5;
-            this.labelControl2.Text = "Toplam İşlem Sayısı / Yapılan =";
+            this.lblAdet.Appearance.Options.UseTextOptions = true;
+            this.lblAdet.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.lblAdet.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.tablePanel1.SetColumn(this.lblAdet, 1);
+            this.lblAdet.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblAdet.Location = new System.Drawing.Point(162, 3);
+            this.lblAdet.Name = "lblAdet";
+            this.tablePanel1.SetRow(this.lblAdet, 0);
+            this.lblAdet.Size = new System.Drawing.Size(80, 17);
+            this.lblAdet.TabIndex = 0;
+            this.lblAdet.Text = "labelControl1";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // ProgressBarFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(553, 126);
+            this.ClientSize = new System.Drawing.Size(553, 129);
             this.ControlBox = false;
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.progressPanel1);
@@ -190,7 +206,6 @@
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
             this.tablePanel1.ResumeLayout(false);
-            this.tablePanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -207,5 +222,6 @@
         private DevExpress.XtraEditors.LabelControl lblZaman;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl lblİslemler;
     }
 }

@@ -24,6 +24,7 @@ namespace YonAvm
             this.Position = 0;
             this.ToplamAdet = "";
             this.Islem = "";
+            this.Adim = "";
             prgProgress.Properties.Step = 1;
         }
         public string ToplamAdet
@@ -35,6 +36,17 @@ namespace YonAvm
             set
             {
                 lblAdet.Text = value;
+            }
+        }
+        public string Adim
+        {
+            get
+            {
+                return lblİslemler.Text;
+            }
+            set
+            {
+                lblİslemler.Text = value;
             }
         }
         public string Islem
@@ -83,7 +95,16 @@ namespace YonAvm
                 prgProgress.Position = value;
             }
         }
-
+        public void UpdateDetails(string details)
+        {
+            if (this.InvokeRequired)
+            {
+                this.Invoke(new Action(() => UpdateDetails(details)));
+                return;
+            }
+            lblİslemler.Text = details;
+            this.Refresh(); // Görseli yenilemek için
+        }
         public void PerformStep(Form owner)
         {
             if (this.InvokeRequired)

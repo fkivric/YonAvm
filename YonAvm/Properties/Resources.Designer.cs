@@ -61,12 +61,32 @@ namespace YonAvm.Properties {
         }
         
         /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap bodetails_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("bodetails_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   DevExpress.Utils.Svg.SvgImage türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
         internal static DevExpress.Utils.Svg.SvgImage documentpdf {
             get {
                 object obj = ResourceManager.GetObject("documentpdf", resourceCulture);
                 return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Entegref__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Entegref__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -107,6 +127,16 @@ namespace YonAvm.Properties {
             get {
                 object obj = ResourceManager.GetObject("listviewappointmentpattern", resourceCulture);
                 return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap question_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("question_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

@@ -178,5 +178,41 @@ namespace YonAvm.Properties {
                 this["connectionstring2"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string VKN {
+            get {
+                return ((string)(this["VKN"]));
+            }
+            set {
+                this["VKN"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string EntegrefSecretPhase {
+            get {
+                return ((string)(this["EntegrefSecretPhase"]));
+            }
+            set {
+                this["EntegrefSecretPhase"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string EntegrefAIPToken {
+            get {
+                return ((string)(this["EntegrefAIPToken"]));
+            }
+            set {
+                this["EntegrefAIPToken"] = value;
+            }
+        }
     }
 }

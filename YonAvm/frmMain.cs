@@ -539,28 +539,63 @@ namespace YonAvm
 			and SALID > 0
 			and not exists (select * from SALES i where i.SALCANSALID = s.SALID)
 			and NOT EXISTS (select * from MDE_GENEL.dbo.DivaEklenenler where IslemdetayID = INVCHID)", Convert.ToDateTime(dteVestelBasTarih.EditValue).ToString("yyyy-MM-dd"), Convert.ToDateTime(dteVestelBitTarih.EditValue).ToString("yyyy-MM-dd"), div);
-            var dt = conn.GetDataTableConnectionSql(q, sql);
-            if (dt.Rows.Count > 0)
-            {
-                gridVestelSatis.DataSource = dt;
-                ViewVestelSatis.OptionsView.BestFitMaxRowCount = -1;
-                ViewVestelSatis.BestFitColumns(true);
-                srcVestelMagaza.Enabled = false;
-                dteVestelBasTarih.Enabled = false;
-                dteVestelBitTarih.Enabled = false;
-                btnVestelSatisListele.Enabled = false;
-                btnVestelIadeListele.Enabled = false;
-            }
-            else
-            {
-                srcVestelMagaza.Enabled = true;
-                dteVestelBasTarih.Enabled = true;
-                dteVestelBitTarih.Enabled = true;
-                btnVestelSatisListele.Enabled = true;
-                btnVestelIadeListele.Enabled = true;
 
-            }
-            satis = true;
+            ProgressBarFrm progressForm = new ProgressBarFrm()
+            {
+                Start = 0,
+                Finish = 1,
+                Position = 0,
+                ToplamAdet = 1.ToString(),
+            };
+            int success = 0;
+            int error = 0;
+            DataTable dt = new DataTable();
+            executeBackground(
+       () =>
+       {
+           progressForm.Show(this);
+           try
+           {
+               progressForm.UpdateDetails("Veriler Çekiliyor");
+               dt = conn.GetDataTableConnectionSql(q, sql);
+               progressForm.PerformStep(this);
+               success = dt.Rows.Count;
+           }
+           catch (Exception)
+           {
+               progressForm.PerformStep(this);
+               error++;
+           }
+       },
+                              null,
+                              () =>
+                              {
+                                  completeProgress();
+                                  progressForm.Hide(this);
+
+                                  if (dt.Rows.Count > 0)
+                                  {
+                                      gridVestelSatis.DataSource = dt;
+                                      ViewVestelSatis.OptionsView.BestFitMaxRowCount = -1;
+                                      ViewVestelSatis.BestFitColumns(true);
+                                      srcVestelMagaza.Enabled = false;
+                                      dteVestelBasTarih.Enabled = false;
+                                      dteVestelBitTarih.Enabled = false;
+                                      btnVestelSatisListele.Enabled = false;
+                                      btnVestelIadeListele.Enabled = false;
+                                  }
+                                  else
+                                  {
+                                      srcVestelMagaza.Enabled = true;
+                                      dteVestelBasTarih.Enabled = true;
+                                      dteVestelBitTarih.Enabled = true;
+                                      btnVestelSatisListele.Enabled = true;
+                                      btnVestelIadeListele.Enabled = true;
+
+                                  }
+                                  satis = true;
+                                  XtraMessageBox.Show("Başarılı :" + success + " adet işlem listelendi.", "Sonuç", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                              });
         }
 
         private void btnIadeListele_Click(object sender, EventArgs e)
@@ -1615,7 +1650,7 @@ namespace YonAvm
                 AND DEEDDATE  between '{0}' and '{1}'
                 AND SALDIVISON {2}
 			    AND EXISTS (select * from MDE_GENEL.dbo.DivaEklenenler where IslemdetayID = INVCHID)                
-                AND PRONAME like 'PROFI%'", Convert.ToDateTime(dteVestelBasTarih.EditValue).ToString("yyyy-MM-dd"), Convert.ToDateTime(dteVestelBitTarih.EditValue).ToString("yyyy-MM-dd"), div);
+                AND PRONAME like 'PROFI%'", Convert.ToDateTime(dteProfiloBasTarih.EditValue).ToString("yyyy-MM-dd"), Convert.ToDateTime(dteProfiloBitTarih.EditValue).ToString("yyyy-MM-dd"), div);
             }
             else
             {
@@ -1731,7 +1766,7 @@ namespace YonAvm
                 AND DEEDDATE  between '{0}' and '{1}'
                 AND SALDIVISON {2}
 			    AND EXISTS (select * from MDE_GENEL.dbo.DivaEklenenler where IslemdetayID = INVCHID)
-                AND PROSUPPLIER.PROSUPCURID IN (3412264)", Convert.ToDateTime(dteVestelBasTarih.EditValue).ToString("yyyy-MM-dd"), Convert.ToDateTime(dteVestelBitTarih.EditValue).ToString("yyyy-MM-dd"), div);
+                AND PRONAME like 'PROFI%'", Convert.ToDateTime(dteProfiloBasTarih.EditValue).ToString("yyyy-MM-dd"), Convert.ToDateTime(dteProfiloBitTarih.EditValue).ToString("yyyy-MM-dd"), div);
             }
             var dt = conn.GetDataTableConnectionSql(q, sql);
             if (dt.Rows.Count > 0)
@@ -1754,7 +1789,7 @@ namespace YonAvm
                 btnProfiloIade.Enabled = true;
 
             }
-            satis = true;
+            satis = false;
         }
 
         private void btnProfiloYeni_Click(object sender, EventArgs e)
@@ -2036,8 +2071,7 @@ namespace YonAvm
             DataTable dt = new DataTable();
             da.Fill(dt);
             gridProfloIade.DataSource = dt;
-            btnVestelIadeEt.Visible = false;
-            btnProfiloIadeEt.Visible = true;
+            btnProfiloIadeEt.Visible = false;
         }
 
         private void btnProfiloIadeListe_Click(object sender, EventArgs e)
@@ -2656,7 +2690,7 @@ namespace YonAvm
         void IslenecekSorgu()
         {
             string q = String.Format(@"
-            select CURVAL, CURNAME, DIV_FTRDATE, SALID, PARK_NEWID from MDE_GENEL.dbo.DivaFaturaListesi d
+            select CURVAL, CURNAME, DIV_FTRDATE, SALID, DIV_FTRNO, PARK_NEWID from MDE_GENEL.dbo.DivaFaturaListesi d
             left outer join VDB_YON01.dbo.SALES on SALID = VOL_SALID
             left outer join VDB_YON01.dbo.CURRENTS on CURID = VOL_CURID
             where SALID is not NULL
@@ -2725,6 +2759,7 @@ namespace YonAvm
                gidistarihi = Convert.ToDateTime(ViewFaturaListesi.GetRowCellValue(selected[index], "DIV_FTRDATE").ToString());
                var MusteriAdi = ViewFaturaListesi.GetRowCellValue(selected[index], "CURNAME").ToString();
                string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), lblSayfaIsmi.Text,MusteriAdi);
+               CreateDirectoryIfNotExists(filePath);
                string documentNo = "";
                documentNo = ViewFaturaListesi.GetRowCellValue(index, "DIV_FTRNO").ToString();
 
@@ -2744,6 +2779,7 @@ namespace YonAvm
                                {
                                    conn.insertData(String.Format("update MDE_GENEL.dbo.DivaFaturaListesi set PARK_NEWID = {1} where  DIV_FTRNO = '{0}'", documentNo, item.id), sql);
                                }
+                               break;
                            }
                        }
                    }
@@ -2753,12 +2789,11 @@ namespace YonAvm
                               null,
                               () =>
                               {
-                                  client.Logout(Properties.Settings.Default.LogoToken);
                                   completeProgress();
                                   progressForm.Hide(this);
-                                  Properties.Settings.Default.LogoToken = "";
+                                  Clint.OturumKapat(Properties.Settings.Default.ParkToken);
                                   Properties.Settings.Default.ParkToken = "";
-                                  XtraMessageBox.Show("Başarılı :" + success + " adet işlem kaydetildi. Hatalı işlem Toplamı :" + error, "Sonuç", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                  CustomMessageBox.ShowMessage("Bilgilendirme","Başarılı :" + success + " adet işlem kaydetildi. Hatalı işlem Toplamı :" + error,this, "Sonuç", MessageBoxButtons.OK, MessageBoxIcon.Information);
                               });
         }
     }    

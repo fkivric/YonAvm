@@ -350,6 +350,7 @@
             this.gridColumn102 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn103 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn104 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn111 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn105 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
             this.tileBar6 = new DevExpress.XtraBars.Navigation.TileBar();
@@ -380,6 +381,8 @@
             this.tablePanel13 = new DevExpress.Utils.Layout.TablePanel();
             this.txtSiraNo = new DevExpress.XtraEditors.TextEdit();
             this.labelControl48 = new DevExpress.XtraEditors.LabelControl();
+            this.navBarGroup5 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarGroup6 = new DevExpress.XtraNavBar.NavBarGroup();
             this.lblSayfaIsmi = new DevExpress.XtraEditors.LabelControl();
             this.navBarControl3 = new DevExpress.XtraNavBar.NavBarControl();
             this.navBarGroup2 = new DevExpress.XtraNavBar.NavBarGroup();
@@ -559,7 +562,7 @@
             this.tileBar.ItemPadding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.tileBar.Location = new System.Drawing.Point(0, 0);
             this.tileBar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tileBar.MaxId = 5;
+            this.tileBar.MaxId = 6;
             this.tileBar.MaximumSize = new System.Drawing.Size(0, 110);
             this.tileBar.Name = "tileBar";
             this.tileBar.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
@@ -663,6 +666,7 @@
             // 
             // navigationPage3
             // 
+            this.navigationPage3.Caption = "navigationPage3";
             this.navigationPage3.Controls.Add(this.navigationFrame1);
             this.navigationPage3.Controls.Add(this.tileBar1);
             this.navigationPage3.Name = "navigationPage3";
@@ -2038,6 +2042,7 @@
             // 
             // navigationPage4
             // 
+            this.navigationPage4.Caption = "navigationPage4";
             this.navigationPage4.Controls.Add(this.navigationFrame2);
             this.navigationPage4.Controls.Add(this.tileBar2);
             this.navigationPage4.Name = "navigationPage4";
@@ -2062,6 +2067,7 @@
             // 
             // navigationPage5
             // 
+            this.navigationPage5.Caption = "navigationPage5";
             this.navigationPage5.Controls.Add(this.gridProfiloSatis);
             this.navigationPage5.Controls.Add(this.navBarControl2);
             this.navigationPage5.Controls.Add(this.groupControl2);
@@ -3186,7 +3192,7 @@
             this.btnProfiloIadeEt.Name = "btnProfiloIadeEt";
             this.btnProfiloIadeEt.Size = new System.Drawing.Size(1323, 47);
             this.btnProfiloIadeEt.TabIndex = 8;
-            this.btnProfiloIadeEt.Text = "Müşteri Kayıt\r\nİşlendi Yap";
+            this.btnProfiloIadeEt.Text = "Müşteri İade\r\nİşlendi Yap";
             this.btnProfiloIadeEt.Visible = false;
             this.btnProfiloIadeEt.Click += new System.EventHandler(this.btnProfiloIadeEt_Click);
             // 
@@ -3232,7 +3238,7 @@
             this.tablePanel7.SetRow(this.btnPorifloExcel, 0);
             this.btnPorifloExcel.Size = new System.Drawing.Size(268, 55);
             this.btnPorifloExcel.TabIndex = 9;
-            this.btnPorifloExcel.Text = "Excel Al";
+            this.btnPorifloExcel.Text = "Excel\'e Kaydet";
             this.btnPorifloExcel.Click += new System.EventHandler(this.btnPorifloExcel_Click);
             // 
             // btnProfiloIadeListe
@@ -3817,6 +3823,7 @@
             this.gridColumn102,
             this.gridColumn103,
             this.gridColumn104,
+            this.gridColumn111,
             this.gridColumn105});
             this.ViewFaturaListesi.GridControl = this.gridFaturaListesi;
             this.ViewFaturaListesi.Name = "ViewFaturaListesi";
@@ -3855,21 +3862,29 @@
             // 
             // gridColumn104
             // 
-            this.gridColumn104.Caption = "SATIŞ No";
+            this.gridColumn104.Caption = "Satış No";
             this.gridColumn104.FieldName = "SALID";
             this.gridColumn104.Name = "gridColumn104";
             this.gridColumn104.OptionsColumn.ReadOnly = true;
             this.gridColumn104.Visible = true;
-            this.gridColumn104.VisibleIndex = 5;
+            this.gridColumn104.VisibleIndex = 6;
+            // 
+            // gridColumn111
+            // 
+            this.gridColumn111.Caption = "Diva Fatura No";
+            this.gridColumn111.FieldName = "DIV_FTRNO";
+            this.gridColumn111.Name = "gridColumn111";
+            this.gridColumn111.Visible = true;
+            this.gridColumn111.VisibleIndex = 4;
             // 
             // gridColumn105
             // 
-            this.gridColumn105.Caption = "Yeni Fatura No";
+            this.gridColumn105.Caption = "Yeni Fatura ID";
             this.gridColumn105.FieldName = "PARK_NEWID";
             this.gridColumn105.Name = "gridColumn105";
             this.gridColumn105.OptionsColumn.ReadOnly = true;
             this.gridColumn105.Visible = true;
-            this.gridColumn105.VisibleIndex = 4;
+            this.gridColumn105.VisibleIndex = 5;
             // 
             // groupControl6
             // 
@@ -4249,6 +4264,18 @@
             this.labelControl48.TabIndex = 7;
             this.labelControl48.Text = "Müşteri No";
             // 
+            // navBarGroup5
+            // 
+            this.navBarGroup5.Caption = "İşlemler";
+            this.navBarGroup5.Name = "navBarGroup5";
+            this.navBarGroup5.NavigationPaneVisible = false;
+            // 
+            // navBarGroup6
+            // 
+            this.navBarGroup6.Caption = "Veri Eşleşmesi";
+            this.navBarGroup6.Name = "navBarGroup6";
+            this.navBarGroup6.NavigationPaneVisible = false;
+            // 
             // lblSayfaIsmi
             // 
             this.lblSayfaIsmi.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
@@ -4258,9 +4285,9 @@
             this.lblSayfaIsmi.Appearance.Options.UseTextOptions = true;
             this.lblSayfaIsmi.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.lblSayfaIsmi.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblSayfaIsmi.Location = new System.Drawing.Point(593, 10);
+            this.lblSayfaIsmi.Location = new System.Drawing.Point(735, 12);
             this.lblSayfaIsmi.Name = "lblSayfaIsmi";
-            this.lblSayfaIsmi.Size = new System.Drawing.Size(672, 57);
+            this.lblSayfaIsmi.Size = new System.Drawing.Size(608, 57);
             this.lblSayfaIsmi.TabIndex = 2;
             this.lblSayfaIsmi.Text = "VESTEL";
             // 
@@ -4830,5 +4857,8 @@
         private DevExpress.XtraBars.Navigation.TileBarItem tileBarbtnFaturaListesiGetir;
         private DevExpress.XtraBars.Navigation.TileBarItem tileBarbtnFaturaKaydet;
         private DevExpress.XtraBars.Navigation.TileBarItem tileBarbtnFaturaPdfKaydet;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn111;
+        private DevExpress.XtraNavBar.NavBarGroup navBarGroup5;
+        private DevExpress.XtraNavBar.NavBarGroup navBarGroup6;
     }
 }
